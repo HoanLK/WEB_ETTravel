@@ -1,0 +1,77 @@
+﻿@model CMS.Models.Order
+
+@{
+    ViewBag.Title = "Thêm Đơn đặt tour";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+}
+
+<div ng-app="myApp">
+    <div ng-controller="themOrderController">
+        <input type="hidden" value="@WebSecurity.CurrentUserName" id="user" />
+        <div class="row">
+            <div class="col-md-2">
+                <button type="button" class="btn btn-block btn-sm ink-reaction btn-success" ng-click="saveOrder()"><span class="fa fa-edit"></span> Lưu</button>
+            </div>
+            <div class="col-md-2">
+                <button type="button" class="btn btn-block btn-sm ink-reaction btn-info" ng-click="saveOrderAndExit()"><span class="fa fa-check-square-o"></span> Lưu & Thoát</button>
+            </div>
+            <div class="col-md-2">
+                <button type="button" class="btn btn-block btn-sm ink-reaction btn-info" ng-click="saveOrderAndNew()"><span class="fa fa-plus"></span> Lưu & Thêm mới</button>
+            </div>
+            <div class="col-md-2">
+                <button type="button" class="btn btn-block btn-sm ink-reaction btn-danger" ng-click="cancel()"><span class="fa fa-remove"></span> Hủy bỏ</button>
+            </div>
+        </div>
+        <hr class="ruler-lg" />
+        <div class="card">
+            <div class="card-body">
+                <form class="form" role="form">
+                    <div class="row">
+                        <div class="col-md-7">
+                            <div class="form-group  ">
+                                <input type="text" class="form-control" id="hoTen" name="hoTen" ng-model="Order.hoTen">
+                                <label for="title">Họ tên</label>
+                            </div>
+                        </div>
+                        <div class="col-md-7">
+                            <div class="form-group  ">
+                                <input type="text" class="form-control" id="diaChi" name="diaChi" ng-model="Order.diaChi">
+                                <label for="title">Địa Chỉ</label>
+                            </div>
+                        </div>
+                        <div class="col-md-7">
+                            <div class="form-group  " ng-class="{'has-error':!Order.SDT, 'has-success':Order.SDT}">
+                                <input type="text" class="form-control" id="SDT" name="SDT" ng-model="Order.SDT">
+                                <label for="title">Dố điện thoại *</label>
+                            </div>
+                        </div>
+                        <div class="col-md-7">
+                            <div class="form-group  ">
+                                <input type="text" class="form-control" id="email" name="email" ng-model="Order.email">
+                                <label for="title">Email</label>
+                            </div>
+                        </div>
+                        <div class="col-md-7">
+                            <div class="form-group  " ng-class="{'has-error':!Order.tour, 'has-success':Order.tour}">
+                                <input type="text" class="form-control" id="tour" name="tour" ng-model="Order.tour">
+                                <label for="title">Tuor *</label>
+                            </div>
+                        </div>
+                        <div class="col-md-7">
+                            <div class="form-group  ">
+                                <input type="date" class="form-control" id="timeStart" name="timeStart" ng-model="Order.timeStart">
+                                <label for="title">Ngày khởi hành</label>
+                            </div>
+                        </div>
+                        <div class="col-md-7">
+                            <div class="form-group  ">
+                                <input type="number" class="form-control" id="guestNumber" name="guestNumber" ng-model="Order.guestNumber">
+                                <label for="title">Số người</label>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

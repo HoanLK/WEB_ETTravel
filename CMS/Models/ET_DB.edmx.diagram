@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="c2957f7744264f1eb6ac8d5cdea6e9ed" Name="Diagram1" ZoomLevel="67">
+        <EntityTypeShape EntityType="ETModel.Banner" Width="1.5" PointX="4.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ETModel.Category" Width="1.5" PointX="2.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ETModel.CategoryProduct" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ETModel.Post" Width="1.5" PointX="6.75" PointY="2.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="ETModel.Video" Width="1.5" PointX="8.625" PointY="2.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="ETModel.webpages_Membership" Width="1.5" PointX="8.625" PointY="5.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="ETModel.webpages_OAuthMembership" Width="1.5" PointX="8.75" PointY="0.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="ETModel.webpages_Roles" Width="1.5" PointX="7" PointY="0.875" IsExpanded="true" />
+        <AssociationConnector Association="ETModel.FK_dbo_Category_dbo_Category_idCategoryParent" ManuallyRouted="false" />
+        <AssociationConnector Association="ETModel.FK_dbo_CategoryProduct_dbo_CategoryProduct_idCategoryParent" ManuallyRouted="false" />
+        <EntityTypeShape EntityType="ETModel.CustomerRegister" Width="1.5" PointX="10.5" PointY="6.125" />
+        <EntityTypeShape EntityType="ETModel.Product" Width="1.5" PointX="12.5" PointY="2.625" />
+        <EntityTypeShape EntityType="ETModel.Order" Width="1.5" PointX="10.625" PointY="2.625" />
+        <EntityTypeShape EntityType="ETModel.Customer" Width="1.5" PointX="12.375" PointY="0.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="ETModel.Partner" Width="1.5" PointX="10.625" PointY="0.5" />
+        <EntityTypeShape EntityType="ETModel.User" Width="1.5" PointX="4.875" PointY="1" />
+        <AssociationConnector Association="ETModel.webpages_UsersInRoles" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

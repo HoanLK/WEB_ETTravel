@@ -1,0 +1,50 @@
+﻿
+@{
+    ViewBag.Title = "Kết quả tìm kiếm";
+    
+}
+
+<div class="KQTimKiem" ng-controller="showSearchController">
+    <p class="title" ng-show="searchText.length > 0"><span style="font-weight: bold; font-style: italic;">{{searchText}}</span></p>
+    <p class="title" ng-show="!(searchText.length > 0)"><i>Xin lỗi! Kết quả tìm kiếm không tồn tại</i></p>
+</div>
+
+<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 DLTrongNuoc" ng-controller="showSearchController">
+    <p class="TieuDe" ng-show="products.length > 0">Có {{products.length}} tour</p>
+    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 DuLich">
+        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 DiaDiem" ng-repeat="(index, value) in products">
+            <div class="Khung">
+                <img class="img-responsive anh" src="{{value.image}}" />
+                <div class="a">
+                    <div class="b">
+                        <a href="/tour/{{value.alias}}-{{value.idProduct}}" class="Ten">{{value.title}}</a>
+                    </div>
+                    <div class="ThoiGian">
+                        <div class="pull-left">
+                            <span class="fa fa-calendar Lich"></span> {{value.dateNumber}} ngày {{value.nightNumber}} đêm
+                        </div>
+                        <div class="pull-right text-center">
+                            <span class="fa fa-car PhuongTien"></span><br />
+                        </div>
+                    </div>
+                    <p class="GioiThieu" ng-bind-html="value.description"></p>
+                    <p class="DonGia">Đơn giá: {{value.price | number:0}}<sup>vnđ</sup></p>
+                    <a href="/tour/{{value.alias}}-{{value.idProduct}}" class="ChiTiet">Chi tiết</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 Visa_ThueXe" ng-controller="showSearchController">
+    <p class="TieuDe" ng-show="posts.length > 0">Có {{posts.length}} bài viết</p>
+    <div ng-repeat="(index, value) in posts">
+        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 item">
+            <img class="img-responsive anh" src="{{value.image}}" />
+            <a href="/bai-viet/{{value.alias}}-{{value.idPost}}" class="TieuDe">{{value.title}}</a>
+            <div class="GioiThieu">
+                {{value.description | limitTo: 100}}{{value.description.length > 100 ? '&hellip;' : ''}}
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,319 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+    <!--SEO-->
+    <title>@ViewBag.Title</title>
+    <meta name="description" content="@((ViewBag.Description!=null)?ViewBag.Description:"")" />
+    <meta name="keywords" content='@((ViewBag.Keywords!=null)?ViewBag.Keywords:"")' />
+    <meta name="revisit-after" content="1 days" />
+    <meta name="robots" content='@((ViewBag.Robots!=null)?ViewBag.Robots:"index, noop, follow")' />
+    <meta http-equiv="content-language" content="vi" />
+    <link href="~/Content/Images/images/logo.png" rel="shortcut icon" type="image/x-icon" />
+    <link rel="alternate" href="http://www.daunhotmobilchinhhang.com/" hreflang="vn-vi" />
+    <meta itemprop="name" content='@((ViewBag.Title!=null)?ViewBag.Title : "ET TRAVEL")'>
+    <meta itemprop="description" content='@((ViewBag.Description!=null)?ViewBag.Description:"")'>
+    <meta itemprop="image" content='@((ViewBag.Image!=null)?ViewBag.Image:"")'>
+    <meta property="og:title" content='@((ViewBag.Title!=null)?ViewBag.Title : "ET TRAVEL")' />
+    <meta property="og:locale" content="vi_VN" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content='@((ViewBag.Image!=null)?ViewBag.Image:"")' />
+    <meta property="og:description" content='@((ViewBag.Description!=null)?ViewBag.Description:"")' />
+    <meta property="og:site_name" content="ET Travel" />
+    <meta name="geo.placename" content="1/97, Nguyễn Công Hòa, Hải Phòng" />
+    <meta name="geo.region" content="VN-HP" />
+    <meta name="geo.position" content="20.845268;106.665318" />
+    <meta name="ICBM" content="20.845268, 106.665318" />
+    <link rel="image_src" href='@((ViewBag.Image!=null)?ViewBag.Image:"")' />
+    <!--Bootstrap-->
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+    <!--Message-->
+    <link href="~/Content/admin/css/theme-default/libs/toastr/toastr.min.css" rel="stylesheet" />
+    <!--Site-->
+    <link href="~/Content/front/css/Site.css" rel="stylesheet" />
+    <link href="~/Content/front/css/DuLich.css" rel="stylesheet" />
+    <link href="~/Content/front/css/BaiViet.css" rel="stylesheet" />
+</head>
+<body ng-app="frontApp">
+    <div class="col-lg-1 col-md-1 hidden-sm hidden-xs QCLeft">
+        <a href="#" class="Link"><img class="img-responsive" src="~/Content/Images/images/QC.jpg" /></a>
+    </div>
+
+    <div class="col-lg-1 col-md-1 hidden-sm hidden-xs QCRight">
+        <a href="#" class="Link"><img class="img-responsive" src="~/Content/Images/images/QC.jpg" /></a>
+    </div>
+
+    <header class="col-lg-12 col-md-12 col-sm-12 col-xs-12 Header">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 TopHeader">
+            <div class="left">
+                <a href="https://www.facebook.com/DULICH.ET" target="_blank" class="fa fa-facebook"></a>
+                <a href="#" class="fa fa-envelope-o"></a>
+                <a href="#" class="fa fa-google-plus"></a>
+                <a href="#" class="fa fa-youtube-play"></a>
+                <div id="google_translate_element" style="display:inline-block; margin-left:1em;"></div>
+            </div>
+            <div class="right">
+                <ul class="MenuTop">
+                    <li>
+                        <a href="@Url.Action("Index","Home")">Trang chủ</a>
+                    </li>
+                    <li>
+                        <a href="/bai-viet/gioi-thieu-19">Giới thiệu</a>
+                    </li>
+                    <li>
+                        <a href="/danh-muc-bai-viet/thong-tin-149">Thông tin</a>
+                    </li>
+                    <li>
+                        <a href="/lien-he">Liên hệ</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 MidHeader">
+            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 Logo">
+                <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12"></div>
+                <a href="@Url.Action("Index","Home")" class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                    <img class="img-responsive Logo" title="ET Travel" alt="ET Travel" src="~/Content/Images/images/logo.png" />
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 HotLine">
+                <div class="left">
+                    <span class="fa fa-headphones"></span>
+                </div>
+                <div class="right">
+                    <a class="Phone" href="tel:0313611158">0313.611.158</a>
+                    <p class="GhiChu">Tổng đài tư vấn miễn phí</p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 Phone">
+                <div class="left">
+                    <span class="fa fa-phone"></span>
+                </div>
+                <div class="right">
+                    <a class="Phone" href="tel:0906028211">0906.02.82.11</a>
+                    <a class="Phone" href="tel:0981200288">0981.200.288</a>
+                </div>
+            </div>
+            <a href="http://phongveskyline.com/" target="_blank" class="col-lg-3 col-md-3 col-sm-3 col-xs-12 Facebook">
+                <img class="img-responsive" src="~/Content/Images/images/SkyLine.png" />
+            </a>
+        </div>
+
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 BotHeader">
+            
+            <nav class="navbar navbar-inverse">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand visible-xs" href="#">Menu</a>
+                    </div>
+                    <div class="collapse navbar-collapse" id="myNavbar">
+                        <ul class="nav navbar-nav">
+                            <li>
+                                <span class="fa fa-flag"></span>
+                                <a href="/loai-tour/trong-nuoc">Du lịch trong nước</a>
+                                @*<ul class="Con" ng-repeat="(index, value) in categories">
+                                    <li><a href="/loai-tour/{{value.alias}}-{{value.idCategory}}" title="{{value.title}}" class="TieuDe">DU LỊCH {{value.title}}</a></li>
+                                </ul>*@
+                            </li>
+                            <li>
+                                <span class="fa fa-globe"></span>
+                                <a href="/loai-tour/quoc-te">Du lịch nước ngoài</a>
+                                @*<ul class="Con" ng-repeat="(index, value) in categories">
+                                    <li><a href="/loai-tour/{{value.alias}}-{{value.idCategory}}" title="{{value.title}}" class="TieuDe">DU LỊCH {{value.title}}</a></li>
+                                </ul>*@
+                            </li>
+                            <li><span class="fa fa-plane"></span><a href="http://phongveskyline.com/" target="_blank">Đặt vé máy bay</a></li>
+                            <li><span class="fa fa-cc-visa"></span><a href="/danh-muc-bai-viet/dich-vu-visa-146">Dịch vụ Visa</a></li>
+                            <li><span class="fa fa-car"></span><a href="/danh-muc-bai-viet/cho-thue-xe-147">Cho thuê xe du lịch</a></li>
+                            <li><span class="fa fa-building"></span><a href="/danh-muc-bai-viet/team-building-150">Team building</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 Body">
+        
+
+        <div class="col-lg-1 col-md-1 hidden-sm hidden-xs">
+        </div>
+
+        <div class="col-lg-10 col-md-10 col-sm-12 col-xs-12 Main">
+            @RenderBody()
+        </div>
+
+        <div class="col-lg-1 col-md-1 hidden-sm hidden-xs">
+        </div>
+
+        
+    </div>
+
+    <footer class="col-lg-12 col-md-12 col-sm-12 col-xs-12 Footer">
+        <div class="col-lg-1 col-md-1 hidden-sm hidden-x"></div>
+
+        <div class="col-lg-10 col-md-10 col-sm-12 col-xs-12 TopFooter">
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 left">
+                <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FDULICH.ET&tabs=timeline&width=500&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" style="border:none;overflow:hidden; width:100%; height:200px" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 right">
+                <p><span class="fa fa-map-marker"></span> TÌM CHÚNG TÔI</p>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3728.4687104998193!2d106.66621831443352!3d20.853149986093754!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x314a7a669baf9829%3A0x80bba19558ea583f!2zMTg1IE5ndXnhu4VuIMSQ4bupYyBD4bqjbmgsIEPDoXQgRMOgaSwgTMOqIENow6JuLCBI4bqjaSBQaMOybmcsIFZp4buHdCBOYW0!5e0!3m2!1svi!2s!4v1473100489166" width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
+            </div>
+        </div>
+
+        <div class="col-lg-1 col-md-1 hidden-sm hidden-x"></div>
+
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 MidFooter">
+            <div class="col-lg-1 col-md-1 hidden-sm hidden-x"></div>
+
+            <div class="col-lg-10 col-md-10 col-sm-12 col-xs-12 GiupDo">
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 HoTro">
+                    <p class="TieuDe">ĐẶT TOUR QUA ĐIỆN THOẠI</p>
+                    <a class="LienHe" href="tel:0313611158"><span class="fa fa-phone"></span> 0313.611.158</a>
+                    <p class="GhiChu">Giờ nhận tour: 08:00 - 22:00 giờ</p>
+                </div>
+
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 HoTro">
+                    <p class="TieuDe">DỊCH VỤ VISA, VÉ MÁY BAY</p>
+                    <p class="LienHe"><span class="fa fa-cc-visa"></span> VISA, VÉ MÁY BAY GIÁ RẺ</p>
+                    <p class="GhiChu">Hỗ trợ du khách hết mình</p>
+                </div>
+
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 HoTro" ng-controller="cusRegisterController">
+                    <p class="TieuDe">ĐĂNG KÝ NHẬN TIN</p>
+                    <input class="Text" ng-keypress="($event.which === 13)?registe():0" ng-model="cusRegiste.email" id="email" placeholder="Email" />
+                    <button class="btnDangKy" ng-click="registe()">Đăng ký</button>
+                </div>
+            </div>
+
+            <div class="col-lg-1 col-md-1 hidden-sm hidden-x"></div>
+        </div>
+
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 BotFooter">
+            <p class="TieuDe">ET Travel - 2016 - Designed by <a href="http://ketnoitrejsc.com/" target="_blank">Kết Nối Trẻ JSC</a></p>
+        </div>
+    </footer>
+
+
+    <!--Jquery-->
+    <script src="https://code.jquery.com/jquery-1.12.2.min.js" integrity="sha256-lZFHibXzMHo3GGeehn1hudTAP3Sc0uKXBXAzHX1sjtk=" crossorigin="anonymous"></script>
+    <!--Bootstrap-->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    <!--AngularJS-->
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+    <script src="~/Scripts/angular-sanitize.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.3.4/angular-cookies.js"></script>
+    <!--Message-->
+    <script src="~/Content/admin/js/libs/toastr/toastr.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            toastr.options = {
+                "positionClass": "toast-bottom-left"
+            };
+        });
+    </script>
+    <!--MY-->
+    <script src="~/Scripts/front/frontApp.min.js"></script>
+
+    <script src="~/Scripts/front/searchController.js"></script>
+    <script src="~/Scripts/front/showSearchController.js"></script>
+
+    <script src="~/Scripts/front/categoryProductFactory.min.js"></script>
+    <script src="~/Scripts/front/categoryPostFactory.min.js"></script>
+    <!--Banner-->
+    <script src="~/Scripts/front/bannerController.min.js"></script>
+    <!--Tabs-->
+    <script src="~/Scripts/front/tabController.js"></script>
+    <!--Video-->
+    <script src="~/Scripts/front/videoController.min.js"></script>
+    <!--Category-->
+    <script src="~/Scripts/front/allCategoryProductController.min.js"></script>
+    <script src="~/Scripts/front/childCategoryProductController.min.js"></script>
+    <script src="~/Scripts/front/menuCategoryPostController.min.js"></script>
+    <script src="~/Scripts/front/allCategoryPostController.min.js"></script>
+    <script src="~/Scripts/front/childCategoryPostController.min.js"></script>
+    <!--Product-->
+    <script src="~/Scripts/front/showProductController.min.js"></script>
+    <!--Post-->
+    <script src="~/Scripts/front/showPostController.min.js"></script>
+    <!--Menu-->
+    @*<script src="~/Scripts/front/menuMainController.min.js"></script>*@
+    <!--Seach-->
+    <script src="~/Scripts/front/searchController.js"></script>
+    <script src="~/Scripts/front/showSearchController.js"></script>
+    <!--Register-->
+    <script src="~/Scripts/front/cusRegisterController.js"></script>
+    <!--Pagination-->
+    <script src="~/Scripts/front/pagination/dirPagination.min.js"></script>
+    <!--Order-->
+    <script src="~/Scripts/front/themorderController.js"></script>
+    <!--Customer-->
+    <script src="~/Scripts/front/CustomerController.min.js"></script>
+    <!--Partner-->
+    <script src="~/Scripts/front/PartnerController.min.js"></script>
+    <!--Ck Editor-->
+    <script src="~/Content/front/js/modernizr.custom.min.js"></script>
+    <!--Ads-->
+    <script>
+        (function ($) {
+
+            $.fn.advScroll = function (option) {
+                $.fn.advScroll.option = {
+                    marginTop: 250,
+                    easing: '',
+                    timer: 400,
+                };
+
+                option = $.extend({}, $.fn.advScroll.option, option);
+
+                return this.each(function () {
+                    var el = $(this);
+                    $(window).scroll(function () {
+                        t = parseInt($(window).scrollTop()) + option.marginTop;
+                        el.stop().animate({ marginTop: t }, option.timer, option.easing);
+                    })
+                });
+            };
+
+            $('.QCLeft').advScroll();
+            $('.QCRight').advScroll();
+
+        })(jQuery)
+    </script>
+
+
+    <!--Google translate-->
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({ pageLanguage: 'vi', layout: google.translate.TranslateElement.InlineLayout.SIMPLE }, 'google_translate_element');
+        }
+    </script>
+    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    <!--Chat online-->
+    <!--Start of Tawk.to Script-->
+    <script type="text/javascript">
+        var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
+        (function () {
+            var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
+            s1.async = true;
+            s1.src = 'https://embed.tawk.to/57dd3595dd50b61453660419/default';
+            s1.charset = 'UTF-8';
+            s1.setAttribute('crossorigin', '*');
+            s0.parentNode.insertBefore(s1, s0);
+        })();
+    </script>
+    <!--End of Tawk.to Script-->
+</body>
+</html>

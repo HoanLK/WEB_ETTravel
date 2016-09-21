@@ -1,0 +1,15 @@
+﻿@model CMS.Models.Post
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div class="col-lg-9 col-md-9 col-sm-12 col-xs-12 BaiViet" ng-controller="showPostController">
+    <input type="hidden" value="@Model.idPost" id="idPost" />
+    <p class="TieuDe">{{post.title}}</p>
+    <div class="NoiDung" ng-bind-html="post.content"></div>
+</div>
+<div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 GoiY" ng-controller="showPostController">
+    <p class="TieuDe">Cùng chuyên mục</p>
+    <ul ng-repeat="(index, value) in relatedPosts">
+        <li><span class="fa fa-hand-o-right"></span> <a href="/bai-viet/{{value.alias}}-{{value.idPost}}">{{value.title}}</a></li>
+    </ul>
+</div>

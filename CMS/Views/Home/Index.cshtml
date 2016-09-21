@@ -1,0 +1,171 @@
+﻿@*@model*@
+
+
+<!--Banner-->
+@Html.Partial("_Banner")
+
+<!--Main-->
+<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+    <div class="col-lg-6 col-md-6 col-sm-10 col-xs-12 TimKiem" ng-controller="searchController">
+        <p>BẠN MUỐN ĐI ĐÂU?</p>
+        <input type="text" class="form-control" placeholder="Nhập địa chỉ bạn muốn đến.." ng-keypress="($event.which === 13)?search():0" ng-model="searchText">
+        <button type="button" class="btn btn-default" ng-click="search()">Tìm kiếm</button>
+    </div>
+</div>
+
+<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 DichVuKhac">
+    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 DichVu">
+        <img class="img-responsive" src="~/Content/Images/images/DatVeMayBay.jpg" title="Đặt vé máy bay" alt="Đặt vé máy bay" />
+        <a href="http://phongveskyline.com/" target="_blank" class="Link">ĐẶT VÉ MÁY BAY</a>
+    </div>
+    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 DichVu">
+        <img class="img-responsive" src="~/Content/Images/images/ChoThueXe.jpg" title="Cho thuê xe" alt="Cho thuê xe" />
+        <a href="/danh-muc-bai-viet/cho-thue-xe-147" class="Link">CHO THUÊ XE</a>
+    </div>
+    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 DichVu">
+        <img class="img-responsive" src="~/Content/Images/images/Visa.jpg" title="Dịch vụ visa" alt="Dịch vụ visa" />
+        <a href="/danh-muc-bai-viet/dich-vu-visa-146" class="Link">DỊCH VỤ VISA</a>
+    </div>
+    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 DichVu">
+        <img class="img-responsive" src="~/Content/Images/images/Building.jpg" title="Team building" alt="Team building" />
+        <a href="/danh-muc-bai-viet/team-building-150" class="Link">Team building</a>
+    </div>
+</div>
+
+<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 DLTrongNuoc" ng-controller="tabController">
+    <p class="TieuDe">DU LỊCH TRONG NƯỚC</p>
+    <p class="TieuDe TieuDe2">---------------- <span class="fa fa-flag"></span> ----------------</p>
+    @*Danh sách Danh mục trong nước*@
+    <ul class="nav nav-tabs">
+        <!--Ví dụ cái thứ 3-->
+        <li ng-repeat="(index, value) in categoryTrongNuocs"
+            ng-class="{'active':value.idCategory == categoryTrongNuoc.idCategory}"><a href="" ng-click="ChonCategoryTrongNuoc(value)">{{value.title}}</a></li>
+    </ul>
+
+    @*Danh sách Tour theo danh mục*@
+    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 DuLich">
+        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 DiaDiem" ng-repeat="(index, value) in productTrongNuocs">
+            <div class="Khung">
+                <img class="img-responsive anh" title="{{value.title}}" alt="{{value.title}}" src="{{value.image}}" />
+                <div class="a">
+                    <div class="b">
+                        <a href="/tour/{{value.alias}}-{{value.idProduct}}" class="Ten">{{value.title}}</a>
+                    </div>
+                    <div class="ThoiGian">
+                        <div class="pull-left">
+                            <span class="fa fa-calendar Lich"></span> {{value.dateNumber}} ngày {{value.nightNumber}} đêm
+                        </div>
+                        <div class="pull-right text-center">
+                            <span class="fa PhuongTien" ng-class="{'fa-car':value.vehicle==0,'fa-plane':value.vehicle==1,'fa-ship':value.vehicle==2}"></span><br />
+                        </div>
+                    </div>
+                    <p class="GioiThieu" ng-bind-html="value.description"></p>
+                    <p class="DonGia">Đơn giá: {{value.price | number:0}}<sup>vnđ</sup></p>
+                    <a href="/tour/{{value.alias}}-{{value.idProduct}}" class="ChiTiet">Chi tiết</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <a href="/loai-tour/{{categoryTrongNuoc.alias}}-{{categoryTrongNuoc.idCategory}}" class="XemTatCaTour">Xem thêm Tour >></a>
+</div>
+
+@*<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" ng-controller="tabController">
+    <a href="/loai-tour/{{categoryTrongNuoc.alias}}-{{categoryTrongNuoc.idCategory}}" class="XemTatCaTour">Xem thêm Tour >></a>
+</div>*@
+
+<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 DLTrongNuoc" ng-controller="tabController">
+    <p class="TieuDe">DU LỊCH NƯỚC NGOÀI</p>
+    <p class="TieuDe">---------------- <span class="fa fa-globe"></span> ----------------</p>
+    @*Danh sách Danh mục quốc tế*@
+    <ul class="nav nav-tabs">
+        <!--Ví dụ cái thứ 3-->
+        <li ng-repeat="(index, value) in categoryQuocTes"
+            ng-class="{'active':value.idCategory == categoryQuocTe.idCategory}"><a href="" ng-click="ChonCategoryQuocTe(value)">{{value.title}}</a></li>
+    </ul>
+
+    @*Danh sách Tour theo danh mục*@
+    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 DuLich">
+        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 DiaDiem" ng-repeat="(index, value) in productQuocTes">
+            <div class="Khung">
+                <img class="img-responsive anh" title="{{value.title}}" alt="{{value.title}}" src="{{value.image}}" />
+                <div class="a">
+                    <div class="b">
+                        <a href="/tour/{{value.alias}}-{{value.idProduct}}" class="Ten">{{value.title}}</a>
+                    </div>
+                    <div class="ThoiGian">
+                        <div class="pull-left">
+                            <span class="fa fa-calendar Lich"></span> {{value.dateNumber}} ngày {{value.nightNumber}} đêm
+                        </div>
+                        <div class="pull-right text-center">
+                            <span class="fa PhuongTien" ng-class="{'fa-car':value.vehicle==0,'fa-plane':value.vehicle==1,'fa-ship':value.vehicle==2}"></span><br />
+                        </div>
+                    </div>
+                    <p class="GioiThieu" ng-bind-html="value.description"></p>
+                    <p class="DonGia">Đơn giá: {{value.price | number:0}}<sup>vnđ</sup></p>
+                    <a href="/tour/{{value.alias}}-{{value.idProduct}}" class="ChiTiet">Chi tiết</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <a href="/loai-tour/{{categoryQuocTe.alias}}-{{categoryQuocTe.idCategory}}" class="XemTatCaTour">Xem thêm Tour >></a>
+</div>
+
+@*<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+    <a href="/loai-tour/{{categoryQuocTe.alias}}-{{categoryQuocTe.idCategory}}" class="XemTatCaTour">Xem thêm Tour >></a>
+</div>*@
+
+@*<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 DiemDuLichDep" ng-controller="tabController">
+        <p class="TieuDe">ĐỊA ĐIỂM DU LỊCH ĐẸP TRONG NƯỚC</p>
+        <p class="GioiThieu">
+            Một số địa điểm đẹp và hấp dẫ trong nước phải kể đến như hồ Ba Bể,
+            vịnh Hạ Long, thác Bản Giốc và một số địa danh nauwx bao trùm khắp mọi miền tổ quốc
+        </p>
+        <div dir-paginate="(index, value) in productTrongNuocs | itemsPerPage: 3">
+            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 item">
+                <img class="img-responsive anh" src="{{value.image}}" />
+                <a href="/tour/{{value.alias}}-{{value.idProduct}}" class="TieuDe">{{value.title}}</a>
+            </div>
+        </div>
+    </div>*@
+
+<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 ThemDichVu">
+    <a class="col-lg-6 col-md-6 col-sm-6 col-xs-6 left">
+        <img class="img-responsive anh" src="~/Content/Images/images/DatVeMayBay2.jpg" />
+    </a>
+
+    <a class="col-lg-6 col-md-6 col-sm-6 col-xs-6 right">
+        <img class="img-responsive anh" src="~/Content/Images/images/LamVisa.jpg" />
+    </a>
+</div>
+
+<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 KhachHang" ng-controller="CustomerController">
+    <p class="TieuDe">KHÁCH HÀNG CỦA ET TRAVEL</p>
+    <p class="TieuDe">---------------------- <span class="fa fa-group"></span> ----------------------</p>
+
+    <marquee class="item" id="marq" scrollamount="6" direction="left" loop="0" scrolldelay="0" onmouseover="this.stop()" onmouseout="this.start()">
+        <a ng-repeat="(index, value) in Customers" target="_blank" href="{{value.link}}" class="Co"><img src="{{value.image}}" title="{{value.title}}" /> </a>
+    </marquee>
+</div>
+
+<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 KhachHang" ng-controller="PartnerController">
+    <p class="TieuDe">ĐỐI TÁC CỦA ET TRAVEL</p>
+    <p class="TieuDe">---------------------- <span class="fa fa-group"></span> ----------------------</p>
+
+    <marquee class="item" id="marq" scrollamount="6" direction="left" loop="0" scrolldelay="0" onmouseover="this.stop()" onmouseout="this.start()">
+        <a ng-repeat="(index, value) in Partners" target="_blank" href="{{value.link}}" class="Co"><img src="{{value.image}}" title="{{value.title}}" /> </a>
+    </marquee>
+</div>
+
+<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 LyDoLuaChon">
+    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 left">
+        <p class="TieuDe">VÌ SAO BẠN NÊN CHỌN ET TRAVEL?</p>
+        <p class="GioiThieu"><span class="fa fa-check-circle"></span> Uy tín - An toàn - Tin cậy</p>
+        <p class="GioiThieu"><span class="fa fa-check-circle"></span> Đặt tour dễ dàng chỉ với một thao tác</p>
+        <p class="GioiThieu"><span class="fa fa-check-circle"></span> Giá cả cạnh tranh</p>
+        <p class="GioiThieu"><span class="fa fa-check-circle"></span> Đáp ứng mọi nhu cầu cầu khách hàng</p>
+    </div>
+
+    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 right">
+        <img class="img-responsive" src="~/Content/Images/images/Plane.png" />
+    </div>
+</div>

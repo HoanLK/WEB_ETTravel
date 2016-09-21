@@ -1,0 +1,95 @@
+﻿.BaiViet {
+}
+
+    .BaiViet > .TieuDe {
+        font-size: 2.2em;
+        color: #f44336;
+        box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+        background-color: #fff;
+        margin-top:0.5em;
+    }
+
+    .BaiViet > .NoiDung {
+        text-align: justify;
+        font-size: 1.2em;
+        margin-top:1.5em;
+        box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+        background-color: #fff;
+        padding:1em;
+    }
+
+.GoiY {
+    margin-top:1em;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    background-color: #fff;
+}
+
+    .GoiY > .TieuDe {
+        font-size: 2.2em;
+        border-bottom: solid 1px #f44336;
+        color: #f44336;
+    }
+
+    .GoiY > ul {
+        text-align: left;
+        padding: 0.5em;
+    }
+
+        .GoiY > ul > li {
+            list-style: none;
+            font-size: 1.2em;
+        }
+
+            .GoiY > ul > li > span {
+                color: #f44336;
+            }
+
+            .GoiY > ul > li > a {
+            }
+
+                .GoiY > ul > li > a:hover {
+                }
+
+.Visa_ThueXe {
+    padding-top: 1em;
+}
+
+    .Visa_ThueXe > .TieuDe {
+        color: #f44336;
+        font-size: 2.5em;
+        margin: 0;
+    }
+
+    .Visa_ThueXe .item {
+        padding: 0.2em;
+        box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+        background-color: #fff;
+    }
+
+        .Visa_ThueXe .item > .anh {
+            width: 30%;
+            float: left;
+        }
+
+        .Visa_ThueXe .item > .TieuDe {
+            width: 68%;
+            float: right;
+            text-align: left;
+            color: #f44336;
+            font-size: 1.5em;
+        }
+
+        .Visa_ThueXe .item > .GioiThieu {
+            width: 68%;
+            float: right;
+            text-align: justify;
+        }
+
+        .KQTimKiem{
+
+        }
+
+        .KQTimKiem>.title{
+            text-align:left;
+            font-size:2em;
+        }

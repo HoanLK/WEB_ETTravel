@@ -1,0 +1,1499 @@
+﻿@import url(http://fonts.googleapis.com/css?family=Roboto:400,700,300);
+
+body {
+    background-color: #f2f2f2;
+    font-family: 'Roboto', sans-serif;
+}
+
+/*Quảng cáo bên trais*/
+.QCLeft {
+    padding: 0 1em 0 0;
+    position: absolute;
+    margin-top: 100px;
+    z-index: 1;
+    left:0px;
+}
+
+/*.QCLeft > .Link {
+        }
+
+            .QCLeft > .Link > img {
+                
+            }*/
+
+/*Quảng cáo bên phải*/
+.QCRight {
+    padding: 0 1em 0 0;
+    position: absolute;
+    margin-top: 100px;
+    z-index: 1;
+    right:0px;
+}
+
+    .QCRight > .Link {
+        padding: 0;
+        margin: 0;
+    }
+
+        .QCRight > .Link > img {
+            margin: 0;
+        }
+
+.Header {
+    padding: 0;
+}
+
+    .Header > .TopHeader {
+        background-color: #0171bb;
+        color: #fff;
+        padding: 0.5em;
+    }
+
+        .Header > .TopHeader > .left {
+            position: static;
+            float: left;
+            padding-left: 2em;
+        }
+
+            .Header > .TopHeader > .left > a {
+                color: #fff;
+                font-size: 1.3em;
+                padding-left: 0.5em;
+            }
+
+                .Header > .TopHeader > .left > a:hover {
+                    text-decoration: none;
+                    color: aqua;
+                }
+
+        .Header > .TopHeader > .right {
+            position: static;
+            float: right;
+        }
+
+            .Header > .TopHeader > .right > .MenuTop {
+                margin: 0;
+            }
+
+                .Header > .TopHeader > .right > .MenuTop > li {
+                    list-style-type: none;
+                    display: inline;
+                    font-size: 1.3em;
+                    padding-right: 2em;
+                }
+
+                    .Header > .TopHeader > .right > .MenuTop > li > a {
+                        color: #fff;
+                    }
+
+    .Header > .MidHeader {
+        padding-right: 5em;
+        padding-bottom: 0.5em;
+        padding-top: 0.5em;
+    }
+
+        .Header > .MidHeader > .Logo {
+        }
+
+
+
+        .Header > .MidHeader > .HotLine {
+            padding-top: 1.3em;
+        }
+
+            .Header > .MidHeader > .HotLine > .left {
+                position: static;
+                float: left;
+                width: 30%;
+            }
+
+                .Header > .MidHeader > .HotLine > .left > span {
+                    font-size: 4em;
+                    color: #f44336;
+                    border: solid 2px #ccc;
+                    border-radius: 50%;
+                    padding: 0.2em;
+                }
+
+            .Header > .MidHeader > .HotLine > .right {
+                position: static;
+                float: right;
+                width: 70%;
+            }
+
+                .Header > .MidHeader > .HotLine > .right > .Phone {
+                    color: #f44336;
+                    font-size: 2.5em;
+                    font-weight: bold;
+                    padding-top: 0.1em;
+                    margin: 0;
+                }
+
+                .Header > .MidHeader > .HotLine > .right > .GhiChu {
+                    margin: 0;
+                    text-align: center;
+                    font-weight: bold;
+                    color: #808080;
+                }
+
+        .Header > .MidHeader > .Phone {
+            padding-top: 1.3em;
+        }
+
+            .Header > .MidHeader > .Phone > .left {
+                position: static;
+                float: left;
+                width: 30%;
+            }
+
+                .Header > .MidHeader > .Phone > .left > span {
+                    font-size: 4em;
+                    color: #f44336;
+                    border: solid 2px #ccc;
+                    border-radius: 50%;
+                    padding: 0.2em 0.3em;
+                }
+
+            .Header > .MidHeader > .Phone > .right {
+                position: static;
+                float: right;
+                width: 70%;
+            }
+
+                .Header > .MidHeader > .Phone > .right > .Phone {
+                    color: #f44336;
+                    font-size: 2em;
+                    font-weight: bold;
+                    margin: 0;
+                }
+
+        .Header > .MidHeader > .Facebook {
+            padding-top: 1.3em;
+        }
+
+            .Header > .MidHeader > .Facebook > .left {
+                position: static;
+                float: left;
+                width: 30%;
+            }
+
+                .Header > .MidHeader > .Facebook > .left > span {
+                    font-size: 4em;
+                    color: #fff;
+                    background-color: #0171bb;
+                    border: solid 2px #ccc;
+                    border-radius: 50%;
+                    padding: 0.2em 0.4em;
+                }
+
+            .Header > .MidHeader > .Facebook > .right {
+                position: static;
+                float: right;
+                width: 70%;
+            }
+
+                .Header > .MidHeader > .Facebook > .right > .FacebookText {
+                    color: #0171bb;
+                    font-size: 3em;
+                    font-weight: bold;
+                    margin: 0;
+                }
+
+                .Header > .MidHeader > .Facebook > .right > .GhiChu {
+                    margin: 0;
+                    text-align: center;
+                    font-weight: bold;
+                    color: #808080;
+                }
+
+    .Header > .BotHeader {
+        padding: 0;
+    }
+
+        .Header > .BotHeader > .navbar-inverse {
+            margin: 0;
+            padding-left: 6em;
+            border-radius: 0;
+            background-color: #ffcb05;
+            border: 0;
+        }
+
+            .Header > .BotHeader > .navbar-inverse > .container-fluid {
+            }
+
+                .Header > .BotHeader > .navbar-inverse > .container-fluid > .navbar-collapse {
+                }
+
+                    .Header > .BotHeader > .navbar-inverse > .container-fluid > .navbar-collapse > .navbar-nav {
+                    }
+
+                        .Header > .BotHeader > .navbar-inverse > .container-fluid > .navbar-collapse > .navbar-nav > li {
+                            color: #0171bb;
+                            font-size: 1.4em;
+                            font-weight: bold;
+                            padding-top: 0.5em;
+                        }
+
+                            .Header > .BotHeader > .navbar-inverse > .container-fluid > .navbar-collapse > .navbar-nav > li > span {
+                                position: static;
+                                display: inline;
+                                color: #f44336;
+                            }
+
+                            .Header > .BotHeader > .navbar-inverse > .container-fluid > .navbar-collapse > .navbar-nav > li > a {
+                                position: static;
+                                display: inline;
+                                padding: 0em 1em 0em 0.1em;
+                                color: #0171bb;
+                            }
+
+                                .Header > .BotHeader > .navbar-inverse > .container-fluid > .navbar-collapse > .navbar-nav > li > a:hover {
+                                    color: #fff;
+                                    transition: 0.4s ease-in-out;
+                                }
+
+.Body {
+    padding: 0;
+}
+
+    .Body > .Main > .Banner {
+        padding: 0;
+        z-index: 1;
+        padding: 0px 15px;
+    }
+
+        .Body > .Main > .Banner > img {
+            z-index: 1;
+        }
+
+    /*Khung tìm kiếm*/
+    .Body .TimKiem {
+        background-color: #2ecc71;
+        border-radius: 10px;
+        padding: 1em 3em 2em 3em;
+        text-align: center;
+        position: inherit;
+        margin: -5em 20% 1em 20%;
+        z-index: 2;
+        width: 60%;
+        box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    }
+
+        .Body .TimKiem > p {
+            color: #fff;
+            font-size: 2.5em;
+            font-weight: bold;
+        }
+
+        .Body .TimKiem > input {
+            width: 70%;
+            float: left;
+            font-size: 1.3em;
+        }
+
+        .Body .TimKiem > Button {
+            background-color: #FF9800;
+            color: #fff;
+            width: 25%;
+            float: right;
+            font-size: 1.3em;
+            border: none;
+        }
+
+
+
+/*Nội dung chính*/
+.Body > .Main {
+    padding: 0;
+    text-align: center;
+}
+    /*Các dịch vụ đặt vé, thuê xe*/
+    .Body > .Main > .DichVuKhac {
+        padding: 0;
+    }
+
+        .Body > .Main > .DichVuKhac > .DichVu {
+            -webkit-transition-duration: 0.5s; /*Webkit: Animation duration*/
+            -moz-transition-duration: 0.5s; /*Mozilla duration version*/
+        }
+
+            .Body > .Main > .DichVuKhac > .DichVu:hover {
+                -webkit-transform: scale(1.1); /*Webkit: Scale up image to 1.2x original size*/
+                -moz-transform: scale(1.1); /*Mozilla scale version*/
+            }
+
+            .Body > .Main > .DichVuKhac > .DichVu > img {
+            }
+
+            .Body > .Main > .DichVuKhac > .DichVu > .Link {
+                color: #fff;
+                font-size: 1.5em;
+                position: relative;
+                font-weight: bold;
+                top: -2.0em;
+            }
+
+                .Body > .Main > .DichVuKhac > .DichVu > .Link:hover {
+                    transition: 0.4s all;
+                }
+
+    /*Dịch vụ du lịch strong nước*/
+    .Body > .Main > .DLTrongNuoc {
+        text-align: center;
+        padding-top: 2em;
+        padding-bottom: 1em;
+    }
+
+        .Body > .Main > .DLTrongNuoc > .TieuDe {
+            color: #f44336;
+            font-size: 2.5em;
+            margin: 0;
+        }
+
+        .Body > .Main > .DLTrongNuoc > .TieuDe2 {
+            font-size: 2em;
+        }
+
+        .Body > .Main > .DLTrongNuoc > .nav-tabs {
+            border-bottom: none;
+        }
+
+            .Body > .Main > .DLTrongNuoc > .nav-tabs > .active {
+                background-color: #fff;
+                box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+            }
+
+                .Body > .Main > .DLTrongNuoc > .nav-tabs > .active > a {
+                    color: #f44336;
+                    border: none;
+                }
+
+            .Body > .Main > .DLTrongNuoc > .nav-tabs > li {
+                background-color: #f1f1f1;
+                margin-right: 5px;
+                font-size: 1.2em;
+                font-weight: bold;
+            }
+
+                .Body > .Main > .DLTrongNuoc > .nav-tabs > li > a {
+                    border-radius: 0px;
+                    color: #000;
+                    border: none;
+                }
+
+        .Body > .Main > .DLTrongNuoc > .DuLich {
+            border-top: solid 2px #f44336;
+            padding: 0;
+            margin-top: 20px;
+        }
+
+            .Body > .Main > .DLTrongNuoc > .DuLich > .DiaDiem {
+                padding: 1em;
+                text-align: left;
+            }
+
+                .Body > .Main > .DLTrongNuoc > .DuLich > .DiaDiem > .Khung {
+                    height: 40em;
+                    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+                    background-color: #fff;
+                }
+
+                    .Body > .Main > .DLTrongNuoc > .DuLich > .DiaDiem > .Khung .anh {
+                    }
+
+                    .Body > .Main > .DLTrongNuoc > .DuLich > .DiaDiem > .Khung > .a {
+                        margin: 0em 0.5em;
+                    }
+
+                        .Body > .Main > .DLTrongNuoc > .DuLich > .DiaDiem > .Khung > .a > .b {
+                            margin: 1em 0em;
+                        }
+
+                            .Body > .Main > .DLTrongNuoc > .DuLich > .DiaDiem > .Khung > .a > .b .Ten {
+                                color: #f44336;
+                                font-weight: bold;
+                                margin: 0;
+                                font-size: 1.4em;
+                                padding-left: 5px;
+                            }
+
+                                .Body > .Main > .DLTrongNuoc > .DuLich > .DiaDiem > .Khung > .a > .b .Ten:hover {
+                                }
+
+                        .Body > .Main > .DLTrongNuoc > .DuLich > .DiaDiem > .Khung > .a > .ThoiGian {
+                            font-size: 1.1em;
+                            padding-left: 5px;
+                            height: 1%;
+                            overflow: hidden;
+                            margin-bottom: 1em;
+                        }
+
+                            .Body > .Main > .DLTrongNuoc > .DuLich > .DiaDiem > .Khung > .a > .ThoiGian > .pull-left {
+                                font-size: 1.2em;
+                                font-weight: bold;
+                                padding: 0.8em;
+                                background-color: #448AFF;
+                                color: #fff;
+                                border-radius: 30px 5px 30px 5px;
+                            }
+
+                                .Body > .Main > .DLTrongNuoc > .DuLich > .DiaDiem > .Khung > .a > .ThoiGian > .pull-left > .Lich {
+                                    font-size: 1.5em;
+                                    margin-right: 0.3em;
+                                }
+
+
+
+                            .Body > .Main > .DLTrongNuoc > .DuLich > .DiaDiem > .Khung > .a > .ThoiGian > .pull-right > .PhuongTien {
+                                color: #0078ff;
+                                font-size: 1.5em;
+                                border-radius: 50%;
+                                border: 2px solid;
+                                padding: 0.8em;
+                            }
+
+                    .Body > .Main > .DLTrongNuoc > .DuLich > .DiaDiem > .Khung .GioiThieu {
+                        font-size: 1.1em;
+                        padding-left: 5px;
+                        line-height: 1.6em;
+                    }
+
+                    .Body > .Main > .DLTrongNuoc > .DuLich > .DiaDiem > .Khung .DonGia {
+                        position: absolute;
+                        overflow: hidden;
+                        bottom: 5%;
+                        color: #f44336;
+                        font-size: 1.2em;
+                        font-weight: bold;
+                        margin: 0;
+                        padding-left: 5px;
+                    }
+
+                    .Body > .Main > .DLTrongNuoc > .DuLich > .DiaDiem > .Khung .ChiTiet {
+                        position: absolute;
+                        overflow: hidden;
+                        bottom: 5%;
+                        right: 6%;
+                        padding: 0.5em 1em;
+                        font-weight: bold;
+                        display: block;
+                        overflow: hidden;
+                        border-width: 0;
+                        outline: none;
+                        border-radius: 2px;
+                        box-shadow: 0 1px 4px rgba(0, 0, 0, .6);
+                        background-color: #2BBBAD;
+                        color: #ecf0f1;
+                        transition: background-color .3s;
+                    }
+
+                        .Body > .Main > .DLTrongNuoc > .DuLich > .DiaDiem > .Khung .ChiTiet:hover,
+                        .Body > .Main > .DLTrongNuoc > .DuLich > .DiaDiem > .Khung .ChiTiet:focus {
+                            background-color: #27ae60;
+                        }
+
+                        .Body > .Main > .DLTrongNuoc > .DuLich > .DiaDiem > .Khung .ChiTiet > * {
+                            position: relative;
+                        }
+
+                        .Body > .Main > .DLTrongNuoc > .DuLich > .DiaDiem > .Khung .ChiTiet span {
+                            display: block;
+                            padding: 12px 24px;
+                        }
+
+                        .Body > .Main > .DLTrongNuoc > .DuLich > .DiaDiem > .Khung .ChiTiet:before {
+                            content: "";
+                            position: absolute;
+                            top: 50%;
+                            left: 50%;
+                            display: block;
+                            width: 0;
+                            padding-top: 0;
+                            border-radius: 100%;
+                            background-color: rgba(236, 240, 241, .3);
+                            -webkit-transform: translate(-50%, -50%);
+                            -moz-transform: translate(-50%, -50%);
+                            -ms-transform: translate(-50%, -50%);
+                            -o-transform: translate(-50%, -50%);
+                            transform: translate(-50%, -50%);
+                        }
+
+                        .Body > .Main > .DLTrongNuoc > .DuLich > .DiaDiem > .Khung .ChiTiet:active:before {
+                            width: 120%;
+                            padding-top: 120%;
+                            transition: width .4s ease-out, padding-top .4s ease-out;
+                        }
+
+                        .Body > .Main > .DLTrongNuoc > .DuLich > .DiaDiem > .Khung .ChiTiet:hover {
+                            background-color: #30cfc0 !important;
+                            text-decoration: none;
+                            box-shadow: 0 5px 11px 0 rgba(0,0,0,.18),0 4px 15px 0 rgba(0,0,0,.15);
+                        }
+
+    /*Nút xem toàn bộ các tour*/
+    .Body > .Main .XemTatCaTour {
+        float: right;
+        padding: 0.4em 0.6em;
+        color: #455A64;
+        font-size: 1.2em;
+        font-weight: bold;
+        border: 0;
+        text-decoration: underline;
+    }
+
+        .Body > .Main .XemTatCaTour:hover {
+            background-color: #f8f8f8;
+            text-decoration: none;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+            transition: all 0.2s ease;
+        }
+
+    /*Những điểm du lịch đẹp*/
+    .Body > .Main > .DiemDuLichDep {
+        padding-top: 1em;
+    }
+
+        .Body > .Main > .DiemDuLichDep > .TieuDe {
+            color: #0c869b;
+            font-size: 2em;
+        }
+
+        .Body > .Main > .DiemDuLichDep > .GioiThieu {
+            color: #656565;
+            font-size: 1.1em;
+        }
+
+        .Body > .Main > .DiemDuLichDep > div {
+        }
+
+            .Body > .Main > .DiemDuLichDep > div > .item {
+            }
+
+                .Body > .Main > .DiemDuLichDep > div > .item > .anh {
+                }
+
+                .Body > .Main > .DiemDuLichDep > div > .item > .TieuDe {
+                    position: absolute;
+                    overflow: hidden;
+                    bottom: 1%;
+                    margin: 0;
+                    color: #fff;
+                    background-color: rgba(0, 0, 0,.5);
+                    width: 91.8%;
+                    font-size: 1em;
+                    font-weight: bold;
+                }
+
+    /*Dịch vụ đặt vé máy bay và visa*/
+    .Body > .Main > .ThemDichVu {
+        margin-top: 2em;
+    }
+
+        .Body > .Main > .ThemDichVu > .left {
+        }
+
+            .Body > .Main > .ThemDichVu > .left > .anh {
+            }
+
+        .Body > .Main > .ThemDichVu > .right {
+        }
+
+            .Body > .Main > .ThemDichVu > .right > .anh {
+            }
+
+    /*Khách hàng tiềm năng*/
+    .Body > .Main > .KhachHang {
+        margin-top: 2em;
+    }
+
+        .Body > .Main > .KhachHang > .TieuDe {
+            color: #f44336;
+            font-size: 1.8em;
+        }
+
+        .Body > .Main > .KhachHang > .item {
+            padding: 0em;
+        }
+
+            .Body > .Main > .KhachHang > .item img {
+                width: 120px;
+                padding-right: 3em;
+            }
+
+    /*Lý do lựa chọn*/
+    .Body > .Main > .LyDoLuaChon {
+        margin-top: 2em;
+        text-align: left;
+    }
+
+        .Body > .Main > .LyDoLuaChon > .left {
+        }
+
+            .Body > .Main > .LyDoLuaChon > .left > .TieuDe {
+                color: #2d618e;
+                font-size: 2em;
+            }
+
+            .Body > .Main > .LyDoLuaChon > .left > .GioiThieu {
+                font-size: 1.5em;
+                color: #575757;
+            }
+
+                .Body > .Main > .LyDoLuaChon > .left > .GioiThieu > span {
+                    color: #ffba00;
+                }
+
+        .Body > .Main > .LyDoLuaChon > .right {
+        }
+
+            .Body > .Main > .LyDoLuaChon > .right > img {
+            }
+
+.Footer {
+    padding: 0;
+    margin-top: 2em;
+}
+
+    .Footer > .TopFooter {
+        padding: 0;
+    }
+
+        .Footer > .TopFooter > .left {
+        }
+
+            .Footer > .TopFooter > .left > .anh {
+                width: 20%;
+                float: left;
+            }
+
+            .Footer > .TopFooter > .left > .TenCTy {
+                width: 80%;
+                float: right;
+                color: #0171bb;
+                text-align: center;
+                font-size: 2.5em;
+                margin-bottom: 0;
+                margin-top: 0.2em;
+                font-weight: bold;
+            }
+
+            .Footer > .TopFooter > .left > .KhauHieu {
+                width: 80%;
+                float: right;
+                text-align: center;
+                color: #ffa800;
+                font-size: 2em;
+                font-weight: bold;
+            }
+
+            .Footer > .TopFooter > .left .LienHe {
+                width: 100%;
+                margin: 0.5em 0;
+            }
+
+                .Footer > .TopFooter > .left .LienHe > span {
+                    color: #f44336;
+                    border: solid 1px #f44336;
+                    border-radius: 50%;
+                    padding: 0.1em;
+                }
+
+        .Footer > .TopFooter > .right {
+        }
+
+            .Footer > .TopFooter > .right > p {
+                color: #f44336;
+                border-bottom: solid 1px #f44336;
+                font-size: 1.7em;
+            }
+
+                .Footer > .TopFooter > .right > p > span {
+                }
+
+    /*footer giữa*/
+    .Footer > .MidFooter {
+        padding: 0;
+        border-top: solid 1px #ccc;
+    }
+
+        .Footer > .MidFooter > .GiupDo {
+            padding-top: 1em;
+        }
+
+            .Footer > .MidFooter > .GiupDo > .HoTro {
+                text-align: center;
+            }
+
+                .Footer > .MidFooter > .GiupDo > .HoTro > .TieuDe {
+                    color: #0670f5;
+                    font-size: 1.6em;
+                    font-weight: bold;
+                }
+
+                .Footer > .MidFooter > .GiupDo > .HoTro > .LienHe {
+                    font-size: 1.4em;
+                    color: #000000;
+                }
+
+                    .Footer > .MidFooter > .GiupDo > .HoTro > .LienHe > span {
+                        color: #f44336;
+                    }
+
+                .Footer > .MidFooter > .GiupDo > .HoTro > .GhiChu {
+                    font-size: 1.2em;
+                    color: #003cff;
+                }
+
+                .Footer > .MidFooter > .GiupDo > .HoTro > .Text {
+                    width: 80%;
+                    margin-left: 1em;
+                    border-radius: 5px;
+                    border: solid 1px #808080;
+                    font-size: 1.2em;
+                }
+
+                .Footer > .MidFooter > .GiupDo > .HoTro > .btnDangKy {
+                    font-size: 1.2em;
+                    font-weight: bold;
+                    margin-top: 0.5em;
+                    text-align: center;
+                    padding: 0.5em 1em;
+                    border-width: 0;
+                    outline: none;
+                    border-radius: 2px;
+                    box-shadow: 0 1px 4px rgba(0, 0, 0, .6);
+                    background-color: #2BBBAD;
+                    color: #ecf0f1;
+                    transition: background-color .3s;
+                }
+
+                    .Footer > .MidFooter > .GiupDo > .HoTro > .btnDangKy:hover,
+                    .Footer > .MidFooter > .GiupDo > .HoTro > .btnDangKy:focus {
+                        background-color: #27ae60;
+                    }
+
+                    .Footer > .MidFooter > .GiupDo > .HoTro > .btnDangKy > * {
+                        position: relative;
+                    }
+
+                    .Footer > .MidFooter > .GiupDo > .HoTro > .btnDangKy span {
+                        display: block;
+                        padding: 12px 24px;
+                    }
+
+                    .Footer > .MidFooter > .GiupDo > .HoTro > .btnDangKy:before {
+                        content: "";
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        display: block;
+                        width: 0;
+                        padding-top: 0;
+                        border-radius: 100%;
+                        background-color: rgba(236, 240, 241, .3);
+                        -webkit-transform: translate(-50%, -50%);
+                        -moz-transform: translate(-50%, -50%);
+                        -ms-transform: translate(-50%, -50%);
+                        -o-transform: translate(-50%, -50%);
+                        transform: translate(-50%, -50%);
+                    }
+
+                    .Footer > .MidFooter > .GiupDo > .HoTro > .btnDangKy:active:before {
+                        width: 120%;
+                        padding-top: 120%;
+                        transition: width .4s ease-out, padding-top .4s ease-out;
+                    }
+
+                    .Footer > .MidFooter > .GiupDo > .HoTro > .btnDangKy:hover {
+                        background-color: #30cfc0 !important;
+                        text-decoration: none;
+                        box-shadow: 0 5px 11px 0 rgba(0,0,0,.18),0 4px 15px 0 rgba(0,0,0,.15);
+                    }
+
+    .Footer > .BotFooter {
+        background-color: #f44336;
+        color: #fff;
+        font-size: 1em;
+        padding: 0.1em 10em;
+        text-align: right;
+    }
+
+        .Footer > .BotFooter > .TieuDe {
+            margin: 0;
+        }
+
+            .Footer > .BotFooter > .TieuDe > a {
+                color: #fff;
+            }
+
+/*Mobile*/
+@media (max-width: 767px) {
+    .Header > .TopHeader > .right > .MenuTop {
+        padding: 0;
+    }
+
+        .Header > .TopHeader > .right > .MenuTop > li {
+            font-size: 1.1em;
+            padding-right: 0.5em;
+        }
+
+            .Header > .TopHeader > .right > .MenuTop > li > a {
+                color: #fff;
+            }
+
+    .Header > .TopHeader > .left {
+        padding-left: 30%;
+    }
+
+    .Header > .MidHeader {
+        padding-right: 0em;
+    }
+
+        .Header > .MidHeader > .HotLine > .right > .Phone {
+            font-size: 2em;
+        }
+
+    .Header > .BotHeader {
+        padding: 0;
+    }
+
+        .Header > .BotHeader > .navbar-inverse {
+            margin: 0;
+            border-radius: 0;
+            background-color: #ffcb05;
+            border: 0;
+            padding-left: 1em;
+        }
+
+    .navbar-inverse .navbar-brand {
+        color: #f44336;
+    }
+
+    .navbar-inverse .navbar-toggle {
+        border: 0;
+        background-color: #f44336;
+    }
+
+    /*Body*/
+    /*Khung tìm kiếm*/
+    .Body .TimKiem {
+        margin: -1em 1% 1em 1%;
+        padding: 0.5em 1em 1em 1em;
+        width: 98%;
+    }
+
+        .Body .TimKiem > p {
+            font-size: 1.5em;
+        }
+
+        .Body .TimKiem > input {
+            font-size: 1em;
+        }
+
+        .Body .TimKiem > Button {
+            font-size: 1em;
+        }
+
+    /*Nội dung chính*/
+    /*Các dịch vụ đặt vé, thuê xe*/
+
+    .Body > .Main > .DichVuKhac > .DichVu {
+        margin-bottom: 1em;
+    }
+
+    /*Dịch vụ du lịch strong nước*/
+    .Body > .Main > .DLTrongNuoc {
+        padding-top: 1em;
+    }
+
+        .Body > .Main > .DLTrongNuoc > .TieuDe {
+            font-size: 1.5em;
+        }
+
+        .Body > .Main > .DLTrongNuoc > .nav-tabs > li {
+            margin-right: 5px;
+            font-size: 1em;
+        }
+
+            .Body > .Main > .DLTrongNuoc > .nav-tabs > li > a {
+                padding: 0.2em;
+            }
+
+    /*Nút xem toàn bộ các tour*/
+    .Body > .Main .XemTatCaTour {
+    }
+
+    /*Những điểm du lịch đẹp*/
+    .Body > .Main > .DiemDuLichDep > .TieuDe {
+        font-size: 1.2em;
+    }
+
+    .Body > .Main > .DiemDuLichDep > .GioiThieu {
+        font-size: 1em;
+    }
+
+    .Body > .Main > .DiemDuLichDep > .item > .TieuDe {
+        font-size: 0.4em;
+    }
+
+    /*Dịch vụ đặt vé máy bay và visa*/
+    .Body > .Main > .ThemDichVu {
+        margin-top: 2em;
+    }
+
+    /*Khách hàng tiềm năng*/
+    .Body > .Main > .KhachHang {
+        margin-top: 2em;
+    }
+
+        .Body > .Main > .KhachHang > .TieuDe {
+            font-size: 1.4em;
+        }
+
+        .Body > .Main > .KhachHang > .item {
+            padding: 1em;
+        }
+
+    /*Lý do lựa chọn*/
+    .Body > .Main > .LyDoLuaChon {
+        margin-top: 1em;
+    }
+
+        .Body > .Main > .LyDoLuaChon > .left > .TieuDe {
+            font-size: 1em;
+        }
+
+        .Body > .Main > .LyDoLuaChon > .left > .GioiThieu {
+            font-size: 0.8em;
+        }
+
+    /*Fooyer*/
+    .Footer {
+        margin-top: 1em;
+    }
+
+        .Footer > .TopFooter > .left > .TenCTy {
+            font-size: 1.5em;
+        }
+
+        .Footer > .TopFooter > .left > .KhauHieu {
+            font-size: 1.2em;
+        }
+
+        .Footer > .TopFooter > .left .LienHe {
+            width: 100%;
+        }
+
+        /*footer giữa*/
+        .Footer > .MidFooter > .GiupDo {
+            padding-bottom: 1em;
+        }
+
+        .Footer > .BotFooter {
+            font-size: 1em;
+            padding: 0.4em 1em;
+        }
+}
+
+/*table*/
+@media (min-width: 767px) and (max-width:992px) {
+    .Header > .MidHeader {
+        padding-right: 1em;
+    }
+
+        .Header > .MidHeader > .HotLine {
+            padding-top: 2.5em;
+        }
+
+            .Header > .MidHeader > .HotLine > .left > span {
+                font-size: 2em;
+                padding: 0.1em;
+            }
+
+            .Header > .MidHeader > .HotLine > .right > .Phone {
+                font-size: 1.4em;
+                padding-top: 0.1em;
+            }
+
+            .Header > .MidHeader > .HotLine > .right > .GhiChu {
+                font-size: 0.8em;
+            }
+
+        .Header > .MidHeader > .Phone {
+            padding-top: 2.5em;
+        }
+
+            .Header > .MidHeader > .Phone > .left > span {
+                font-size: 1.8em;
+                padding: 0.2em 0.3em;
+            }
+
+            .Header > .MidHeader > .Phone > .right > .Phone {
+                font-size: 1.4em;
+            }
+
+        .Header > .MidHeader > .Facebook {
+            padding-top: 2.5em;
+        }
+
+            .Header > .MidHeader > .Facebook > .left > span {
+                font-size: 1.8em;
+                padding: 0.2em 0.4em;
+            }
+
+            .Header > .MidHeader > .Facebook > .right > .FacebookText {
+                font-size: 1.4em;
+            }
+
+            .Header > .MidHeader > .Facebook > .right > .GhiChu {
+                text-align: left;
+            }
+
+    .Header > .BotHeader > .navbar-inverse {
+        padding: 0;
+    }
+
+        .Header > .BotHeader > .navbar-inverse > .container-fluid {
+            padding: 0;
+        }
+
+            .Header > .BotHeader > .navbar-inverse > .container-fluid > .navbar-collapse > .navbar-nav > li {
+                font-size: 0.9em;
+                padding-top: 1em;
+            }
+
+                .Header > .BotHeader > .navbar-inverse > .container-fluid > .navbar-collapse > .navbar-nav > li > span {
+                    position: static;
+                    display: inline;
+                    color: #f44336;
+                }
+
+                .Header > .BotHeader > .navbar-inverse > .container-fluid > .navbar-collapse > .navbar-nav > li > a {
+                    padding: 0.5em;
+                }
+
+
+
+                    .Header > .BotHeader > .navbar-inverse > .container-fluid > .navbar-collapse > .navbar-nav > li > a:hover {
+                        color: #fff;
+                    }
+
+    /*Khung tìm kiếm*/
+    .Body .TimKiem {
+        margin: -5em 10% 1em 10%;
+        width: 80%;
+    }
+
+        .Body .TimKiem > p {
+            font-size: 2em;
+        }
+
+    /*Lý do lựa chọn*/
+    .Body > .Main > .LyDoLuaChon {
+        margin-top: 2em;
+        text-align: left;
+    }
+
+        .Body > .Main > .LyDoLuaChon > .left > .TieuDe {
+            font-size: 1.3em;
+        }
+
+        .Body > .Main > .LyDoLuaChon > .left > .GioiThieu {
+            font-size: 1.2em;
+        }
+
+    .Body > .Main > .DLTrongNuoc > .DuLich > .DiaDiem > .Khung {
+        height: 34em;
+    }
+
+        .Body > .Main > .DLTrongNuoc > .DuLich > .DiaDiem > .Khung .DonGia {
+            font-size: 1em;
+        }
+
+        .Body > .Main > .DLTrongNuoc > .DuLich > .DiaDiem > .Khung .ChiTiet {
+            padding: 0.1em 0.2em;
+        }
+
+        .Body > .Main > .DLTrongNuoc > .DuLich > .DiaDiem > .Khung > .a > .ThoiGian > .pull-left {
+            font-size: 1em;
+            padding: 0.4em;
+        }
+
+        .Body > .Main > .DLTrongNuoc > .DuLich > .DiaDiem > .Khung > .a > .ThoiGian > .pull-right > .PhuongTien {
+            font-size: 1.2em;
+            padding: 0.4em;
+        }
+
+    /*footer*/
+    .Footer > .TopFooter > .left > .TenCTy {
+        font-size: 2em;
+        margin-top: 0.2em;
+    }
+
+    .Footer > .TopFooter > .left > .KhauHieu {
+        font-size: 1.4em;
+    }
+
+    .Footer > .TopFooter > .right > p {
+        font-size: 1.9em;
+    }
+
+    /*footer giữa*/
+    .Footer > .MidFooter > .GiupDo {
+        padding-top: 0em;
+    }
+
+        .Footer > .MidFooter > .GiupDo > .HoTro > .TieuDe {
+            font-size: 1em;
+        }
+
+        .Footer > .MidFooter > .GiupDo > .HoTro > .LienHe {
+            font-size: 1.1em;
+        }
+
+        .Footer > .MidFooter > .GiupDo > .HoTro > .GhiChu {
+            font-size: 1em;
+        }
+
+    .Footer > .BotFooter {
+        font-size: 1.5em;
+        padding: 0.4em 1em;
+    }
+}
+
+/*table xoay ngang*/
+@media (max-width: 1024px) and (min-width:992px) {
+    img {
+        width: 100%;
+    }
+
+    .Header > .MidHeader {
+        padding-right: 4em;
+    }
+
+        .Header > .MidHeader > .HotLine {
+            padding-top: 1em;
+        }
+
+            .Header > .MidHeader > .HotLine > .left > span {
+                font-size: 3em;
+                padding: 0.2em;
+            }
+
+            .Header > .MidHeader > .HotLine > .right > .Phone {
+                font-size: 2em;
+                padding-top: 0em;
+            }
+
+            .Header > .MidHeader > .HotLine > .right > .GhiChu {
+                font-size: 0.8em;
+            }
+
+        .Header > .MidHeader > .Phone {
+            padding-top: 1em;
+        }
+
+            .Header > .MidHeader > .Phone > .left > span {
+                font-size: 2.8em;
+                padding: 0.2em 0.3em;
+            }
+
+            .Header > .MidHeader > .Phone > .right > .Phone {
+                font-size: 1.8em;
+            }
+
+        .Header > .MidHeader > .Facebook {
+            padding-top: 1em;
+        }
+
+            .Header > .MidHeader > .Facebook > .left > span {
+                font-size: 2.8em;
+                padding: 0.2em 0.4em;
+            }
+
+            .Header > .MidHeader > .Facebook > .right > .FacebookText {
+                font-size: 1.8em;
+            }
+
+            .Header > .MidHeader > .Facebook > .right > .GhiChu {
+                font-size: 0.9em;
+            }
+
+    .Header > .BotHeader > .navbar-inverse > .container-fluid > .navbar-collapse > .navbar-nav > li {
+        font-size: 1em;
+    }
+
+    /*Khung tìm kiếm*/
+    .Body .TimKiem {
+        padding: 1em 3em 2em 3em;
+        margin: -3em 15% 1em 15%;
+        width: 70%;
+    }
+
+    /*Lý do lựa chọn*/
+    .Body > .Main > .LyDoLuaChon > .left > .TieuDe {
+        font-size: 1.5em;
+    }
+
+    .Body > .Main > .LyDoLuaChon > .left > .GioiThieu {
+        font-size: 1.3em;
+    }
+
+    .Footer > .TopFooter > .left > .TenCTy {
+        font-size: 1.8em;
+        margin-top: 0.2em;
+    }
+
+    .Footer > .TopFooter > .left > .KhauHieu {
+        font-size: 1.5em;
+    }
+
+    .Footer > .TopFooter > .left .LienHe {
+        font-size: 1.2em;
+    }
+
+    .Footer > .TopFooter > .right {
+    }
+
+        .Footer > .TopFooter > .right > p {
+            color: #f44336;
+            border-bottom: solid 1px #f44336;
+            font-size: 1.7em;
+        }
+
+    /*footer giữa*/
+    .Footer > .MidFooter > .GiupDo > .HoTro > .TieuDe {
+        font-size: 1.2em;
+    }
+
+    .Footer > .MidFooter > .GiupDo > .HoTro > .LienHe {
+        font-size: 1.1em;
+    }
+
+    .Footer > .MidFooter > .GiupDo > .HoTro > .GhiChu {
+        font-size: 1.2em;
+    }
+
+    .Footer > .BotFooter {
+        font-size: 1.2em;
+        padding: 0.4em 3.5em;
+    }
+}
+
+/*Desktop*/
+@media (min-width: 992px) {
+}
+
+/*Màn hình lớn*/
+@media (min-width:1400px) {
+    img {
+        width: 100%;
+    }
+
+    .Header > .TopHeader {
+        padding: 1em;
+    }
+
+        .Header > .TopHeader > .left {
+            padding-left: 5em;
+        }
+
+            .Header > .TopHeader > .left > a {
+                font-size: 2em;
+            }
+
+        .Header > .TopHeader > .right > .MenuTop > li {
+            font-size: 2em;
+            padding-right: 2em;
+        }
+
+    .Header > .MidHeader > .HotLine {
+        padding-top: 3em;
+    }
+
+        .Header > .MidHeader > .HotLine > .left > span {
+            font-size: 8em;
+            padding: 0.2em;
+        }
+
+        .Header > .MidHeader > .HotLine > .right > .Phone {
+            font-size: 4.5em;
+            padding-top: 0.1em;
+        }
+
+        .Header > .MidHeader > .HotLine > .right > .GhiChu {
+            font-size: 2.2em;
+        }
+
+    .Header > .MidHeader > .Phone {
+        padding-top: 3em;
+    }
+
+        .Header > .MidHeader > .Phone > .left > span {
+            font-size: 7em;
+            padding: 0.2em 0.3em;
+        }
+
+        .Header > .MidHeader > .Phone > .right > .Phone {
+            font-size: 4em;
+        }
+
+    .Header > .MidHeader > .Facebook {
+        padding-top: 3em;
+    }
+
+        .Header > .MidHeader > .Facebook > .left > span {
+            font-size: 7em;
+            padding: 0.2em 0.4em;
+        }
+
+        .Header > .MidHeader > .Facebook > .right > .FacebookText {
+            font-size: 4em;
+        }
+
+        .Header > .MidHeader > .Facebook > .right > .GhiChu {
+            font-size: 3em;
+        }
+
+    .Header > .BotHeader > .navbar-inverse {
+        padding-left: 12.8em;
+    }
+
+        .Header > .BotHeader > .navbar-inverse > .container-fluid > .navbar-collapse > .navbar-nav > li {
+            font-size: 2.6em;
+            padding: 0.5em 0.2em;
+        }
+
+    /*Khung tìm kiếm*/
+    .Body .TimKiem {
+        padding: 1em 3em 2em 3em;
+        margin: -4em 25% 1em 25%;
+    }
+
+        .Body .TimKiem > p {
+            font-size: 3.5em;
+        }
+
+        .Body .TimKiem > input {
+            font-size: 3.5em;
+            height: auto;
+        }
+
+        .Body .TimKiem > Button {
+            font-size: 3.5em;
+        }
+
+    /*Nội dung chính*/
+    .Body > .Main > .DichVuKhac > .DichVu > .Link {
+        font-size: 3.5em;
+    }
+
+    /*Dịch vụ du lịch strong nước*/
+    .Body > .Main > .DLTrongNuoc > .TieuDe {
+        font-size: 4.5em;
+    }
+
+    .Body > .Main > .DLTrongNuoc > .nav-tabs > li {
+        font-size: 3.2em;
+    }
+
+    .Body > .Main > .DLTrongNuoc > .DuLich > .DiaDiem > .Khung {
+        height: 53em;
+    }
+
+        .Body > .Main > .DLTrongNuoc > .DuLich > .DiaDiem > .Khung .Ten {
+            font-size: 2.3em;
+        }
+
+        .Body > .Main > .DLTrongNuoc > .DuLich > .DiaDiem > .Khung .ThoiGian {
+            font-size: 1.5em;
+        }
+
+        .Body > .Main > .DLTrongNuoc > .DuLich > .DiaDiem > .Khung .GioiThieu {
+            font-size: 1.3em;
+        }
+
+        .Body > .Main > .DLTrongNuoc > .DuLich > .DiaDiem > .Khung .DonGia {
+            font-size: 2.2em;
+        }
+
+        .Body > .Main > .DLTrongNuoc > .DuLich > .DiaDiem > .Khung .ChiTiet {
+            font-size: 2.2em;
+        }
+
+    /*Nút xem toàn bộ các tour*/
+    .Body > .Main .XemTatCaTour {
+        padding: 0.4em 2em;
+        font-size: 2.8em;
+    }
+
+    /*Những điểm du lịch đẹp*/
+    .Body > .Main > .DiemDuLichDep > .TieuDe {
+        font-size: 4em;
+    }
+
+    .Body > .Main > .DiemDuLichDep > .GioiThieu {
+        font-size: 3em;
+    }
+
+    .Body > .Main > .DiemDuLichDep > .item > .TieuDe {
+        width: 95.5%;
+        font-size: 2.5em;
+    }
+
+    /*Khách hàng tiềm năng*/
+    .Body > .Main > .KhachHang > .TieuDe {
+        font-size: 4em;
+    }
+
+    /*Lý do lựa chọn*/
+    .Body > .Main > .LyDoLuaChon > .left > .TieuDe {
+        font-size: 4em;
+    }
+
+    .Body > .Main > .LyDoLuaChon > .left > .GioiThieu {
+        font-size: 3em;
+    }
+
+    .Footer > .TopFooter > .left > .TenCTy {
+        font-size: 4.5em;
+    }
+
+    .Footer > .TopFooter > .left > .KhauHieu {
+        font-size: 3.5em;
+    }
+
+    .Footer > .TopFooter > .left .LienHe {
+        font-size: 3em;
+    }
+
+    .Footer > .TopFooter > .right > p {
+        font-size: 2.7em;
+    }
+
+    /*footer giữa*/
+    .Footer > .MidFooter > .GiupDo > .HoTro > .TieuDe {
+        font-size: 3em;
+    }
+
+    .Footer > .MidFooter > .GiupDo > .HoTro > .LienHe {
+        font-size: 2.5em;
+    }
+
+    .Footer > .MidFooter > .GiupDo > .HoTro > .GhiChu {
+        font-size: 2em;
+    }
+
+    .Footer > .MidFooter > .GiupDo > .HoTro > .Text {
+        font-size: 2.5em;
+    }
+
+    .Footer > .MidFooter > .GiupDo > .HoTro > .btnDangKy {
+        font-size: 2.5em;
+    }
+
+    .Footer > .BotFooter {
+        font-size: 3em;
+        padding: 0.4em 5em;
+    }
+}

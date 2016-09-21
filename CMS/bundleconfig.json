@@ -1,0 +1,380 @@
+[
+  {
+    "outputFileName": "Content/admin/Login.css",
+    "inputFiles": [
+      "Content/admin/Login.css"
+    ]
+  },
+  {
+    "outputFileName": "Content/admin/css/theme-default/bootstrap.css",
+    "inputFiles": [
+      "Content/admin/css/theme-default/bootstrap.css"
+    ]
+  },
+  {
+    "outputFileName": "Content/admin/css/theme-default/materialadmin.css",
+    "inputFiles": [
+      "Content/admin/css/theme-default/materialadmin.css"
+    ]
+  },
+  {
+    "outputFileName": "Content/admin/css/theme-default/libs/bootstrap-tagsinput/bootstrap-tagsinput.css",
+    "inputFiles": [
+      "Content/admin/css/theme-default/libs/bootstrap-tagsinput/bootstrap-tagsinput.css"
+    ]
+  },
+  {
+    "outputFileName": "Content/admin/css/theme-default/libs/toastr/toastr.css",
+    "inputFiles": [
+      "Content/admin/css/theme-default/libs/toastr/toastr.css"
+    ]
+  },
+  {
+    "outputFileName": "Content/admin/css/theme-default/libs/DataTables/jquery.dataTables.css",
+    "inputFiles": [
+      "Content/admin/css/theme-default/libs/DataTables/jquery.dataTables.css"
+    ]
+  },
+  {
+    "outputFileName": "Content/admin/css/theme-default/libs/DataTables/TableTools.css",
+    "inputFiles": [
+      "Content/admin/css/theme-default/libs/DataTables/TableTools.css"
+    ]
+  },
+  {
+    "outputFileName": "Content/admin/css/theme-default/libs/DataTables/extensions/dataTables.colVis.css",
+    "inputFiles": [
+      "Content/admin/css/theme-default/libs/DataTables/extensions/dataTables.colVis.css"
+    ]
+  },
+  {
+    "outputFileName": "Content/admin/css/theme-default/libs/DataTables/extensions/dataTables.tableTools.css",
+    "inputFiles": [
+      "Content/admin/css/theme-default/libs/DataTables/extensions/dataTables.tableTools.css"
+    ]
+  },
+  {
+    "outputFileName": "Content/admin/js/libs/toastr/toastr.js",
+    "inputFiles": [
+      "Content/admin/js/libs/toastr/toastr.js"
+    ]
+  },
+  {
+    "outputFileName": "Content/admin/js/core/demo/DemoTableDynamic.js",
+    "inputFiles": [
+      "Content/admin/js/core/demo/DemoTableDynamic.js"
+    ]
+  },
+  {
+    "outputFileName": "Scripts/front/pagination/dirPagination.js",
+    "inputFiles": [
+      "Scripts/front/pagination/dirPagination.js"
+    ]
+  },
+  {
+    "outputFileName": "Scripts/admin/myApp.js",
+    "inputFiles": [
+      "Scripts/admin/myApp.js"
+    ]
+  },
+  {
+    "outputFileName": "Scripts/admin/categoryProductFactory.js",
+    "inputFiles": [
+      "Scripts/admin/categoryProductFactory.js"
+    ]
+  },
+  {
+    "outputFileName": "Scripts/front/frontApp.js",
+    "inputFiles": [
+      "Scripts/front/frontApp.js"
+    ]
+  },
+  {
+    "outputFileName": "Scripts/front/categoryProductFactory.js",
+    "inputFiles": [
+      "Scripts/front/categoryProductFactory.js"
+    ]
+  },
+  {
+    "outputFileName": "Scripts/front/categoryPostFactory.js",
+    "inputFiles": [
+      "Scripts/front/categoryPostFactory.js"
+    ]
+  },
+  {
+    "outputFileName": "Scripts/front/videoController.js",
+    "inputFiles": [
+      "Scripts/front/videoController.js"
+    ]
+  },
+  {
+    "outputFileName": "Scripts/front/allCategoryProductController.js",
+    "inputFiles": [
+      "Scripts/front/allCategoryProductController.js"
+    ]
+  },
+  {
+    "outputFileName": "Scripts/front/childCategoryProductController.js",
+    "inputFiles": [
+      "Scripts/front/childCategoryProductController.js"
+    ]
+  },
+  {
+    "outputFileName": "Scripts/front/menuCategoryPostController.js",
+    "inputFiles": [
+      "Scripts/front/menuCategoryPostController.js"
+    ]
+  },
+  {
+    "outputFileName": "Scripts/front/allCategoryPostController.js",
+    "inputFiles": [
+      "Scripts/front/allCategoryPostController.js"
+    ]
+  },
+  {
+    "outputFileName": "Scripts/front/childCategoryPostController.js",
+    "inputFiles": [
+      "Scripts/front/childCategoryPostController.js"
+    ]
+  },
+  {
+    "outputFileName": "Scripts/front/showProductController.js",
+    "inputFiles": [
+      "Scripts/front/showProductController.js"
+    ]
+  },
+  {
+    "outputFileName": "Scripts/front/showPostController.js",
+    "inputFiles": [
+      "Scripts/front/showPostController.js"
+    ]
+  },
+  {
+    "outputFileName": "Scripts/front/menuMainController.js",
+    "inputFiles": [
+      "Scripts/front/menuMainController.js"
+    ]
+  },
+  {
+    "outputFileName": "Scripts/front/showSearchController.js",
+    "inputFiles": [
+      "Scripts/front/showSearchController.js"
+    ]
+  },
+  {
+    "outputFileName": "Scripts/front/cusRegisterController.js",
+    "inputFiles": [
+      "Scripts/front/cusRegisterController.js"
+    ]
+  },
+  {
+    "outputFileName": "Content/front/css/yamm.css",
+    "inputFiles": [
+      "Content/front/css/yamm.css"
+    ]
+  },
+  {
+    "outputFileName": "Content/front/css/bootstrap.min.css",
+    "inputFiles": [
+      "Content/front/css/bootstrap.min.css"
+    ]
+  },
+  {
+    "outputFileName": "Content/front/css/site.css",
+    "inputFiles": [
+      "Content/front/css/site.css"
+    ]
+  },
+  {
+    "outputFileName": "Scripts/front/tabController.min.js",
+    "inputFiles": [
+      "Scripts/front/tabController.js"
+    ]
+  },
+  {
+    "outputFileName": "Scripts/front/bannerController.min.js",
+    "inputFiles": [
+      "Scripts/front/bannerController.js"
+    ]
+  },
+  {
+    "outputFileName": "Scripts/front/searchController.min.js",
+    "inputFiles": [
+      "Scripts/front/searchController.js"
+    ]
+  },
+  {
+    "outputFileName": "Scripts/front/themOrderController.min.js",
+    "inputFiles": [
+      "Scripts/front/themOrderController.js"
+    ]
+  },
+  {
+    "outputFileName": "Scripts/admin/aliasFactory.min.js",
+    "inputFiles": [
+      "Scripts/admin/aliasFactory.js"
+    ]
+  },
+  {
+    "outputFileName": "Scripts/admin/categoryFactory.min.js",
+    "inputFiles": [
+      "Scripts/admin/categoryFactory.js"
+    ]
+  },
+  {
+    "outputFileName": "Scripts/admin/danhsachBannerController.min.js",
+    "inputFiles": [
+      "Scripts/admin/danhsachBannerController.js"
+    ]
+  },
+  {
+    "outputFileName": "Scripts/admin/danhsachCategoryController.min.js",
+    "inputFiles": [
+      "Scripts/admin/danhsachCategoryController.js"
+    ]
+  },
+  {
+    "outputFileName": "Scripts/admin/danhsachCategoryProductController.min.js",
+    "inputFiles": [
+      "Scripts/admin/danhsachCategoryProductController.js"
+    ]
+  },
+  {
+    "outputFileName": "Scripts/admin/danhsachCustomerRegisterController.min.js",
+    "inputFiles": [
+      "Scripts/admin/danhsachCustomerRegisterController.js"
+    ]
+  },
+  {
+    "outputFileName": "Scripts/admin/danhsachOrderController.min.js",
+    "inputFiles": [
+      "Scripts/admin/danhsachOrderController.js"
+    ]
+  },
+  {
+    "outputFileName": "Scripts/admin/danhsachPostController.min.js",
+    "inputFiles": [
+      "Scripts/admin/danhsachPostController.js"
+    ]
+  },
+  {
+    "outputFileName": "Scripts/admin/danhsachProductController.min.js",
+    "inputFiles": [
+      "Scripts/admin/danhsachProductController.js"
+    ]
+  },
+  {
+    "outputFileName": "Scripts/admin/danhsachVideoController.min.js",
+    "inputFiles": [
+      "Scripts/admin/danhsachVideoController.js"
+    ]
+  },
+  {
+    "outputFileName": "Scripts/admin/menumultilevelFactory.min.js",
+    "inputFiles": [
+      "Scripts/admin/menumultilevelFactory.js"
+    ]
+  },
+  {
+    "outputFileName": "Scripts/admin/ng-ckeditor.min.min.js",
+    "inputFiles": [
+      "Scripts/admin/ng-ckeditor.min.js"
+    ]
+  },
+  {
+    "outputFileName": "Scripts/admin/postFactory.min.js",
+    "inputFiles": [
+      "Scripts/admin/postFactory.js"
+    ]
+  },
+  {
+    "outputFileName": "Scripts/admin/themBannerController.min.js",
+    "inputFiles": [
+      "Scripts/admin/themBannerController.js"
+    ]
+  },
+  {
+    "outputFileName": "Scripts/admin/themCategoryController.min.js",
+    "inputFiles": [
+      "Scripts/admin/themCategoryController.js"
+    ]
+  },
+  {
+    "outputFileName": "Scripts/admin/themCategoryProductController.min.js",
+    "inputFiles": [
+      "Scripts/admin/themCategoryProductController.js"
+    ]
+  },
+  {
+    "outputFileName": "Scripts/admin/themOrderController.min.js",
+    "inputFiles": [
+      "Scripts/admin/themOrderController.js"
+    ]
+  },
+  {
+    "outputFileName": "Scripts/admin/themPostController.min.js",
+    "inputFiles": [
+      "Scripts/admin/themPostController.js"
+    ]
+  },
+  {
+    "outputFileName": "Scripts/admin/themProductController.min.js",
+    "inputFiles": [
+      "Scripts/admin/themProductController.js"
+    ]
+  },
+  {
+    "outputFileName": "Scripts/admin/themVideoController.min.js",
+    "inputFiles": [
+      "Scripts/admin/themVideoController.js"
+    ]
+  },
+  {
+    "outputFileName": "Scripts/admin/urlFactory.min.js",
+    "inputFiles": [
+      "Scripts/admin/urlFactory.js"
+    ]
+  },
+  {
+    "outputFileName": "Scripts/admin/danhsachCustomerController.min.js",
+    "inputFiles": [
+      "Scripts/admin/danhsachCustomerController.js"
+    ]
+  },
+  {
+    "outputFileName": "Scripts/admin/danhsachPartnerController.min.js",
+    "inputFiles": [
+      "Scripts/admin/danhsachPartnerController.js"
+    ]
+  },
+  {
+    "outputFileName": "Scripts/admin/themCustomerController.min.js",
+    "inputFiles": [
+      "Scripts/admin/themCustomerController.js"
+    ]
+  },
+  {
+    "outputFileName": "Scripts/admin/themPartnerController.min.js",
+    "inputFiles": [
+      "Scripts/admin/themPartnerController.js"
+    ]
+  },
+  {
+    "outputFileName": "Scripts/front/CustomerController.min.js",
+    "inputFiles": [
+      "Scripts/front/CustomerController.js"
+    ]
+  },
+  {
+    "outputFileName": "Scripts/front/PartnerController.min.js",
+    "inputFiles": [
+      "Scripts/front/PartnerController.js"
+    ]
+  },
+  {
+    "outputFileName": "Scripts/admin/danhsachOrderCheckedController.min.js",
+    "inputFiles": [
+      "Scripts/admin/danhsachOrderCheckedController.js"
+    ]
+  }
+]

@@ -1,0 +1,61 @@
+﻿@model IEnumerable<CMS.Models.Post>
+
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div ng-app="frontApp">
+    
+    <div class="banner">
+        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner" role="listbox">
+                <div class="item banner-child active" style="background-image: url('/Content/Images/images/Banner/BannerPost/BannerPost.jpg'); background-color: #000; ">
+                    <div class="banner-child-content" >
+                        <div class="banner-child-title" style="color: #fff">
+                            Những sản phẩm của chúng tôi
+                        </div>
+                        <div class="banner-child-des" style="color: #fff">
+                            Bất cứ khi nào bạn đang ở trên đường, bạn phụ thuộc vào động cơ của bạn - và tất cả các bộ phận của nó - để chạy trơn tru. Đó là lý do tại sao chúng tôi cung cấp một loạt các sản phẩm chất lượng cao, bạn có thể tin tưởng.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="category-menu-1">
+                    <div class="col-md-3">
+                        @Html.Partial("_MenuCategoryPost")
+                    </div>
+                </div>
+                <div class="col-md-9">
+                    <div ng-controller="allCategoryPostController">
+                        <div class="list-category-post">
+                            <h1 class="title">Danh mục bài viết</h1>
+                            <div class="container-fluid">
+                                @*<div class="col-md-6" ng-repeat="(index, value) in categories">*@
+                                <div class="col-md-6" dir-paginate="(index, value) in categories | itemsPerPage: 12">
+                                    <div class="child-post">
+                                        <a href="/danh-muc-bai-viet/{{value.alias}}-{{value.idCategory}}" class="title-child-post"><img src="{{value.image}}" class="img-responsive" /></a>
+                                        <div class="text">
+                                            <a href="/danh-muc-bai-viet/{{value.alias}}-{{value.idCategory}}">{{value.title}}</a> <br />
+                                            <div class="description">{{value.description | limitTo: 100}}{{value.description.length > 100 ? '&hellip;' : ''}}</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container"><dir-pagination-controls></dir-pagination-controls></div>
+                    </div>
+                </div>
+                <div class="category-menu-2">
+                    <div class="col-md-3">
+                        @Html.Partial("_MenuCategoryPost")
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

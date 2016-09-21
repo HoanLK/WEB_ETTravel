@@ -1,0 +1,93 @@
+﻿
+@{
+    ViewBag.Title = "Thêm Video";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+}
+
+<div ng-app="myApp">
+    <div ng-controller="themVideoController">
+        <input type="hidden" value="@WebSecurity.CurrentUserName" id="user" />
+        <div class="row">
+            <div class="col-md-2">
+                <button type="button" class="btn btn-block btn-sm ink-reaction btn-success" ng-click="save()"><span class="fa fa-edit"></span> Lưu</button>
+            </div>
+            <div class="col-md-2">
+                <button type="button" class="btn btn-block btn-sm ink-reaction btn-info" ng-click="saveAndExit()"><span class="fa fa-check-square-o"></span> Lưu & Thoát</button>
+            </div>
+            <div class="col-md-2">
+                <button type="button" class="btn btn-block btn-sm ink-reaction btn-info" ng-click="saveAndNew()"><span class="fa fa-plus"></span> Lưu & Thêm mới</button>
+            </div>
+            <div class="col-md-2">
+                <button type="button" class="btn btn-block btn-sm ink-reaction btn-danger" ng-click="cancel()"><span class="fa fa-remove"></span> Hủy bỏ</button>
+            </div>
+        </div>
+        <hr class="ruler-lg" />
+
+        <div class="card">
+            <div class="card-body">
+                <form class="form" role="form">
+                    <div class="row">
+                        <div class="col-md-7">
+                            <div class="form-group  " ng-class="{'has-error':!video.title, 'has-success':video.title}">
+                                <input type="text" class="form-control" id="title" name="title" ng-model="video.title" ng-change="changeTitle()">
+                                <label for="title">Tiêu đề *</label>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+
+                <div class="row">
+                    <div class="card-head">
+                        <ul class="nav nav-tabs" data-toggle="tabs">
+                            <li class="active"><a href="#noidung">Video</a></li>
+                        </ul>
+                    </div>
+                    <div class="card-body tab-content">
+                        <div class="tab-pane active" id="noidung">
+                            <div class="col-md-9">
+                                <form class="form" role="form">
+
+                                    <div class="form-group ">
+                                        <textarea name="description" id="description" class="form-control" rows="3" placeholder="" ng-model="video.description"></textarea>
+                                        <label for="description">Mô tả</label>
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" id="link_video" name="link_video" ng-model="video.link_video" ng-change="changeVideo()" />
+                                        <label for="link_video">Video</label>
+                                        <iframe width="560" ng-show="video.link_video" height="315" ng-src="{{link_video}}" frameborder="0" allowfullscreen></iframe>
+                                    </div>
+                                    
+                                </form>
+                            </div>
+
+
+                            <div class="col-md-3">
+                                <form class="form" role="form">
+
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" id="text_link" name="text_link" ng-model="video.link_post" />
+                                        <label for="text_link">Link bài viết</label>
+                                    </div>
+                                    <div class="form-group ">
+                                        <textarea name="note" id="note" class="form-control" rows="3" placeholder="" ng-model="video.note"></textarea>
+                                        <label for="note">Ghi chú</label>
+                                    </div>
+                                </form>
+                            </div>
+
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+</div>
+
+
+
+
