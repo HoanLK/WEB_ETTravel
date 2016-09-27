@@ -190,7 +190,7 @@
     <Folder Include="Content\front\img\" />
     <Folder Include="Content\Images\files\" />
     <Folder Include="Content\Images\flash\" />
-    <Folder Include="Content\Images\_thumbs\" />
+    <Folder Include="Content\Images\_thumbs\Images\" />
     <Folder Include="Views\CategoryProduct\" />
     <Folder Include="Views\Product\" />
   </ItemGroup>
@@ -205,10 +205,14 @@
     <Compile Include="Areas\Admin\Controllers\CategoriesController.cs" />
     <Compile Include="Areas\Admin\Controllers\CategoryProductsAPIController.cs" />
     <Compile Include="Areas\Admin\Controllers\CategoryProductsController.cs" />
+    <Compile Include="Areas\Admin\Controllers\ContactAPIController.cs" />
+    <Compile Include="Areas\Admin\Controllers\ContactsController.cs" />
     <Compile Include="Areas\Admin\Controllers\CustomerAPIController.cs" />
     <Compile Include="Areas\Admin\Controllers\CustomerRegistersController.cs" />
     <Compile Include="Areas\Admin\Controllers\CustomersController.cs" />
     <Compile Include="Areas\Admin\Controllers\DashboardController.cs" />
+    <Compile Include="Areas\Admin\Controllers\EmployeeAPIController.cs" />
+    <Compile Include="Areas\Admin\Controllers\EmployeesController.cs" />
     <Compile Include="Areas\Admin\Controllers\OrderAPIController.cs" />
     <Compile Include="Areas\Admin\Controllers\OrdersController.cs" />
     <Compile Include="Areas\Admin\Controllers\PartnerAPIController.cs" />
@@ -217,6 +221,8 @@
     <Compile Include="Areas\Admin\Controllers\PostsController.cs" />
     <Compile Include="Areas\Admin\Controllers\ProductsAPIController.cs" />
     <Compile Include="Areas\Admin\Controllers\ProductsController.cs" />
+    <Compile Include="Areas\Admin\Controllers\UserAPIController.cs" />
+    <Compile Include="Areas\Admin\Controllers\UsersController.cs" />
     <Compile Include="Areas\Admin\Controllers\VideosController.cs" />
     <Compile Include="Controllers\BaiVietController.cs" />
     <Compile Include="Controllers\BannersAPIController.cs" />
@@ -274,10 +280,16 @@
     <Compile Include="Models\CategoryProduct.cs">
       <DependentUpon>ET_DB.tt</DependentUpon>
     </Compile>
+    <Compile Include="Models\Contact.cs">
+      <DependentUpon>ET_DB.tt</DependentUpon>
+    </Compile>
     <Compile Include="Models\Customer.cs">
       <DependentUpon>ET_DB.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\CustomerRegister.cs">
+      <DependentUpon>ET_DB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Employee.cs">
       <DependentUpon>ET_DB.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\ET_DB.Context.cs">
@@ -2222,31 +2234,34 @@
     </Content>
     <Content Include="Content\admin\css\Site.css" />
     <Content Include="Content\front\css\BaiViet.css" />
+    <Content Include="Content\front\css\BaiViet.min.css">
+      <DependentUpon>BaiViet.css</DependentUpon>
+    </Content>
     <Content Include="Content\front\css\bootstrap-theme.css" />
     <Content Include="Content\front\css\bootstrap-theme.min.css" />
     <Content Include="Content\front\css\bootstrap.css" />
     <Content Include="Content\front\css\bootstrap.min.css" />
     <Content Include="Content\front\css\DuLich.css" />
+    <Content Include="Content\front\css\DuLich.min.css">
+      <DependentUpon>DuLich.css</DependentUpon>
+    </Content>
     <Content Include="Content\front\css\font-awesome.css" />
     <Content Include="Content\front\css\font-awesome.min.css" />
     <Content Include="Content\front\css\Site.css" />
+    <Content Include="Content\front\css\Site.min.css">
+      <DependentUpon>Site.css</DependentUpon>
+    </Content>
     <Content Include="Content\front\fonts\fontawesome-webfont.svg" />
     <Content Include="Content\front\fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Content\Images\images\Building.jpg" />
     <Content Include="Content\Images\images\ChoThueXe.jpg" />
     <Content Include="Content\Images\images\DatVeMayBay.jpg" />
     <Content Include="Content\Images\images\DatVeMayBay2.jpg" />
-    <Content Include="Content\Images\images\HCMIU.jpg" />
     <Content Include="Content\Images\images\LamVisa.jpg" />
-    <Content Include="Content\Images\images\liberty central.JPG" />
     <Content Include="Content\Images\images\logo.png" />
-    <Content Include="Content\Images\images\petrovietnam.jpg" />
     <Content Include="Content\Images\images\Plane.png" />
     <Content Include="Content\Images\images\QC.jpg" />
-    <Content Include="Content\Images\images\Rinnai.png" />
     <Content Include="Content\Images\images\SkyLine.png" />
-    <Content Include="Content\Images\images\Vietha.jpg" />
-    <Content Include="Content\Images\images\vinhome.jpg" />
     <Content Include="Content\Images\images\Visa.jpg" />
     <Content Include="Content\ui-grid.css" />
     <Content Include="Content\ui-grid.min.css" />
@@ -2283,6 +2298,10 @@
     <Content Include="Scripts\admin\danhsachCategoryProductController.min.js">
       <DependentUpon>danhsachCategoryProductController.js</DependentUpon>
     </Content>
+    <Content Include="Scripts\admin\danhsachContactController.js" />
+    <Content Include="Scripts\admin\danhsachContactController.min.js">
+      <DependentUpon>danhsachContactController.js</DependentUpon>
+    </Content>
     <Content Include="Scripts\admin\danhsachCustomerController.js" />
     <Content Include="Scripts\admin\danhsachCustomerController.min.js">
       <DependentUpon>danhsachCustomerController.js</DependentUpon>
@@ -2290,6 +2309,10 @@
     <Content Include="Scripts\admin\danhsachCustomerRegisterController.js" />
     <Content Include="Scripts\admin\danhsachCustomerRegisterController.min.js">
       <DependentUpon>danhsachCustomerRegisterController.js</DependentUpon>
+    </Content>
+    <Content Include="Scripts\admin\danhsachEmployeeController.js" />
+    <Content Include="Scripts\admin\danhsachEmployeeController.min.js">
+      <DependentUpon>danhsachEmployeeController.js</DependentUpon>
     </Content>
     <Content Include="Scripts\admin\danhsachOrderCheckedController.js" />
     <Content Include="Scripts\admin\danhsachOrderCheckedController.min.js">
@@ -2333,9 +2356,21 @@
     <Content Include="Scripts\admin\themCategoryProductController.min.js">
       <DependentUpon>themCategoryProductController.js</DependentUpon>
     </Content>
+    <Content Include="Scripts\admin\themContactController.js" />
+    <Content Include="Scripts\admin\themContactController.min.js">
+      <DependentUpon>themContactController.js</DependentUpon>
+    </Content>
     <Content Include="Scripts\admin\themCustomerController.js" />
     <Content Include="Scripts\admin\themCustomerController.min.js">
       <DependentUpon>themCustomerController.js</DependentUpon>
+    </Content>
+    <Content Include="Scripts\admin\themEmployeeController.js" />
+    <Content Include="Scripts\admin\themEmployeeController.min.js">
+      <DependentUpon>themEmployeeController.js</DependentUpon>
+    </Content>
+    <Content Include="Scripts\admin\themInfoUserController.js" />
+    <Content Include="Scripts\admin\themInfoUserController.min.js">
+      <DependentUpon>themInfoUserController.js</DependentUpon>
     </Content>
     <Content Include="Scripts\admin\themOrderController.js" />
     <Content Include="Scripts\admin\themOrderController.min.js">
@@ -2373,6 +2408,10 @@
     <Content Include="Scripts\front\categoryPostFactory.min.js">
       <DependentUpon>categoryPostFactory.js</DependentUpon>
     </Content>
+    <Content Include="Scripts\front\CategoryProductController.js" />
+    <Content Include="Scripts\front\CategoryProductController.min.js">
+      <DependentUpon>CategoryProductController.js</DependentUpon>
+    </Content>
     <Content Include="Scripts\front\categoryProductFactory.min.js">
       <DependentUpon>categoryProductFactory.js</DependentUpon>
     </Content>
@@ -2384,12 +2423,20 @@
     <Content Include="Scripts\front\childCategoryProductController.min.js">
       <DependentUpon>childCategoryProductController.js</DependentUpon>
     </Content>
+    <Content Include="Scripts\front\ContactController.js" />
+    <Content Include="Scripts\front\contactController.min.js">
+      <DependentUpon>ContactController.js</DependentUpon>
+    </Content>
     <Content Include="Scripts\front\cusRegisterController.min.js">
       <DependentUpon>cusRegisterController.js</DependentUpon>
     </Content>
     <Content Include="Scripts\front\CustomerController.js" />
     <Content Include="Scripts\front\CustomerController.min.js">
       <DependentUpon>CustomerController.js</DependentUpon>
+    </Content>
+    <Content Include="Scripts\front\EmployeeController.js" />
+    <Content Include="Scripts\front\EmployeeController.min.js">
+      <DependentUpon>EmployeeController.js</DependentUpon>
     </Content>
     <Content Include="Scripts\front\frontApp.min.js">
       <DependentUpon>frontApp.js</DependentUpon>
@@ -2481,6 +2528,10 @@
     <Content Include="Scripts\front\themorderController.js" />
     <Content Include="Scripts\front\themOrderController.min.js">
       <DependentUpon>themorderController.js</DependentUpon>
+    </Content>
+    <Content Include="Scripts\admin\UserController.js" />
+    <Content Include="Scripts\admin\UserController.min.js">
+      <DependentUpon>UserController.js</DependentUpon>
     </Content>
     <Content Include="Scripts\front\videoController.js" />
     <Content Include="Scripts\front\searchController.js" />
@@ -2815,6 +2866,15 @@
     <Content Include="Areas\Admin\Views\Customers\Index.cshtml" />
     <Content Include="Areas\Admin\Views\Partners\Create.cshtml" />
     <Content Include="Areas\Admin\Views\Partners\Index.cshtml" />
+    <Content Include="Areas\Admin\Views\Contacts\Create.cshtml" />
+    <Content Include="Areas\Admin\Views\Contacts\Index.cshtml" />
+    <Content Include="Areas\Admin\Views\Users\Create.cshtml" />
+    <Content Include="Areas\Admin\Views\Users\Delete.cshtml" />
+    <Content Include="Areas\Admin\Views\Users\Details.cshtml" />
+    <Content Include="Areas\Admin\Views\Users\Edit.cshtml" />
+    <Content Include="Areas\Admin\Views\Users\Index.cshtml" />
+    <Content Include="Areas\Admin\Views\Employees\Create.cshtml" />
+    <Content Include="Areas\Admin\Views\Employees\Index.cshtml" />
     <None Include="bundleconfig.json" />
     <EntityDeploy Include="Models\ET_DB.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
@@ -2857,6 +2917,7 @@
     <Content Include="Views\DanhMucSanPham\TrongNuoc.cshtml" />
     <Content Include="Views\DanhMucSanPham\QuocTe.cshtml" />
     <Content Include="Views\Home\LienHe.cshtml" />
+    <Content Include="Views\Account\Info.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <WCFMetadata Include="Service References\" />

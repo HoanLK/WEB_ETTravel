@@ -1,0 +1,68 @@
+﻿
+@{
+    ViewBag.Title = "Thêm nhân viên";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+}
+<div ng-app="myApp">
+    <div ng-controller="themEmployeeController">
+        <div class="row">
+            <div class="col-md-2">
+                <button type="button" class="btn btn-block btn-sm ink-reaction btn-success" ng-click="saveEmployee()"><span class="fa fa-edit"></span> Lưu</button>
+            </div>
+            <div class="col-md-2">
+                <button type="button" class="btn btn-block btn-sm ink-reaction btn-info" ng-click="saveEmployeeAndExit()"><span class="fa fa-check-square-o"></span> Lưu & Thoát</button>
+            </div>
+            <div class="col-md-2">
+                <button type="button" class="btn btn-block btn-sm ink-reaction btn-info" ng-click="saveEmployeeAndNew()"><span class="fa fa-plus"></span> Lưu & Thêm mới</button>
+            </div>
+            <div class="col-md-2">
+                <button type="button" class="btn btn-block btn-sm ink-reaction btn-danger" ng-click="cancel()"><span class="fa fa-remove"></span> Hủy bỏ</button>
+            </div>
+        </div>
+        <hr class="ruler-lg" />
+        <div class="card">
+            <div class="card-body">
+                <form class="form" role="form">
+                    <div class="row">
+                        <div class="col-md-7">
+                            <div class="form-group  " ng-class="{'has-error':!Employee.hoTen, 'has-success':Employee.hoTen}">
+                                <input type="text" class="form-control" id="hoten" name="hoten" ng-model="Employee.hoTen" ng-change="changeTitle()">
+                                <label for="hoten">Họ tên *</label>
+                            </div>
+                        </div>
+                        <div class="col-md-5">
+                            <div class="form-group " ng-class="{'has-error':!Employee.chucVu, 'has-success':Employee.chucVu}">
+                                <input type="text" class="form-control" id="chucvu" name="chucvu" ng-model="Employee.chucVu" />
+                                <label for="chucvu">Chức vụ *</label>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+                <div class="row">
+                    @*<div class="card-head">
+                        <ul class="nav nav-tabs" data-toggle="tabs">
+                            <li class="active"><a href="#noidung">Nhân viên</a></li>
+                        </ul>
+                    </div>*@
+                    <div class="card-body tab-content">
+                        <div class="tab-pane active" id="noidung">
+                            <div class="col-md-9">
+                                <form class="form" role="form">
+                                    <div class="form-group">
+                                        <input type="text" name="image" id="image" ng-model="Employee.anh" class="form-control" /> <button class="btn btn-primary" ng-click="chooseImage()">Chọn ảnh</button>
+                                        <label for="image">Hình ảnh (1250x400)</label>
+                                        <img class="img-responsive" src="{{Employee.anh}}" ng-show="Employee.anh" />
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+

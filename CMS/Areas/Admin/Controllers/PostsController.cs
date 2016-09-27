@@ -16,6 +16,25 @@ namespace CMS.Areas.Admin.Controllers
     {
         private ETEntities db = new ETEntities();
 
+        //GetByCategoryTour
+        [AllowAnonymous]
+        public JsonResult GetByCategoryTour(int id)
+        {
+            var model = db.Post.Where(p => p.idCategory == (db.Category.Where(c => c.alias == (db.CategoryProduct.Where(ct => ct.idCategory == id).Select(ct => ct.alias).FirstOrDefault()))).Select(c => c.idCategory).FirstOrDefault());
+                
+                
+                //from categoryTour in db.CategoryProduct
+                //        join post in db.Post
+                //        join categoryPost in db.Category
+
+
+
+
+
+            return Json(model, JsonRequestBehavior.AllowGet);
+        }
+
+
         // GET: Admin/Posts
         public async Task<ActionResult> Index()
         {

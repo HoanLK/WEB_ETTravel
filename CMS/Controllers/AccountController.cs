@@ -24,6 +24,15 @@ namespace CMS.Controllers
             return View(User);
         }
 
+        [Authorize(Roles = "Admin")]
+        public ActionResult Info()
+        {
+            //Get list account
+            var User = db.User.ToList();
+
+            return View(User);
+        }
+
         //Register
         //Get
         [Authorize(Roles = "Admin")]

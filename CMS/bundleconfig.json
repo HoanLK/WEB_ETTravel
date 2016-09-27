@@ -114,12 +114,6 @@
     ]
   },
   {
-    "outputFileName": "Scripts/front/childCategoryProductController.js",
-    "inputFiles": [
-      "Scripts/front/childCategoryProductController.js"
-    ]
-  },
-  {
     "outputFileName": "Scripts/front/menuCategoryPostController.js",
     "inputFiles": [
       "Scripts/front/menuCategoryPostController.js"
@@ -141,12 +135,6 @@
     "outputFileName": "Scripts/front/showProductController.js",
     "inputFiles": [
       "Scripts/front/showProductController.js"
-    ]
-  },
-  {
-    "outputFileName": "Scripts/front/showPostController.js",
-    "inputFiles": [
-      "Scripts/front/showPostController.js"
     ]
   },
   {
@@ -177,12 +165,6 @@
     "outputFileName": "Content/front/css/bootstrap.min.css",
     "inputFiles": [
       "Content/front/css/bootstrap.min.css"
-    ]
-  },
-  {
-    "outputFileName": "Content/front/css/site.css",
-    "inputFiles": [
-      "Content/front/css/site.css"
     ]
   },
   {
@@ -375,6 +357,90 @@
     "outputFileName": "Scripts/admin/danhsachOrderCheckedController.min.js",
     "inputFiles": [
       "Scripts/admin/danhsachOrderCheckedController.js"
+    ]
+  },
+  {
+    "outputFileName": "Scripts/front/CategoryProductController.min.js",
+    "inputFiles": [
+      "Scripts/front/CategoryProductController.js"
+    ]
+  },
+  {
+    "outputFileName": "Scripts/admin/danhsachContactController.min.js",
+    "inputFiles": [
+      "Scripts/admin/danhsachContactController.js"
+    ]
+  },
+  {
+    "outputFileName": "Scripts/front/contactController.min.js",
+    "inputFiles": [
+      "Scripts/front/contactController.js"
+    ]
+  },
+  {
+    "outputFileName": "Scripts/admin/themContactController.min.js",
+    "inputFiles": [
+      "Scripts/admin/themContactController.js"
+    ]
+  },
+  {
+    "outputFileName": "Content/front/css/DuLich.min.css",
+    "inputFiles": [
+      "Content/front/css/DuLich.css"
+    ]
+  },
+  {
+    "outputFileName": "Content/front/css/Site.min.css",
+    "inputFiles": [
+      "Content/front/css/Site.css"
+    ]
+  },
+  {
+    "outputFileName": "Content/front/css/BaiViet.min.css",
+    "inputFiles": [
+      "Content/front/css/BaiViet.css"
+    ]
+  },
+  {
+    "outputFileName": "Scripts/admin/themInfoUserController.min.js",
+    "inputFiles": [
+      "Scripts/admin/themInfoUserController.js"
+    ]
+  },
+  {
+    "outputFileName": "Scripts/front/childCategoryProductController.min.js",
+    "inputFiles": [
+      "Scripts/front/childCategoryProductController.js"
+    ]
+  },
+  {
+    "outputFileName": "Scripts/front/UserController.min.js",
+    "inputFiles": [
+      "Scripts/front/UserController.js"
+    ]
+  },
+  {
+    "outputFileName": "Scripts/admin/danhsachEmployeeController.min.js",
+    "inputFiles": [
+      "Scripts/admin/danhsachEmployeeController.js"
+    ]
+  },
+  {
+    "outputFileName": "Scripts/admin/themEmployeeController.min.js",
+    "inputFiles": [
+      "Scripts/admin/themEmployeeController.js"
+    ]
+  },
+  {
+    "outputFileName": "Scripts/front/EmployeeController.min.js",
+    "inputFiles": [
+      "Scripts/front/EmployeeController.js"
+    ]
+  },
+  {
+    "outputFileName": "Scripts/front/showPostController.min.js",
+    "inputFiles": [
+      "Scripts/front/showPostController.js"
     ]
   }
 ]

@@ -1,0 +1,207 @@
+﻿
+<header>
+    <div class="container-fluid">
+        <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
+            <nav class="navbar navbar-default yamm navbar-fixed-top" role="navigation">
+                <div class="menu-top">
+                    <div class="navbar-header">
+                        <button type="button" data-toggle="collapse" data-target="#navbar-collapse-1" class="navbar-toggle">
+                            <span class="icon-bar"></span><span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a href="/" class="navbar-brand nav-logo" title="Trang chủ">
+                            <img src="~/Content/front/img/logo.png" title="Dầu nhớt Mobil chính hãng" alt="Dầu nhớt Mobil chính hãng" />
+                        </a>
+                    </div>
+
+                    <div ng-controller="menuMainController">
+                        <div id="navbar-collapse-1" class="navbar-collapse collapse">
+                            <ul class="nav navbar-nav navbar-right">
+                                <!-- Sản phẩm -->
+                                <li class="dropdown yamm-fw nav-child">
+                                    <a href="#" title="Sản phẩm" data-toggle="dropdown" class="dropdown-toggle">Sản phẩm  <span class="glyphicon glyphicon-triangle-bottom"></span></a>
+                                    <ul class="dropdown-menu">
+                                        <li>
+                                            <!-- Content container to add padding -->
+                                            <div class="yamm-content">
+                                                <div class="row">
+                                                    <div class="col-md-4 col-md-offset-1 ">
+                                                        <ul class="">
+                                                            <li><a href="/danh-muc-san-pham" title="Sản phẩm"><strong>SẢN PHẨM </strong></a></li>
+                                                            <li ng-repeat="(index, value) in listSanPham"><h3 style="margin: 0; padding: 0;"><a title="{{value.title}}" href="/danh-muc-san-pham/{{value.alias}}-{{value.idCategory}}">{{value.title}}</a></h3></li>
+                                                            <li ng-repeat="(index, value) in listSanPham2"><a title="{{value.title}}" href="/danh-muc-bai-viet/{{value.alias}}-{{value.idCategory}}">{{value.title}}</a></li>
+                                                        </ul>
+                                                        <br />
+                                                        <div class="col-md-8 col-md-offset-1"><a href="/danh-muc-san-pham" title="Danh mục dầu nhớt" class="btn btn-default btn-lg">Danh mục dầu nhớt</a></div>
+                                                    </div>
+                                                    <section class="col-md-6 related">
+                                                        <p class="related-title">Nội dung liên quan</p>
+                                                        <div class="col-md-4" ng-repeat="(index, value) in desSanPham" ng-show="index < 3">
+                                                            <section class="related-body">
+                                                                <a href="/san-pham/{{value.alias}}-{{value.idProduct}}" title="{{value.title}}">
+                                                                    <img src="{{value.image}}" title="{{value.title}}" alt="{{value.title}}" class="img-responsive" />
+                                                                </a>
+                                                            </section>
+                                                            <div class="related-footer">
+                                                                <a href="/san-pham/{{value.alias}}-{{value.idProduct}}" title="{{value.title}}">{{value.title}} </a>
+                                                            </div>
+                                                        </div>
+                                                    </section>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <!--Giới thiệu-->
+                                <li class="dropdown yamm-fw nav-child">
+                                    <a href="/bai-viet/gioi-thieu-17" title="Giới thiệu">Giới thiệu</a>
+                                </li>
+                                <!--Bảo dưỡng xe-->
+                                <li class="dropdown yamm-fw nav-child">
+                                    <a href="#" data-toggle="dropdown" class="dropdown-toggle" title="Bảo dưỡng xe">Bảo dưỡng xe <span class="glyphicon glyphicon-triangle-bottom"></span></a>
+                                    <ul class="dropdown-menu">
+                                        <li>
+                                            <!-- Content container to add padding -->
+                                            <div class="yamm-content">
+                                                <div class="row">
+                                                    <div class="">
+                                                        <div class="col-md-4 col-md-offset-1">
+                                                            <ul class="">
+                                                                <li><a href="/danh-muc-bai-viet/bao-duong-xe-141" title="Danh mục bài viết"><strong>Danh mục bài viết</strong></a></li>
+                                                                <li ng-repeat="(index, value) in listBaoDuongXe"><a href="/danh-muc-bai-viet/{{value.alias}}-{{value.idCategory}}" title="{{value.title}}">{{value.title}}</a></li>
+                                                            </ul>
+                                                        </div>
+                                                        <section class="col-md-6 related">
+                                                            <p class="related-title">Nội dung liên quan</p>
+                                                            <div class="col-md-4" ng-repeat="(index, value) in desBaoDuongXe" ng-show="index < 3">
+                                                                <section class="related-body">
+                                                                    <a href="/bai-viet/{{value.alias}}-{{value.idPost}}"  title="{{value.title}}">
+                                                                        <img src="{{value.image}}" title="{{value.title}}" alt="{{value.title}}" class="img-responsive" style="width: 125px; height: 125px;" />
+                                                                    </a>
+                                                                </section>
+                                                                <div class="related-footer">
+                                                                    <a href="/bai-viet/{{value.alias}}-{{value.idPost}}" title="{{value.title}}">{{value.title}} </a>
+                                                                </div>
+                                                            </div>
+                                                        </section>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <!--Lái xe an toàn-->
+                                <li class="dropdown yamm-fw nav-child">
+                                    <a href="#" data-toggle="dropdown" class="dropdown-toggle" title="Lái xe an toàn">Lái xe an toàn <span class="glyphicon glyphicon-triangle-bottom"></span></a>
+                                    <ul class="dropdown-menu">
+                                        <li>
+                                            <!-- Content container to add padding -->
+                                            <div class="yamm-content">
+                                                <div class="row">
+                                                    <div class="">
+                                                        <div class="col-md-4 col-md-offset-1">
+                                                            <ul class="">
+                                                                <li><a href="/danh-muc-bai-viet/bao-duong-xe-141" title="Danh mục bài viết"><strong>Danh mục bài viết</strong></a></li>
+                                                                <li ng-repeat="(index, value) in listLaiXeAnToan"><a href="/danh-muc-bai-viet/{{value.alias}}-{{value.idCategory}}" title="{{value.title}}">{{value.title}}</a></li>
+                                                            </ul>
+                                                        </div>
+                                                        <section class="col-md-6 related">
+                                                            <p class="related-title">Nội dung liên quan</p>
+                                                            <div class="col-md-4" ng-repeat="(index, value) in desLaiXeAnToan" ng-show="index < 3">
+                                                                <section class="related-body">
+                                                                    <a href="/bai-viet/{{value.alias}}-{{value.idPost}}" title="{{value.title}}">
+                                                                        <img src="{{value.image}}" title="{{value.title}}" alt="{{value.title}}" class="img-responsive" style="width: 125px; height: 125px;" />
+                                                                    </a>
+                                                                </section>
+                                                                <div class="related-footer">
+                                                                    <a href="/bai-viet/{{value.alias}}-{{value.idPost}}" title="{{value.title}}">{{value.title}} </a>
+                                                                </div>
+                                                            </div>
+                                                        </section>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <!--Đại lý-->
+                                <li class="dropdown yamm-fw nav-child">
+                                    <a href="#" data-toggle="dropdown" class="dropdown-toggle" title="Đại lý">Đại lý <span class="glyphicon glyphicon-triangle-bottom"></span></a>
+                                    <ul class="dropdown-menu">
+                                        <li>
+                                            <!-- Content container to add padding -->
+                                            <div class="yamm-content">
+                                                <div class="row">
+                                                    <div class="">
+                                                        <div class="col-md-4 col-md-offset-1">
+                                                            <ul class="">
+                                                                <li><a href="/danh-muc-bai-viet/dai-ly-143" title="Danh mục bài viết"><strong>Danh mục bài viết</strong></a></li>
+                                                                <li ng-repeat="(index, value) in listDaiLy"><a href="/danh-muc-bai-viet/{{value.alias}}-{{value.idCategory}}" title="{{value.title}}">{{value.title}}</a></li>
+                                                            </ul>
+                                                        </div>
+                                                        <section class="col-md-6 related">
+                                                            <p class="related-title">Nội dung liên quan</p>
+                                                            <div class="col-md-4" ng-repeat="(index, value) in desDaiLy" ng-show="index < 3">
+                                                                <section class="related-body">
+                                                                    <a href="/bai-viet/{{value.alias}}-{{value.idPost}}" title="{{value.title}}">
+                                                                        <img src="{{value.image}}" title="{{value.title}}" alt="{{value.title}}" class="img-responsive" style="width: 125px; height: 125px;"/>
+                                                                    </a>
+                                                                </section>
+                                                                <div class="related-footer">
+                                                                    <a href="/bai-viet/{{value.alias}}-{{value.idPost}}" title="{{value.title}}">{{value.title}} </a>
+                                                                </div>
+                                                            </div>
+                                                        </section>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown yamm-fw nav-child">
+                                    <a href="#" title="Liên hệ" data-toggle="modal" data-target="#lienheModal">Liên hệ</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+            </nav>
+        </div>
+    </div>
+    <div class="modal fade" id="lienheModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document" style="width: 80%">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <p class="modal-title text-uppercase" id="myModalLabel">Hãy liên hệ với chúng tôi</p>
+                </div>
+                <div class="modal-body" style="height: 1%; overflow: hidden;">
+                    <div class="">
+                            <div class="col-md-8">
+                                <iframe style="width: 100%; height: 350px;" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3728.663933279328!2d106.663129314385!3d20.845272999394023!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjDCsDUwJzQzLjAiTiAxMDbCsDM5JzU1LjEiRQ!5e0!3m2!1sen!2s!4v1459561817446" ></iframe>
+                                <noframes>Xin lỗi, trình duyệt của bạn không hỗ trợ frames.</noframes>
+                            </div>
+
+                            <div class="col-md-4">
+                                <h2>Công ty TNHH Giải pháp bôi trơn Hilube</h2>
+                                <address>
+                                    <div class="address">
+                                        <p>Địa chỉ: 1/97 Nguyễn Công Hòa, Hải Phòng</p>
+                                        <p>Điện thoại: 0313. 593838</p>
+                                        <p>Hotline: 0931.567.986</p>
+                                        <p>Email: mobil@hilube.vn</p>
+                                        <br />
+                                        <img src="~/Content/front/img/logo_foot.png" class="img-responsive" />
+                                    </div>
+                                </address>
+                            </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Đóng</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>

@@ -25,6 +25,7 @@ namespace CMS.Models
         public string hoten { get; set; }
         public string sdt { get; set; }
         public string image { get; set; }
+        public string chuvu { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<webpages_Roles> webpages_Roles { get; set; }

@@ -39,5 +39,7 @@ namespace CMS.Models
         public virtual DbSet<Customer> Customer { get; set; }
         public virtual DbSet<Partner> Partner { get; set; }
         public virtual DbSet<User> User { get; set; }
+        public virtual DbSet<Contact> Contact { get; set; }
+        public virtual DbSet<Employee> Employee { get; set; }
     }
 }

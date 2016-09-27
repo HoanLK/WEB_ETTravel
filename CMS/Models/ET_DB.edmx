@@ -65,6 +65,18 @@
           <Property Name="author" Type="nvarchar" MaxLength="50" />
           <Property Name="robots" Type="varchar" MaxLength="50" />
         </EntityType>
+        <EntityType Name="Contact">
+          <Key>
+            <PropertyRef Name="idContact" />
+          </Key>
+          <Property Name="idContact" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="hoten" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="diachi" Type="nvarchar(max)" />
+          <Property Name="sdt" Type="nchar" MaxLength="15" Nullable="false" />
+          <Property Name="email" Type="nvarchar" MaxLength="200" />
+          <Property Name="title" Type="nvarchar(max)" />
+          <Property Name="content" Type="ntext" />
+        </EntityType>
         <EntityType Name="Customer">
           <Key>
             <PropertyRef Name="idCustomer" />
@@ -173,6 +185,7 @@
           <Property Name="hoten" Type="nvarchar(max)" />
           <Property Name="sdt" Type="nchar" MaxLength="15" />
           <Property Name="image" Type="ntext" />
+          <Property Name="chuvu" Type="nvarchar" MaxLength="50" />
         </EntityType>
         <EntityType Name="Video">
           <Key>
@@ -224,6 +237,15 @@
           </Key>
           <Property Name="UserId" Type="int" Nullable="false" />
           <Property Name="RoleId" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Employee">
+          <Key>
+            <PropertyRef Name="idEmployee" />
+          </Key>
+          <Property Name="idEmployee" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="hoTen" Type="nvarchar(max)" />
+          <Property Name="chucVu" Type="nvarchar" MaxLength="50" />
+          <Property Name="anh" Type="ntext" />
         </EntityType>
         <Association Name="FK_Category_Category">
           <End Role="Category" Type="Self.Category" Multiplicity="0..1" />
@@ -277,6 +299,7 @@
           <EntitySet Name="Banner" EntityType="Self.Banner" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Category" EntityType="Self.Category" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="CategoryProduct" EntityType="Self.CategoryProduct" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Contact" EntityType="Self.Contact" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Customer" EntityType="Self.Customer" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="CustomerRegister" EntityType="Self.CustomerRegister" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Order" EntityType="Self.Order" Schema="dbo" store:Type="Tables" />
@@ -289,6 +312,7 @@
           <EntitySet Name="webpages_OAuthMembership" EntityType="Self.webpages_OAuthMembership" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="webpages_Roles" EntityType="Self.webpages_Roles" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="webpages_UsersInRoles" EntityType="Self.webpages_UsersInRoles" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Employee" EntityType="Self.Employee" Schema="ettc419f_pgdien" store:Type="Tables" />
           <AssociationSet Name="FK_Category_Category" Association="Self.FK_Category_Category">
             <End Role="Category" EntitySet="Category" />
             <End Role="Category1" EntitySet="Category" />
@@ -495,6 +519,8 @@
             <End Role="webpages_Roles" EntitySet="webpages_Roles" />
             <End Role="User" EntitySet="User" />
           </AssociationSet>
+          <EntitySet Name="Contact" EntityType="ETModel.Contact" />
+          <EntitySet Name="Employee" EntityType="ETModel.Employee" />
         </EntityContainer>
         <EntityType Name="CustomerRegister">
           <Key>
@@ -579,11 +605,33 @@
           <Property Name="sdt" Type="String" MaxLength="15" FixedLength="true" Unicode="true" />
           <Property Name="image" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
           <NavigationProperty Name="webpages_Roles" Relationship="ETModel.webpages_UsersInRoles" FromRole="User" ToRole="webpages_Roles" />
+          <Property Name="chuvu" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
         </EntityType>
         <Association Name="webpages_UsersInRoles">
           <End Type="ETModel.webpages_Roles" Role="webpages_Roles" Multiplicity="*" />
           <End Type="ETModel.User" Role="User" Multiplicity="*" />
         </Association>
+        <EntityType Name="Contact">
+          <Key>
+            <PropertyRef Name="idContact" />
+          </Key>
+          <Property Name="idContact" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="hoten" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="diachi" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="sdt" Type="String" Nullable="false" MaxLength="15" FixedLength="true" Unicode="true" />
+          <Property Name="email" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Name="title" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="content" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="Employee">
+          <Key>
+            <PropertyRef Name="idEmployee" />
+          </Key>
+          <Property Name="idEmployee" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="hoTen" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="chucVu" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="anh" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+        </EntityType>
       </Schema>
     </edmx:ConceptualModels>
     <!-- C-S mapping content -->
@@ -807,6 +855,7 @@
           <EntitySetMapping Name="User">
             <EntityTypeMapping TypeName="ETModel.User">
               <MappingFragment StoreEntitySet="User">
+                <ScalarProperty Name="chuvu" ColumnName="chuvu" />
                 <ScalarProperty Name="image" ColumnName="image" />
                 <ScalarProperty Name="sdt" ColumnName="sdt" />
                 <ScalarProperty Name="hoten" ColumnName="hoten" />
@@ -823,6 +872,29 @@
               <ScalarProperty Name="RoleId" ColumnName="RoleId" />
             </EndProperty>
           </AssociationSetMapping>
+          <EntitySetMapping Name="Contact">
+            <EntityTypeMapping TypeName="ETModel.Contact">
+              <MappingFragment StoreEntitySet="Contact">
+                <ScalarProperty Name="content" ColumnName="content" />
+                <ScalarProperty Name="title" ColumnName="title" />
+                <ScalarProperty Name="email" ColumnName="email" />
+                <ScalarProperty Name="sdt" ColumnName="sdt" />
+                <ScalarProperty Name="diachi" ColumnName="diachi" />
+                <ScalarProperty Name="hoten" ColumnName="hoten" />
+                <ScalarProperty Name="idContact" ColumnName="idContact" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Employee">
+            <EntityTypeMapping TypeName="ETModel.Employee">
+              <MappingFragment StoreEntitySet="Employee">
+                <ScalarProperty Name="anh" ColumnName="anh" />
+                <ScalarProperty Name="chucVu" ColumnName="chucVu" />
+                <ScalarProperty Name="hoTen" ColumnName="hoTen" />
+                <ScalarProperty Name="idEmployee" ColumnName="idEmployee" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
         </EntityContainerMapping>
       </Mapping>
     </edmx:Mappings>
