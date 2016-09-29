@@ -190,7 +190,6 @@
     <Folder Include="Content\front\img\" />
     <Folder Include="Content\Images\files\" />
     <Folder Include="Content\Images\flash\" />
-    <Folder Include="Content\Images\_thumbs\Images\" />
     <Folder Include="Views\CategoryProduct\" />
     <Folder Include="Views\Product\" />
   </ItemGroup>
@@ -213,6 +212,8 @@
     <Compile Include="Areas\Admin\Controllers\DashboardController.cs" />
     <Compile Include="Areas\Admin\Controllers\EmployeeAPIController.cs" />
     <Compile Include="Areas\Admin\Controllers\EmployeesController.cs" />
+    <Compile Include="Areas\Admin\Controllers\HotelAPIController.cs" />
+    <Compile Include="Areas\Admin\Controllers\HotelsController.cs" />
     <Compile Include="Areas\Admin\Controllers\OrderAPIController.cs" />
     <Compile Include="Areas\Admin\Controllers\OrdersController.cs" />
     <Compile Include="Areas\Admin\Controllers\PartnerAPIController.cs" />
@@ -229,7 +230,9 @@
     <Compile Include="Controllers\CategoryProductController.cs" />
     <Compile Include="Controllers\CustomerRegistersAPIController.cs" />
     <Compile Include="Controllers\DanhMucBaiVietController.cs" />
+    <Compile Include="Controllers\DanhMucKhachSanController.cs" />
     <Compile Include="Controllers\DanhMucSanPhamController.cs" />
+    <Compile Include="Controllers\KhachSanController.cs" />
     <Compile Include="Controllers\ProductController.cs" />
     <Compile Include="Controllers\SanPhamController.cs" />
     <Compile Include="Controllers\TimKiemController.cs" />
@@ -306,6 +309,9 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>ET_DB.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Hotel.cs">
+      <DependentUpon>ET_DB.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\Order.cs">
       <DependentUpon>ET_DB.tt</DependentUpon>
@@ -2263,6 +2269,20 @@
     <Content Include="Content\Images\images\QC.jpg" />
     <Content Include="Content\Images\images\SkyLine.png" />
     <Content Include="Content\Images\images\Visa.jpg" />
+    <Content Include="Content\Images\_thumbs\Images\Anonymous.png" />
+    <Content Include="Content\Images\_thumbs\Images\Banner.jpg" />
+    <Content Include="Content\Images\_thumbs\Images\Building.jpg" />
+    <Content Include="Content\Images\_thumbs\Images\ChoThueXe.jpg" />
+    <Content Include="Content\Images\_thumbs\Images\DatVeMayBay.jpg" />
+    <Content Include="Content\Images\_thumbs\Images\DatVeMayBay2.jpg" />
+    <Content Include="Content\Images\_thumbs\Images\LamVisa.jpg" />
+    <Content Include="Content\Images\_thumbs\Images\logo.png" />
+    <Content Include="Content\Images\_thumbs\Images\Plane.png" />
+    <Content Include="Content\Images\_thumbs\Images\QC.jpg" />
+    <Content Include="Content\Images\_thumbs\Images\Rinnai.gif" />
+    <Content Include="Content\Images\_thumbs\Images\SkyLine.png" />
+    <Content Include="Content\Images\_thumbs\Images\vietjet air.jpg" />
+    <Content Include="Content\Images\_thumbs\Images\Visa.jpg" />
     <Content Include="Content\ui-grid.css" />
     <Content Include="Content\ui-grid.min.css" />
     <Content Include="Content\ui-grid.svg" />
@@ -2313,6 +2333,14 @@
     <Content Include="Scripts\admin\danhsachEmployeeController.js" />
     <Content Include="Scripts\admin\danhsachEmployeeController.min.js">
       <DependentUpon>danhsachEmployeeController.js</DependentUpon>
+    </Content>
+    <Content Include="Scripts\admin\danhsachHotelCheckedController.js" />
+    <Content Include="Scripts\admin\danhsachHotelCheckedController.min.js">
+      <DependentUpon>danhsachHotelCheckedController.js</DependentUpon>
+    </Content>
+    <Content Include="Scripts\admin\danhsachHotelController.js" />
+    <Content Include="Scripts\admin\danhsachHotelController.min.js">
+      <DependentUpon>danhsachHotelController.js</DependentUpon>
     </Content>
     <Content Include="Scripts\admin\danhsachOrderCheckedController.js" />
     <Content Include="Scripts\admin\danhsachOrderCheckedController.min.js">
@@ -2367,6 +2395,10 @@
     <Content Include="Scripts\admin\themEmployeeController.js" />
     <Content Include="Scripts\admin\themEmployeeController.min.js">
       <DependentUpon>themEmployeeController.js</DependentUpon>
+    </Content>
+    <Content Include="Scripts\admin\themHotelController.js" />
+    <Content Include="Scripts\admin\themHotelController.min.js">
+      <DependentUpon>themHotelController.js</DependentUpon>
     </Content>
     <Content Include="Scripts\admin\themInfoUserController.js" />
     <Content Include="Scripts\admin\themInfoUserController.min.js">
@@ -2524,6 +2556,10 @@
     <Content Include="Scripts\front\tabController.js" />
     <Content Include="Scripts\front\tabController.min.js">
       <DependentUpon>tabController.js</DependentUpon>
+    </Content>
+    <Content Include="Scripts\front\themKhachSanController.js" />
+    <Content Include="Scripts\front\themKhachSanController.min.js">
+      <DependentUpon>themKhachSanController.js</DependentUpon>
     </Content>
     <Content Include="Scripts\front\themorderController.js" />
     <Content Include="Scripts\front\themOrderController.min.js">
@@ -2875,6 +2911,9 @@
     <Content Include="Areas\Admin\Views\Users\Index.cshtml" />
     <Content Include="Areas\Admin\Views\Employees\Create.cshtml" />
     <Content Include="Areas\Admin\Views\Employees\Index.cshtml" />
+    <Content Include="Areas\Admin\Views\Hotels\Create.cshtml" />
+    <Content Include="Areas\Admin\Views\Hotels\Index.cshtml" />
+    <Content Include="Areas\Admin\Views\Hotels\Checked.cshtml" />
     <None Include="bundleconfig.json" />
     <EntityDeploy Include="Models\ET_DB.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
@@ -2918,6 +2957,9 @@
     <Content Include="Views\DanhMucSanPham\QuocTe.cshtml" />
     <Content Include="Views\Home\LienHe.cshtml" />
     <Content Include="Views\Account\Info.cshtml" />
+    <Content Include="Views\KhachSan\Index.cshtml" />
+    <Content Include="Views\DanhMucKhachSan\Index.cshtml" />
+    <Content Include="Views\DanhMucKhachSan\Show.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <WCFMetadata Include="Service References\" />

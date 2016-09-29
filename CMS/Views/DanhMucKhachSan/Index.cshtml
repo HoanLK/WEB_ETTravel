@@ -1,0 +1,73 @@
+﻿<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 AllDLTrongNuoc" ng-controller="allCategoryProductController">
+    <input type="hidden" value="@Model.idcategory" id="idCategory" />
+    <p class="TieuDe">DU LỊCH TRONG NƯỚC</p>
+    <p class="TieuDe">---------------- <span class="fa fa-flag"></span> ----------------</p>
+    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 HangLe" ng-repeat="(index, value) in categoriesTrongNuoc">
+        <div class="left">
+            <img class="img-responsive" src="~/img/MienBac.jpg" />
+        </div>
+
+        <div class="right">
+            <a href="/khach-san/{{value.alias}}-{{value.idCategory}}" title="{{value.title}}" class="TieuDe">{{value.title}}</a>
+            <p class="GioiThieu" ng-bind-html="value.description"></p>
+            <a href="/khach-san/{{value.alias}}-{{value.idCategory}}" title="{{value.title}}" class="XemThem">XEM THÊM</a>
+        </div>
+    </div>
+
+    @*<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 HangChan">
+            <div class="left">
+                <a href="#" class="TieuDe">TOUR DU LỊCH MIỀN TRUNG</a>
+                <p class="GioiThieu">
+                    Miền Trung Việt Nam gồm Bắc Trung Bộ, Nam Trung Bộ và Tây Nguyên, tổng 19
+                    tỉnh thành. Miền Trung là giao điểm của sông núi hữu tình, thiên nhiên hùng
+                    vĩ, văn hóa đặc sắc, pha trộn ảnh hưởng của Hindu và Trung Hoa. Một điểm đến
+                    lý tưởng! Một cố đô Huế mộng mơ với những tà áo dài thướt tha.
+                </p>
+                <a href="#" class="XemThem">XEM THÊM</a>
+            </div>
+
+            <div class="right">
+                <img class="img-responsive" src="~/img/MienTrung.jpg" />
+            </div>
+        </div>*@
+
+</div>
+
+<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 CanhDepMienBac">
+    <p class="TieuDe">MỘT SỐ THẮNG CẢNH ĐẸP Ở MIỀN BẮC</p>
+    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 DiaDiem">
+        <div class="Khung">
+            <img class="img-responsive anh" src="~/img/haGiang.jpg" />
+            <a href="#" class="TieuDe">HÀ GIANG ĐIỂM HẸN</a>
+            <p class="GioiThieu">
+                Đến hẹn lại lên, chúng ta cùng đến với Hà Giang, nơi địa đầu
+                Tổ Quốc với những lễ hội đặc sắc mang bản chất của núi rừng Tây Bắc...
+                <a href="#" class="XemTiep">Xem tiếp</a>
+            </p>
+        </div>
+    </div>
+
+    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 DiaDiem">
+        <div class="Khung">
+            <img class="img-responsive anh" src="~/img/haGiang.jpg" />
+            <a href="#" class="TieuDe">HÀ GIANG ĐIỂM HẸN</a>
+            <p class="GioiThieu">
+                Đến hẹn lại lên, chúng ta cùng đến với Hà Giang, nơi địa đầu
+                Tổ Quốc với những lễ hội đặc sắc mang bản chất của núi rừng Tây Bắc...
+                <a href="#" class="XemTiep">Xem tiếp</a>
+            </p>
+        </div>
+    </div>
+
+    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 DiaDiem">
+        <div class="Khung">
+            <img class="img-responsive anh" src="~/img/haGiang.jpg" />
+            <a href="#" class="TieuDe">HÀ GIANG ĐIỂM HẸN</a>
+            <p class="GioiThieu">
+                Đến hẹn lại lên, chúng ta cùng đến với Hà Giang, nơi địa đầu
+                Tổ Quốc với những lễ hội đặc sắc mang bản chất của núi rừng Tây Bắc...
+                <a href="#" class="XemTiep">Xem tiếp</a>
+            </p>
+        </div>
+    </div>
+</div>

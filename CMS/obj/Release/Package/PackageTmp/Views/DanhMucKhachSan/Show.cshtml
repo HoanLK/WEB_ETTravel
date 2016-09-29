@@ -1,0 +1,49 @@
+﻿@model CMS.Models.CategoryProduct
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 DLTrongNuoc" ng-controller="childCategoryProductController">
+    <input type="hidden" value="@Model.idCategory" id="idCategory" />
+
+    <p class="TieuDe">@Model.title</p>
+    <p class="TieuDe">---------------- <span class="fa fa-automobile"></span> ----------------</p>
+    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 DuLich">
+        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 DiaDiem" ng-repeat="(index, value) in products">
+            <div class="Khung">
+                <img class="img-responsive anh" title="{{value.title}}" alt="{{value.title}}" src="{{value.image}}" />
+                <div class="a">
+                    <div class="b">
+                        <a href="/hotel/{{value.alias}}-{{value.idProduct}}" class="Ten">{{value.title}}</a>
+                    </div>
+                    @*<div class="ThoiGian">
+                        <div class="pull-left">
+                            <span class="fa fa-calendar Lich"></span> {{value.dateNumber}} ngày {{value.nightNumber}} đêm
+                        </div>
+                        <div class="pull-right text-center">
+                            <span class="fa PhuongTien" ng-class="{'fa-car':value.vehicle==0,'fa-plane':value.vehicle==1,'fa-ship':value.vehicle==2}"></span><br />
+                        </div>
+                    </div>*@
+                    <p class="GioiThieu" ng-bind-html="value.description | limitTo: 300"></p>
+                    <p class="DonGia">Đơn giá: {{value.price | number:0}}<sup class="" ng-class="{'hidden':value.price == null}">vnđ</sup>{{value.price == null ? 'Liên hệ' : ''}}</p>
+                    <a href="/tour/{{value.alias}}-{{value.idProduct}}" class="ChiTiet">Chi tiết</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 CanhDepMienBac" ng-controller="childCategoryProductController">
+    <p class="TieuDe">Bài viết liên quan đến @Model.title</p>
+    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 DiaDiem" dir-paginate="(index, value) in Posts | itemsPerPage:4">
+        <div class="Khung">
+            <img class="img-responsive anh" src="{{value.image}}" title="{{value.title}}" alt="{{value.title}}" />
+            <a href="/bai-viet/{{value.alias}}-{{value.idPost}}" class="TieuDe">{{value.title}}</a>
+            <br />
+            <p class="GioiThieu" ng-bind-html="value.description | limitTo: 300">
+            </p>
+            <a href="/bai-viet/{{value.alias}}-{{value.idPost}}" class="XemTiep">Xem tiếp</a>
+        </div>
+    </div>
+    <a dir-paginate="(index, value) in Posts | itemsPerPage:1" href="/danh-muc-bai-viet/@Model.alias-{{value.idCategory}}" class="XemTatCaTour">Xem thêm bài viết >></a>
+</div>

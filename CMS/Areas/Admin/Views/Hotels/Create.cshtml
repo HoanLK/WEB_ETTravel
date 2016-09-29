@@ -1,0 +1,77 @@
+﻿@model CMS.Models.Hotel
+
+@{
+    ViewBag.Title = "Thêm đơn đặt phòng khách sạn";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+}
+
+<div ng-app="myApp">
+    <div ng-controller="themOrderController">
+        <input type="hidden" value="@WebSecurity.CurrentUserName" id="user" />
+        <div class="row">
+            @*<div class="col-md-2">
+                <button type="button" class="btn btn-block btn-sm ink-reaction btn-success" ng-click="saveOrder()"><span class="fa fa-edit"></span> Lưu</button>
+            </div>
+            <div class="col-md-2">
+                <button type="button" class="btn btn-block btn-sm ink-reaction btn-info" ng-click="saveOrderAndExit()"><span class="fa fa-check-square-o"></span> Lưu & Thoát</button>
+            </div>
+            <div class="col-md-2">
+                <button type="button" class="btn btn-block btn-sm ink-reaction btn-info" ng-click="saveOrderAndNew()"><span class="fa fa-plus"></span> Lưu & Thêm mới</button>
+            </div>*@
+            <div class="col-md-2">
+                <button type="button" class="btn btn-block btn-sm ink-reaction btn-danger" ng-click="cancel()"><span class="fa fa-remove"></span> Đóng</button>
+            </div>
+        </div>
+        <hr class="ruler-lg" />
+        <div class="card">
+            <div class="card-body">
+                <form class="form" role="form">
+                    <div class="row">
+                        <div class="col-md-7">
+                            <div class="form-group  ">
+                                <input type="text" class="form-control" id="hoTen" name="hoTen" ng-model="Hotel.hoTen" readonly>
+                                <label for="title">Họ tên</label>
+                            </div>
+                        </div>
+                        <div class="col-md-7">
+                            <div class="form-group  ">
+                                <input type="text" class="form-control" id="diaChi" name="diaChi" ng-model="Hotel.diaChi" readonly>
+                                <label for="title">Địa Chỉ</label>
+                            </div>
+                        </div>
+                        <div class="col-md-7">
+                            <div class="form-group  " ng-class="{'has-error':!Hotel.SDT, 'has-success':Hotel.SDT}">
+                                <input type="text" class="form-control" id="SDT" name="SDT" ng-model="Hotel.SDT" readonly>
+                                <label for="title">Dố điện thoại *</label>
+                            </div>
+                        </div>
+                        <div class="col-md-7">
+                            <div class="form-group  ">
+                                <input type="text" class="form-control" id="email" name="email" ng-model="Hotel.email" readonly>
+                                <label for="title">Email</label>
+                            </div>
+                        </div>
+                        <div class="col-md-7">
+                            <div class="form-group  " ng-class="{'has-error':!Hotel.tour, 'has-success':Hotel.tour}">
+                                <input type="text" class="form-control" id="tour" name="tour" ng-model="Hotel.tour" readonly>
+                                <label for="title">Tuor *</label>
+                            </div>
+                        </div>
+                        <div class="col-md-7">
+                            <div class="form-group  ">
+                                <input type="date" class="form-control" id="timeStart" name="timeStart" ng-model="Hotel.timeStart" readonly>
+                                <label for="title">Ngày khởi hành</label>
+                            </div>
+                        </div>
+                        <div class="col-md-7">
+                            <div class="form-group  ">
+                                <input type="number" class="form-control" id="guestNumber" name="guestNumber" ng-model="Hotel.guestNumber" readonly>
+                                <label for="title">Số người</label>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

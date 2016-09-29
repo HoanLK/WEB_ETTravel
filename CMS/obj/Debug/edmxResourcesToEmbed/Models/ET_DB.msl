@@ -258,5 +258,21 @@
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
+    <EntitySetMapping Name="Hotel">
+      <EntityTypeMapping TypeName="ETModel.Hotel">
+        <MappingFragment StoreEntitySet="Hotel">
+          <ScalarProperty Name="checked" ColumnName="checked" />
+          <ScalarProperty Name="guestNumber" ColumnName="guestNumber" />
+          <ScalarProperty Name="timeEnd" ColumnName="timeEnd" />
+          <ScalarProperty Name="timeStart" ColumnName="timeStart" />
+          <ScalarProperty Name="hotel1" ColumnName="hotel" />
+          <ScalarProperty Name="email" ColumnName="email" />
+          <ScalarProperty Name="SDT" ColumnName="SDT" />
+          <ScalarProperty Name="diaChi" ColumnName="diaChi" />
+          <ScalarProperty Name="hoTen" ColumnName="hoTen" />
+          <ScalarProperty Name="idHotel" ColumnName="idHotel" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
   </EntityContainerMapping>
 </Mapping>

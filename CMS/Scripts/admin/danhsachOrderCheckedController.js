@@ -44,6 +44,11 @@
         },
         {
             displayName: "Email",
+            name: 'email',
+            enableSorting: false
+        },
+        {
+            displayName: "Tour",
             name: 'tour',
             enableSorting: false
         },
@@ -93,7 +98,7 @@
             //Xóa
             $http.delete('/API/OrderAPI/' + id)
             .success(function () {
-                $http.get('/API/OrderAPI/').success(function (data) { $scope.gridOptions.data = data; });
+                $http.get('/Orders/GetAllOrdersChecked/').success(function (data) { $scope.gridOptions.data = data; });
                 toastr.success('Thành công', 'Xóa');
             });
         }

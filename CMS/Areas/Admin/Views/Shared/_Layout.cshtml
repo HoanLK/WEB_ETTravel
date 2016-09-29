@@ -170,6 +170,17 @@
                             <li><a href="@Url.Action("Checked", "Orders",new { Area = "Admin" })"><span class="title">Tour đã xử lý</span></a></li>
                         </ul>
                     </li>
+                    <li class="gui-folder">
+                        <a>
+                            <div class="gui-icon"><i class="fa fa-bed"></i></div>
+                            <span class="title">Quản lý đặt phòng khách sạn</span>
+                        </a>
+                        <!--start submenu -->
+                        <ul>
+                            <li><a href="@Url.Action("Index", "Hotels", new { Area = "Admin" })"><span class="title">Đặt phòng chưa xử lý</span></a></li>
+                            <li><a href="@Url.Action("Checked", "Hotels",new { Area = "Admin" })"><span class="title">Đặt phòng đã xử lý</span></a></li>
+                        </ul>
+                    </li>
                     <li>
                         <a href="@Url.Action("Index", "Banners", new { Area = "Admin" })">
                             <div class="gui-icon"><i class="fa fa-image"></i></div>
@@ -335,5 +346,9 @@
     <!--Employee-->
     <script src="~/Scripts/admin/themEmployeeController.js"></script>
     <script src="~/Scripts/admin/danhsachEmployeeController.js"></script>
+    <!--Hotel-->
+    <script src="~/Scripts/admin/danhsachHotelController.js"></script>
+    <script src="~/Scripts/admin/danhsachHotelCheckedController.js"></script>
+    <script src="~/Scripts/admin/themHotelController.js"></script>
 </body>
 </html>

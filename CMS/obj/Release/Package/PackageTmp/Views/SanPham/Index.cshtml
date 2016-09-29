@@ -13,7 +13,7 @@
         <p class="HanhTrinh"><span>Thời gian:</span> {{product.dateNumber}} ngày {{product.nightNumber}} đêm</p>
         <p class="HanhTrinh"><span>Phương tiện:</span> <span class="fa " ng-class="{'fa-car':product.vehicle==0,'fa-plane':product.vehicle==1,'fa-ship':product.vehicle==2}"></span></p>
         <p class="HanhTrinh"><span>Khởi hành:</span> {{product.timeStart | date:'dd-MM-yyyy'}}</p>
-        <p class="DonGia"><span>Đơn giá:</span> {{product.price | number:0}}<sup class="" ng-class="{'hidden':value.price == null}">vnđ</sup>{{value.price == null ? 'Liên hệ' : ''}}</p>
+        <p class="DonGia"><span>Đơn giá:</span> {{product.price | number:0}}<sup class="" ng-class="{'hidden':product.price == null}">vnđ</sup>{{product.price == null ? 'Liên hệ' : ''}}</p>
         <div class="GioiThieu" ng-bind-html="product.description"></div>
         <button type="button" class="btnDangKy" data-toggle="modal" data-target="#myModal">Đăng ký</button>
     </div>

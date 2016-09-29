@@ -6,7 +6,7 @@
     <input type="hidden" value="@Model.idPost" id="idPost" />
     <input type="hidden" value="@Model.idCategory" id="idCategory" />
     <p class="TieuDe">{{post.title}}</p>
-    <p class="text-right"><span>Tác giả: {{post.idUserCreated}}</span>| <span>thời gian: {{post.timeCreated | date:'dd-MM-yyyy h:mm'}}</span></p>
+    <p class="text-right"><span>Tác giả: {{post.idUserCreated}}</span>| <span>thời gian: {{post.timeCreated | date:'dd-MM-yyyy HH:mm'}}</span></p>
     <div class="NoiDung" ng-bind-html="post.content"></div>
 </div>
 <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 GoiY" ng-controller="showPostController">

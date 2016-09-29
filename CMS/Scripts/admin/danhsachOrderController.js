@@ -81,7 +81,7 @@
 
     //Edit
     $scope.EditOrder = function (id) {
-        $window.location.href = '/Admin/Orders/Create?idBanner=' + id;
+        $window.location.href = '/Admin/Orders/Create?idOrder=' + id;
     }
 
     //Delete
@@ -92,7 +92,7 @@
             //Xóa
             $http.delete('/API/OrderAPI/' + id)
             .success(function () {
-                $http.get('/API/OrderAPI/').success(function (data) { $scope.gridOptions.data = data; });
+                $http.get('/Orders/GetAllOrdersNoChecked/').success(function (data) { $scope.gridOptions.data = data; });
                 toastr.success('Thành công', 'Xóa');
             });
         }
@@ -115,7 +115,6 @@
             }
             $http.put('/API/OrderAPI/' + id, $scope.Order)
             .success(function () {
-                $http.get('/API/OrderAPI/').success(function (data) { $scope.gridOptions.data = data; });
                 toastr.success('Thành công', 'Đã xử lý');
                 $http.get('/Orders/GetAllOrdersNoChecked/').success(function (data) {
                     $scope.gridOptions.data = data;

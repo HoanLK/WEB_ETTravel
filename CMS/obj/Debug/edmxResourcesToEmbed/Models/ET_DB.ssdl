@@ -242,6 +242,21 @@
     <Property Name="chucVu" Type="nvarchar" MaxLength="50" />
     <Property Name="anh" Type="ntext" />
   </EntityType>
+  <EntityType Name="Hotel">
+    <Key>
+      <PropertyRef Name="idHotel" />
+    </Key>
+    <Property Name="idHotel" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="hoTen" Type="nvarchar" MaxLength="50" />
+    <Property Name="diaChi" Type="nvarchar" MaxLength="100" />
+    <Property Name="SDT" Type="nchar" MaxLength="15" />
+    <Property Name="email" Type="nchar" MaxLength="50" />
+    <Property Name="hotel" Type="nvarchar" MaxLength="100" />
+    <Property Name="timeStart" Type="date" />
+    <Property Name="timeEnd" Type="date" />
+    <Property Name="guestNumber" Type="int" />
+    <Property Name="checked" Type="int" />
+  </EntityType>
   <Association Name="FK_Category_Category">
     <End Role="Category" Type="Self.Category" Multiplicity="0..1" />
     <End Role="Category1" Type="Self.Category" Multiplicity="*" />
@@ -308,6 +323,7 @@
     <EntitySet Name="webpages_Roles" EntityType="Self.webpages_Roles" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="webpages_UsersInRoles" EntityType="Self.webpages_UsersInRoles" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="Employee" EntityType="Self.Employee" Schema="ettc419f_pgdien" store:Type="Tables" />
+    <EntitySet Name="Hotel" EntityType="Self.Hotel" Schema="ettc419f_pgdien" store:Type="Tables" />
     <AssociationSet Name="FK_Category_Category" Association="Self.FK_Category_Category">
       <End Role="Category" EntitySet="Category" />
       <End Role="Category1" EntitySet="Category" />

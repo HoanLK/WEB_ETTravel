@@ -9,7 +9,7 @@
     <input type="hidden" value="34" id="idCategory" />
     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" ng-class="{'HangLe':index%2 == 0, 'HangChan':index%2==1}" ng-repeat="(index, value) in categories">
         <div ng-class="{'left':index%2 == 0, 'right':index%2==1}">
-            <img class="img-responsive" src="{{value.image}}" />
+            <img class="img-responsive" src="{{value.image}}" title="Du lịch {{value.title}}" alt="Du lịch {{value.title}}" />
         </div>
 
         <div ng-class="{'right':index%2 == 0, 'left':index%2==1}">

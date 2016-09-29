@@ -442,5 +442,29 @@
     "inputFiles": [
       "Scripts/front/showPostController.js"
     ]
+  },
+  {
+    "outputFileName": "Scripts/front/themKhachSanController.min.js",
+    "inputFiles": [
+      "Scripts/front/themKhachSanController.js"
+    ]
+  },
+  {
+    "outputFileName": "Scripts/admin/themHotelController.min.js",
+    "inputFiles": [
+      "Scripts/admin/themHotelController.js"
+    ]
+  },
+  {
+    "outputFileName": "Scripts/admin/danhsachHotelController.min.js",
+    "inputFiles": [
+      "Scripts/admin/danhsachHotelController.js"
+    ]
+  },
+  {
+    "outputFileName": "Scripts/admin/danhsachHotelCheckedController.min.js",
+    "inputFiles": [
+      "Scripts/admin/danhsachHotelCheckedController.js"
+    ]
   }
 ]

@@ -229,9 +229,9 @@ body {
 
                         .Header > .BotHeader > .navbar-inverse > .container-fluid > .navbar-collapse > .navbar-nav > li {
                             color: #0171bb;
-                            font-size: 1.4em;
+                            font-size: 1.3em;
                             font-weight: bold;
-                            padding-top: 0.5em;
+                            padding-top: 0.7em;
                         }
 
                             .Header > .BotHeader > .navbar-inverse > .container-fluid > .navbar-collapse > .navbar-nav > li > .Con {
@@ -1114,7 +1114,7 @@ body {
         }
 
             .Header > .BotHeader > .navbar-inverse > .container-fluid > .navbar-collapse > .navbar-nav > li {
-                font-size: 0.9em;
+                font-size: 0.8em;
                 padding-top: 1em;
             }
 
@@ -1282,7 +1282,8 @@ body {
             }
 
     .Header > .BotHeader > .navbar-inverse > .container-fluid > .navbar-collapse > .navbar-nav > li {
-        font-size: 1em;
+        padding-top:1em;
+        font-size: 0.9em;
     }
 
     /*Khung tìm kiếm*/
@@ -1347,215 +1348,16 @@ body {
 }
 
 /*Màn hình lớn*/
-@media (min-width:1400px) {
-    img {
-        width: 100%;
+@media (min-width:1400px){
+    .Header>.MidHeader>.HotLine{
+        padding-top:4em;
     }
 
-    .Header > .TopHeader {
-        padding: 1em;
+    .Header>.MidHeader>.Phone{
+        padding-top:4em;
     }
 
-        .Header > .TopHeader > .left {
-            padding-left: 5em;
-        }
-
-            .Header > .TopHeader > .left > a {
-                font-size: 2em;
-            }
-
-        .Header > .TopHeader > .right > .MenuTop > li {
-            font-size: 2em;
-            padding-right: 2em;
-        }
-
-    .Header > .MidHeader > .HotLine {
-        padding-top: 3em;
-    }
-
-        .Header > .MidHeader > .HotLine > .left > span {
-            font-size: 8em;
-            padding: 0.2em;
-        }
-
-        .Header > .MidHeader > .HotLine > .right > .Phone {
-            font-size: 4.5em;
-            padding-top: 0.1em;
-        }
-
-        .Header > .MidHeader > .HotLine > .right > .GhiChu {
-            font-size: 2.2em;
-        }
-
-    .Header > .MidHeader > .Phone {
-        padding-top: 3em;
-    }
-
-        .Header > .MidHeader > .Phone > .left > span {
-            font-size: 7em;
-            padding: 0.2em 0.3em;
-        }
-
-        .Header > .MidHeader > .Phone > .right > .Phone {
-            font-size: 4em;
-        }
-
-    .Header > .MidHeader > .Facebook {
-        padding-top: 3em;
-    }
-
-        .Header > .MidHeader > .Facebook > .left > span {
-            font-size: 7em;
-            padding: 0.2em 0.4em;
-        }
-
-        .Header > .MidHeader > .Facebook > .right > .FacebookText {
-            font-size: 4em;
-        }
-
-        .Header > .MidHeader > .Facebook > .right > .GhiChu {
-            font-size: 3em;
-        }
-
-    .Header > .BotHeader > .navbar-inverse {
-        padding-left: 12.8em;
-    }
-
-        .Header > .BotHeader > .navbar-inverse > .container-fluid > .navbar-collapse > .navbar-nav > li {
-            font-size: 2.6em;
-            padding: 0.5em 0.2em;
-        }
-
-    /*Khung tìm kiếm*/
-    .Body .TimKiem {
-        padding: 1em 3em 2em 3em;
-        margin: -4em 25% 1em 25%;
-    }
-
-        .Body .TimKiem > p {
-            font-size: 3.5em;
-        }
-
-        .Body .TimKiem > input {
-            font-size: 3.5em;
-            height: auto;
-        }
-
-        .Body .TimKiem > Button {
-            font-size: 3.5em;
-        }
-
-    /*Nội dung chính*/
-    .Body > .Main > .DichVuKhac > .DichVu > .Link {
-        font-size: 3.5em;
-    }
-
-    /*Dịch vụ du lịch strong nước*/
-    .Body > .Main > .DLTrongNuoc > .TieuDe {
-        font-size: 4.5em;
-    }
-
-    .Body > .Main > .DLTrongNuoc > .nav-tabs > li {
-        font-size: 3.2em;
-    }
-
-    .Body > .Main > .DLTrongNuoc > .DuLich > .DiaDiem > .Khung {
-        height: 53em;
-    }
-
-        .Body > .Main > .DLTrongNuoc > .DuLich > .DiaDiem > .Khung .Ten {
-            font-size: 2.3em;
-        }
-
-        .Body > .Main > .DLTrongNuoc > .DuLich > .DiaDiem > .Khung .ThoiGian {
-            font-size: 1.5em;
-        }
-
-        .Body > .Main > .DLTrongNuoc > .DuLich > .DiaDiem > .Khung .GioiThieu {
-            font-size: 1.3em;
-        }
-
-        .Body > .Main > .DLTrongNuoc > .DuLich > .DiaDiem > .Khung .DonGia {
-            font-size: 2.2em;
-        }
-
-        .Body > .Main > .DLTrongNuoc > .DuLich > .DiaDiem > .Khung .ChiTiet {
-            font-size: 2.2em;
-        }
-
-    /*Nút xem toàn bộ các tour*/
-    .Body > .Main .XemTatCaTour {
-        padding: 0.4em 2em;
-        font-size: 2.8em;
-    }
-
-    /*Những điểm du lịch đẹp*/
-    .Body > .Main > .DiemDuLichDep > .TieuDe {
-        font-size: 4em;
-    }
-
-    .Body > .Main > .DiemDuLichDep > .GioiThieu {
-        font-size: 3em;
-    }
-
-    .Body > .Main > .DiemDuLichDep > .item > .TieuDe {
-        width: 95.5%;
-        font-size: 2.5em;
-    }
-
-    /*Khách hàng tiềm năng*/
-    .Body > .Main > .KhachHang > .TieuDe {
-        font-size: 4em;
-    }
-
-    /*Lý do lựa chọn*/
-    .Body > .Main > .LyDoLuaChon > .left > .TieuDe {
-        font-size: 4em;
-    }
-
-    .Body > .Main > .LyDoLuaChon > .left > .GioiThieu {
-        font-size: 3em;
-    }
-
-    .Footer > .TopFooter > .left > .TenCTy {
-        font-size: 4.5em;
-    }
-
-    .Footer > .TopFooter > .left > .KhauHieu {
-        font-size: 3.5em;
-    }
-
-    .Footer > .TopFooter > .left .LienHe {
-        font-size: 3em;
-    }
-
-    .Footer > .TopFooter > .right > p {
-        font-size: 2.7em;
-    }
-
-    /*footer giữa*/
-    .Footer > .MidFooter > .GiupDo > .HoTro > .TieuDe {
-        font-size: 3em;
-    }
-
-    .Footer > .MidFooter > .GiupDo > .HoTro > .LienHe {
-        font-size: 2.5em;
-    }
-
-    .Footer > .MidFooter > .GiupDo > .HoTro > .GhiChu {
-        font-size: 2em;
-    }
-
-    .Footer > .MidFooter > .GiupDo > .HoTro > .Text {
-        font-size: 2.5em;
-    }
-
-    .Footer > .MidFooter > .GiupDo > .HoTro > .btnDangKy {
-        font-size: 2.5em;
-    }
-
-    .Footer > .BotFooter {
-        font-size: 3em;
-        padding: 0.4em 5em;
+    .Header>.BotHeader>.navbar-inverse{
+        padding-left:10em;
     }
 }
