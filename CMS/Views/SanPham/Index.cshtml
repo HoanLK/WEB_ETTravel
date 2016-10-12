@@ -3,13 +3,13 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 TomTat" ng-controller="showProductController">
-    <input type="hidden" value="@Model.idProduct" id="idCategory" />
+    <input type="hidden" value="@Model.idProduct" id="idProduct" />
     <div class="left">
         <img class="img-responsive" src="{{product.image}}" />
     </div>
 
     <div class="right">
-        <p class="TieuDe">{{product.title}}</p>
+        <h1 class="TieuDe">{{product.title}}</h1>
         <p class="HanhTrinh"><span>Thời gian:</span> {{product.dateNumber}} ngày {{product.nightNumber}} đêm</p>
         <p class="HanhTrinh"><span>Phương tiện:</span> <span class="fa " ng-class="{'fa-car':product.vehicle==0,'fa-plane':product.vehicle==1,'fa-ship':product.vehicle==2}"></span></p>
         <p class="HanhTrinh"><span>Khởi hành:</span> {{product.timeStart | date:'dd-MM-yyyy'}}</p>
@@ -21,7 +21,7 @@
 
 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 ChiTiet" ng-controller="showProductController">
     <div class="NoiDung" ng-bind-html="product.content"></div>
-    <p class="CauKet">CẢM NHÂN CUỘC SỐNG QUA TỪNG CHUYẾN ĐI</p>
+    <p class="CauKet">CẢM NHẬN CUỘC SỐNG QUA TỪNG CHUYẾN ĐI</p>
     <button type="button" class="btnDangKy" data-toggle="modal" data-target="#myModal">Đăng ký</button>
 </div>
 
@@ -32,7 +32,7 @@
     <p class="TieuDe">TOUR LIÊN QUAN</p>
     <p class="TieuDe">---------------- <span class="fa fa-automobile"></span> ----------------</p>
     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 DuLich">
-        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 DiaDiem" ng-repeat="(index, value) in products">
+        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 DiaDiem" dir-paginate="(index, value) in products | itemsPerPage:3">
             <div class="Khung">
                 <img class="img-responsive anh" title="{{value.title}}" alt="{{value.title}}" src="{{value.image}}" />
                 <div class="a">
@@ -47,7 +47,7 @@
                             <span class="fa PhuongTien" ng-class="{'fa-car':value.vehicle==0,'fa-plane':value.vehicle==1,'fa-ship':value.vehicle==2}"></span><br />
                         </div>
                     </div>
-                    <p class="GioiThieu" ng-bind-html="value.description"></p>
+                    <p class="GioiThieu" ng-bind-html="value.description | limitTo: 300"></p>
                     <p class="DonGia">Đơn giá: {{value.price | number:0}}<sup>vnđ</sup></p>
                     <a href="/tour/{{value.alias}}-{{value.idProduct}}" class="ChiTiet">Chi tiết</a>
                 </div>

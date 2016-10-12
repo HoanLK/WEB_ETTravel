@@ -132,12 +132,6 @@
     ]
   },
   {
-    "outputFileName": "Scripts/front/showProductController.js",
-    "inputFiles": [
-      "Scripts/front/showProductController.js"
-    ]
-  },
-  {
     "outputFileName": "Scripts/front/menuMainController.js",
     "inputFiles": [
       "Scripts/front/menuMainController.js"
@@ -465,6 +459,18 @@
     "outputFileName": "Scripts/admin/danhsachHotelCheckedController.min.js",
     "inputFiles": [
       "Scripts/admin/danhsachHotelCheckedController.js"
+    ]
+  },
+  {
+    "outputFileName": "Scripts/front/showProduct2Controller.min.js",
+    "inputFiles": [
+      "Scripts/front/showProduct2Controller.js"
+    ]
+  },
+  {
+    "outputFileName": "Scripts/front/showProductController.min.js",
+    "inputFiles": [
+      "Scripts/front/showProductController.js"
     ]
   }
 ]

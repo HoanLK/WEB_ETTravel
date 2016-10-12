@@ -5,14 +5,14 @@
 <div class="col-lg-9 col-md-9 col-sm-12 col-xs-12 BaiViet" ng-controller="showPostController">
     <input type="hidden" value="@Model.idPost" id="idPost" />
     <input type="hidden" value="@Model.idCategory" id="idCategory" />
-    <p class="TieuDe">{{post.title}}</p>
+    <h1 class="TieuDe">{{post.title}}</h1>
     <p class="text-right"><span>Tác giả: {{post.idUserCreated}}</span>| <span>thời gian: {{post.timeCreated | date:'dd-MM-yyyy HH:mm'}}</span></p>
     <div class="NoiDung" ng-bind-html="post.content"></div>
 </div>
 <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 GoiY" ng-controller="showPostController">
     <p class="TieuDe">Cùng chuyên mục</p>
-    <ul ng-repeat="(index, value) in relatedPosts">
-        <li><span class="fa fa-hand-o-right"></span> <a href="/bai-viet/{{value.alias}}-{{value.idPost}}">{{value.title}}</a></li>
+    <ul>
+        <li ng-repeat="(index, value) in relatedPosts"><span class="fa fa-hand-o-right"></span> <a href="/bai-viet/{{value.alias}}-{{value.idPost}}">{{value.title}}</a></li>
     </ul>
     <a dir-paginate="(index, value) in category | itemsPerPage:1" href="/danh-muc-bai-viet/{{value.alias}}-{{value.idCategory}}" class="XemTatCaTour">Xem thêm bài viết >></a>
 </div>

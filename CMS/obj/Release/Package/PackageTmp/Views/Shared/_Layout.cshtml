@@ -8,21 +8,21 @@
 
     <!--SEO-->
     <title>@ViewBag.Title</title>
-    <meta name="description" content="@((ViewBag.Description!=null)?ViewBag.Description:"")" />
-    <meta name="keywords" content='@((ViewBag.Keywords!=null)?ViewBag.Keywords:"")' />
+    <meta name="description" content="@((ViewBag.Description!=null)?ViewBag.Description:"Vé máy bay, vé máy bay giá rẻ, vé máy bay 2 chiều, du lịch, du lịch giá rẻ")" />
+    <meta name="keywords" content='@((ViewBag.Keywords!=null)?ViewBag.Keywords:"Vé máy bay, vé máy bay giá rẻ, vé máy bay 2 chiều, du lịch, du lịch giá rẻ")' />
     <meta name="revisit-after" content="1 days" />
     <meta name="robots" content='@((ViewBag.Robots!=null)?ViewBag.Robots:"index, noop, follow")' />
     <meta http-equiv="content-language" content="vi" />
     <link href="~/Content/Images/images/logo.png" rel="shortcut icon" type="image/x-icon" />
     <link rel="alternate" href="http://www.daunhotmobilchinhhang.com/" hreflang="vn-vi" />
     <meta itemprop="name" content='@((ViewBag.Title!=null)?ViewBag.Title : "ET TRAVEL")'>
-    <meta itemprop="description" content='@((ViewBag.Description!=null)?ViewBag.Description:"")'>
+    <meta itemprop="description" content='@((ViewBag.Description!=null)?ViewBag.Description:"Vé máy bay, vé máy bay giá rẻ, vé máy bay 2 chiều, du lịch, du lịch giá rẻ")'>
     <meta itemprop="image" content='@((ViewBag.Image!=null)?ViewBag.Image:"")'>
     <meta property="og:title" content='@((ViewBag.Title!=null)?ViewBag.Title : "ET TRAVEL")' />
     <meta property="og:locale" content="vi_VN" />
     <meta property="og:type" content="website" />
     <meta property="og:image" content='@((ViewBag.Image!=null)?ViewBag.Image:"")' />
-    <meta property="og:description" content='@((ViewBag.Description!=null)?ViewBag.Description:"")' />
+    <meta property="og:description" content='@((ViewBag.Description!=null)?ViewBag.Description:"Vé máy bay, vé máy bay giá rẻ, vé máy bay 2 chiều, du lịch, du lịch giá rẻ")' />
     <meta property="og:site_name" content="ET Travel" />
     <meta name="geo.placename" content="1/97, Nguyễn Công Hòa, Hải Phòng" />
     <meta name="geo.region" content="VN-HP" />
@@ -121,23 +121,23 @@
                         <ul class="nav navbar-nav">
                             <li>
                                 <span class="fa fa-flag"></span>
-                                <a href="/loai-tour/trong-nuoc">Du lịch trong nước</a>
+                                <a href="/loai-tour/trong-nuoc"><h1 style="display:inline; font-size:inherit; font-weight:inherit">Du lịch</h1> trong nước</a>
                                 <ul class="Con">
-                                    <li><a ng-repeat="(index, value) in categoriesTrongNuoc" href="/loai-tour/{{value.alias}}-{{value.idCategory}}" title="{{value.title}}" class="TieuDe">DU LỊCH {{value.title}}</a></li>
+                                    <li><a ng-repeat="(index, value) in categoriesTrongNuoc" href="/loai-tour/{{value.alias}}-{{value.idCategory}}" title="{{value.title}}" class="TieuDe"><h1 style="display:inline; font-size:inherit; font-weight:inherit">DU LỊCH</h1> {{value.title}}</a></li>
                                 </ul>
                             </li>
                             <li>
                                 <span class="fa fa-globe"></span>
-                                <a href="/loai-tour/quoc-te">Du lịch nước ngoài</a>
+                                <a href="/loai-tour/quoc-te"><h1 style="display:inline; font-size:inherit; font-weight:inherit">Du lịch</h1> nước ngoài</a>
                                 <ul class="Con">
-                                    <li><a ng-repeat="(index, value) in categoriesQuocTe" href="/loai-tour/{{value.alias}}-{{value.idCategory}}" title="{{value.title}}" class="TieuDe">DU LỊCH {{value.title}}</a></li>
+                                    <li><a ng-repeat="(index, value) in categoriesQuocTe" href="/loai-tour/{{value.alias}}-{{value.idCategory}}" title="{{value.title}}" class="TieuDe"><h1 style="display:inline; font-size:inherit; font-weight:inherit">DU LỊCH</h1> {{value.title}}</a></li>
                                 </ul>
                             </li>
-                            <li><span class="fa fa-plane"></span><a href="http://phongveskyline.com/" target="_blank">Đặt vé máy bay</a></li>
-                            <li><span class="fa fa-cc-visa"></span><a href="/danh-muc-bai-viet/dich-vu-visa-146">Dịch vụ Visa</a></li>
-                            <li><span class="fa fa-car"></span><a href="/danh-muc-bai-viet/cho-thue-xe-147">Cho thuê xe du lịch</a></li>
-                            <li><span class="fa fa-bed"></span><a href="/khach-san/khach-san-45">Khách sạn</a></li>
-                            <li><span class="fa fa-building"></span><a href="/danh-muc-bai-viet/team-building-150">Team building</a></li>
+                            <li><span class="fa fa-cc-visa"></span><a href="/danh-muc-bai-viet/dich-vu-visa-146"><h1 style="display:inline; font-size:inherit; font-weight:inherit">Dịch vụ visa</h1></a></li>
+                            <li><span class="fa fa-plane"></span><a href="http://phongveskyline.com/" target="_blank"><h1 style="display:inline; font-size:inherit; font-weight:inherit">Đặt vé máy bay</h1></a></li>
+                            <li><span class="fa fa-car"></span><a href="/danh-muc-bai-viet/cho-thue-xe-147"><h1 style="display:inline; font-size:inherit; font-weight:inherit">Cho thuê xe du lịch</h1></a></li>
+                            <li><span class="fa fa-bed"></span><a href="https://www.agoda.com/vi-vn/?cid=1761152&pcs=1&hl=vi&ckuid=7cee01af-7c3d-49db-b07d-2e794cf24f7a"><h1 style="display:inline; font-size:inherit; font-weight:inherit">Khách sạn</h1></a></li>
+                            <li><span class="fa fa-coffee"></span><a href="/danh-muc-bai-viet/goc-am-thuc-150"><h1 style="display:inline; font-size:inherit; font-weight:inherit">Góc ẩm thực</h1></a></li>
                         </ul>
                     </div>
                 </div>
@@ -185,14 +185,14 @@
 
             <div class="col-lg-10 col-md-10 col-sm-12 col-xs-12 GiupDo">
                 <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 HoTro">
-                    <p class="TieuDe">ĐẶT TOUR QUA ĐIỆN THOẠI</p>
+                    <h5 class="TieuDe">ĐẶT TOUR QUA ĐIỆN THOẠI</h5>
                     <a class="LienHe" href="tel:0313611158"><span class="fa fa-phone"></span> 0313.611.158</a>
                     <p class="GhiChu">Giờ nhận tour: 08:00 - 22:00 giờ</p>
                 </div>
 
                 <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 HoTro">
-                    <p class="TieuDe">DỊCH VỤ VISA, VÉ MÁY BAY</p>
-                    <p class="LienHe"><span class="fa fa-cc-visa"></span> VISA, VÉ MÁY BAY GIÁ RẺ</p>
+                    <h5 class="TieuDe">DỊCH VỤ VISA, VÉ MÁY BAY</h5>
+                    <h6 class="LienHe"><span class="fa fa-cc-visa"></span> VISA, VÉ MÁY BAY GIÁ RẺ</h6>
                     <p class="GhiChu">Hỗ trợ du khách hết mình</p>
                 </div>
 
@@ -254,6 +254,7 @@
     <script src="~/Scripts/front/showProductController.min.js"></script>
     <!--Post-->
     <script src="~/Scripts/front/showPostController.min.js"></script>
+    
     <!--Menu-->
     @*<script src="~/Scripts/front/menuMainController.min.js"></script>*@
     <!--Seach-->

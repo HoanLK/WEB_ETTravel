@@ -2544,6 +2544,10 @@
     <Content Include="Scripts\front\showPostController.min.js">
       <DependentUpon>showPostController.js</DependentUpon>
     </Content>
+    <Content Include="Scripts\front\showProduct2Controller.js" />
+    <Content Include="Scripts\front\showProduct2Controller.min.js">
+      <DependentUpon>showProduct2Controller.js</DependentUpon>
+    </Content>
     <Content Include="Scripts\front\showProductController.min.js">
       <DependentUpon>showProductController.js</DependentUpon>
     </Content>
@@ -2938,6 +2942,7 @@
     <Content Include="Content\ui-grid.woff" />
     <Content Include="Content\ui-grid.ttf" />
     <Content Include="Content\ui-grid.eot" />
+    <Content Include="Content\front\fonts\UVNVungTau.TTF" />
     <None Include="Project_Readme.html" />
     <Content Include="Views\Account\Register.cshtml" />
     <Content Include="Views\SanPham\Index.cshtml" />

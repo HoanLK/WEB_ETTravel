@@ -6,7 +6,7 @@
 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 AllDLTrongNuoc" ng-controller="childCategoryProductController">
     <input type="hidden" value="35" id="idCategory" />
     <p class="TieuDe">DU LỊCH NƯỚC NGOÀI</p>
-    <p class="TieuDe">---------------- <span class="fa fa-flag"></span> ----------------</p>
+    <p class="TieuDe">---------------- <span class="fa fa-globe"></span> ----------------</p>
     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" ng-class="{'HangLe':index%2 == 0, 'HangChan':index%2==1}" ng-repeat="(index, value) in categories">
         <div ng-class="{'left':index%2 == 0, 'right':index%2==1}">
             <img class="img-responsive" src="{{value.image}}" title="{{value.title}}" alt="{{value.title}}" />

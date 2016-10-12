@@ -1,4 +1,4 @@
-﻿frontApp.controller("showProductController", ['$scope', '$http', '$window', '$sce', function ($scope, $http, $window, $sce) {
+﻿frontApp.controller("showProduct2Controller", ['$scope', '$http', '$window', '$sce', function ($scope, $http, $window, $sce) {
     $scope.product = {};
     $scope.relatedProducts = [];
     $scope.idCategoryProduct = "";

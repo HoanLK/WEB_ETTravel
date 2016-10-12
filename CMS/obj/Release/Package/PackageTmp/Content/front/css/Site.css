@@ -1,4 +1,8 @@
 ﻿@import url(http://fonts.googleapis.com/css?family=Roboto:400,700,300);
+@font-face {
+    font-family: 'UVNVungTau';
+    src: url('../fonts/UVNVungTau.TTF') format('truetype');
+}
 
 body {
     background-color: #f2f2f2;
@@ -337,7 +341,6 @@ body {
     /*Nội dung chính*/
     .Body > .Main {
         padding: 0;
-        text-align: center;
     }
         /*Các dịch vụ đặt vé, thuê xe*/
         .Body > .Main > .DichVuKhac {
@@ -347,6 +350,7 @@ body {
             .Body > .Main > .DichVuKhac > .DichVu {
                 -webkit-transition-duration: 0.5s; /*Webkit: Animation duration*/
                 -moz-transition-duration: 0.5s; /*Mozilla duration version*/
+                text-align:center;
             }
 
                 .Body > .Main > .DichVuKhac > .DichVu:hover {
@@ -355,7 +359,7 @@ body {
                 }
 
                 .Body > .Main > .DichVuKhac > .DichVu > img {
-                    width:100%;
+                    width: 100%;
                 }
 
                 .Body > .Main > .DichVuKhac > .DichVu > .Link {
@@ -620,7 +624,7 @@ body {
         /*Dịch vụ đặt vé máy bay và visa*/
         .Body > .Main > .ThemDichVu {
             margin-top: 2em;
-            padding:0;
+            padding: 0;
         }
 
             .Body > .Main > .ThemDichVu > .left {
@@ -634,7 +638,7 @@ body {
                 }
 
                 .Body > .Main > .ThemDichVu > .left > .anh {
-                    width:100%;
+                    width: 100%;
                 }
 
             .Body > .Main > .ThemDichVu > .right {
@@ -654,7 +658,7 @@ body {
         .Body > .Main > .AllKhachHang {
             background-color: #fff;
             padding: 0;
-            margin-top:2em;
+            margin-top: 2em;
         }
 
             .Body > .Main > .AllKhachHang > .KhachHang {
@@ -663,8 +667,10 @@ body {
             }
 
                 .Body > .Main > .AllKhachHang > .KhachHang > .TieuDe {
+                    text-align:center;
                     color: #f44336;
                     font-size: 1.8em;
+                    font-family:UVNVungTau;
                 }
 
                 .Body > .Main > .AllKhachHang > .KhachHang > .item {
@@ -968,11 +974,33 @@ body {
 
         .Body > .Main > .DLTrongNuoc > .nav-tabs > li {
             margin-right: 5px;
-            font-size: 1em;
+            font-size: 0.8em;
         }
 
             .Body > .Main > .DLTrongNuoc > .nav-tabs > li > a {
                 padding: 0.2em;
+            }
+
+        .Body > .Main > .DLTrongNuoc > .DuLich > .DiaDiem > .Khung {
+            height: auto;
+            padding-bottom: 3em;
+        }
+
+            .Body > .Main > .DLTrongNuoc > .DuLich > .DiaDiem > .Khung .DonGia {
+                padding-left: 0;
+            }
+
+            .Body > .Main > .DLTrongNuoc > .DuLich > .DiaDiem > .Khung .ChiTiet {
+                right: 7%;
+            }
+
+            .Body > .Main > .DLTrongNuoc > .DuLich > .DiaDiem > .Khung > .a > .ThoiGian > .pull-left {
+                font-size: 1em;
+            }
+
+            .Body > .Main > .DLTrongNuoc > .DuLich > .DiaDiem > .Khung > .a > .ThoiGian > .pull-right > .PhuongTien {
+                padding: 0.3em;
+                font-size: 2em;
             }
 
     /*Nút xem toàn bộ các tour*/
@@ -1049,6 +1077,14 @@ body {
             font-size: 1em;
             padding: 0.4em 1em;
         }
+
+        .Footer > .MidFooter > .GiupDo > .HoTro {
+            padding: 0;
+        }
+
+            .Footer > .MidFooter > .GiupDo > .HoTro > .TieuDe {
+                font-size: 1.5em;
+            }
 }
 
 /*table*/
@@ -1159,6 +1195,7 @@ body {
         }
 
     .Body > .Main > .DLTrongNuoc > .DuLich > .DiaDiem > .Khung {
+        height:37em;
     }
 
         .Body > .Main > .DLTrongNuoc > .DuLich > .DiaDiem > .Khung .anh {
@@ -1282,7 +1319,7 @@ body {
             }
 
     .Header > .BotHeader > .navbar-inverse > .container-fluid > .navbar-collapse > .navbar-nav > li {
-        padding-top:1em;
+        padding-top: 1em;
         font-size: 0.9em;
     }
 
@@ -1348,16 +1385,16 @@ body {
 }
 
 /*Màn hình lớn*/
-@media (min-width:1400px){
-    .Header>.MidHeader>.HotLine{
-        padding-top:4em;
+@media (min-width:1400px) {
+    .Header > .MidHeader > .HotLine {
+        padding-top: 4em;
     }
 
-    .Header>.MidHeader>.Phone{
-        padding-top:4em;
+    .Header > .MidHeader > .Phone {
+        padding-top: 4em;
     }
 
-    .Header>.BotHeader>.navbar-inverse{
-        padding-left:10em;
+    .Header > .BotHeader > .navbar-inverse {
+        padding-left: 10em;
     }
 }

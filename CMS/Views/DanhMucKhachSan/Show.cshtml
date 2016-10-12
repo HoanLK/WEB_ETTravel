@@ -25,7 +25,7 @@
                         </div>
                     </div>*@
                     <p class="GioiThieu" ng-bind-html="value.description | limitTo: 300"></p>
-                    <p class="DonGia">Đơn giá: {{value.price | number:0}}<sup class="" ng-class="{'hidden':value.price == null}">vnđ</sup>{{value.price == null ? 'Liên hệ' : ''}}</p>
+                    @*<p class="DonGia">Đơn giá: {{value.price | number:0}}<sup class="" ng-class="{'hidden':value.price == null}">vnđ</sup>{{value.price == null ? 'Liên hệ' : ''}}</p>*@
                     <a href="/tour/{{value.alias}}-{{value.idProduct}}" class="ChiTiet">Chi tiết</a>
                 </div>
             </div>
@@ -45,5 +45,5 @@
             <a href="/bai-viet/{{value.alias}}-{{value.idPost}}" class="XemTiep">Xem tiếp</a>
         </div>
     </div>
-    <a dir-paginate="(index, value) in Posts | itemsPerPage:1" href="/danh-muc-bai-viet/@Model.alias-{{value.idCategory}}" class="XemTatCaTour">Xem thêm bài viết >></a>
 </div>
+<a ng-controller="childCategoryProductController" dir-paginate="(index, value) in Posts | itemsPerPage:1" href="/danh-muc-bai-viet/@Model.alias-{{value.idCategory}}" class="XemTatCaTour">Xem thêm bài viết >></a>

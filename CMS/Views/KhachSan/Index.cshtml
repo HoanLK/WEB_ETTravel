@@ -9,11 +9,11 @@
     </div>
 
     <div class="right">
-        <p class="TieuDe">{{product.title}}</p>
+        <h1 class="TieuDe">{{product.title}}</h1>
         @*<p class="HanhTrinh"><span>Thời gian:</span> {{product.dateNumber}} ngày {{product.nightNumber}} đêm</p>
         <p class="HanhTrinh"><span>Phương tiện:</span> <span class="fa " ng-class="{'fa-car':product.vehicle==0,'fa-plane':product.vehicle==1,'fa-ship':product.vehicle==2}"></span></p>
         <p class="HanhTrinh"><span>Khởi hành:</span> {{product.timeStart | date:'dd-MM-yyyy'}}</p>*@
-        <p class="DonGia"><span>Đơn giá:</span> {{product.price | number:0}}<sup class="" ng-class="{'hidden':product.price == null}">vnđ</sup>{{product.price == null ? 'Liên hệ' : ''}}</p>
+        @*<p class="DonGia"><span>Đơn giá:</span> {{product.price | number:0}}<sup class="" ng-class="{'hidden':product.price == null}">vnđ</sup>{{product.price == null ? 'Liên hệ' : ''}}</p>*@
         <div class="GioiThieu" ng-bind-html="product.description"></div>
         <button type="button" class="btnDangKy" data-toggle="modal" data-target="#myModal">Đăng ký</button>
     </div>
@@ -21,7 +21,7 @@
 
 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 ChiTiet" ng-controller="showProductController">
     <div class="NoiDung" ng-bind-html="product.content"></div>
-    <p class="CauKet">CẢM NHÂN CUỘC SỐNG QUA TỪNG CHUYẾN ĐI</p>
+    <p class="CauKet">CẢM NHẬN CUỘC SỐNG QUA TỪNG CHUYẾN ĐI</p>
     <button type="button" class="btnDangKy" data-toggle="modal" data-target="#myModal">Đăng ký</button>
 </div>
 
@@ -29,8 +29,8 @@
 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 DLTrongNuoc" ng-controller="showProductController">
     @*<input type="hidden" value="@Model.idCategory" id="idCategory" />*@
 
-    <p class="TieuDe">TOUR LIÊN QUAN</p>
-    <p class="TieuDe">---------------- <span class="fa fa-automobile"></span> ----------------</p>
+    <p class="TieuDe">KHÁCH SẠN KHÁC</p>
+    <p class="TieuDe">---------------- <span class="fa fa-bed"></span> ----------------</p>
     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 DuLich">
         <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 DiaDiem" ng-repeat="(index, value) in products">
             <div class="Khung">
@@ -58,7 +58,7 @@
 
 <!-- Đăng ký Khách sạn -->
 <div id="myModal" class="modal fade" role="dialog" ng-controller="themKhachSanController">
-    <input type="text" value="@Model.idProduct" id="idKhachSanCurrent" />
+    <input type="hidden" value="@Model.idProduct" id="idKhachSanCurrent" />
     <div class="modal-dialog">
         <!-- Modal content-->
         <div class="modal-content">
