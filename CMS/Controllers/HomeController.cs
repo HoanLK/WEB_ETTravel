@@ -18,8 +18,6 @@ namespace CMS.Controllers
         [Route("lien-he")]
         public ActionResult LienHe()
         {
-            ViewBag.Title = "ET TRAVEL";
-
             return View();
         }
     }

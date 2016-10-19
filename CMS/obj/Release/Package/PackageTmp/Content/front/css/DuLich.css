@@ -331,7 +331,7 @@
         font-weight: bold;
     }
 
-    .Main > .ChiTiet > .btnDangKy {
+    .Main > .ChiTiet  .btnDangKy {
         padding: 0.2em 1.5em;
         font-size: 1.3em;
         font-weight: bold;
@@ -344,21 +344,21 @@
         transition: background-color .3s;
     }
 
-        .Main > .ChiTiet > .btnDangKy:hover,
-        .Main > .ChiTiet > .btnDangKy:focus {
+        .Main > .ChiTiet  .btnDangKy:hover,
+        .Main > .ChiTiet  .btnDangKy:focus {
             background-color: #27ae60;
         }
 
-        .Main > .ChiTiet > .btnDangKy > * {
+        .Main > .ChiTiet  .btnDangKy > * {
             position: relative;
         }
 
-        .Main > .ChiTiet > .btnDangKy span {
+        .Main > .ChiTiet  .btnDangKy span {
             display: block;
             padding: 12px 24px;
         }
 
-        .Main > .ChiTiet > .btnDangKy:before {
+        .Main > .ChiTiet  .btnDangKy:before {
             content: "";
             position: absolute;
             top: 50%;
@@ -375,13 +375,13 @@
             transform: translate(-50%, -50%);
         }
 
-        .Main > .ChiTiet > .btnDangKy:active:before {
+        .Main > .ChiTiet  .btnDangKy:active:before {
             width: 120%;
             padding-top: 120%;
             transition: width .4s ease-out, padding-top .4s ease-out;
         }
 
-        .Main > .ChiTiet > .btnDangKy:hover {
+        .Main > .ChiTiet  .btnDangKy:hover {
             background-color: #30cfc0 !important;
             text-decoration: none;
             box-shadow: 0 5px 11px 0 rgba(0,0,0,.18),0 4px 15px 0 rgba(0,0,0,.15);
