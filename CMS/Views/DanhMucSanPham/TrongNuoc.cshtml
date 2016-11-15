@@ -9,7 +9,7 @@
     <input type="hidden" value="34" id="idCategory" />
     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" ng-class="{'HangLe':index%2 == 0, 'HangChan':index%2==1}" ng-repeat="(index, value) in categories">
         <div ng-class="{'left':index%2 == 0, 'right':index%2==1}">
-            <img class="img-responsive" src="{{value.image}}" title="Du lịch {{value.title}}" alt="Du lịch {{value.title}}" />
+            <img class="img-responsive" ng-src="{{value.image}}" title="Du lịch {{value.title}}" alt="Du lịch {{value.title}}" />
         </div>
 
         <div ng-class="{'right':index%2 == 0, 'left':index%2==1}">
@@ -19,42 +19,3 @@
         </div>
     </div>
 </div>
-
-@*<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 CanhDepMienBac">
-    <p class="TieuDe">MỘT SỐ THẮNG CẢNH ĐẸP Ở MIỀN BẮC</p>
-    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 DiaDiem">
-        <div class="Khung">
-            <img class="img-responsive anh" src="~/img/haGiang.jpg" />
-            <a href="#" class="TieuDe">HÀ GIANG ĐIỂM HẸN</a>
-            <p class="GioiThieu">
-                Đến hẹn lại lên, chúng ta cùng đến với Hà Giang, nơi địa đầu
-                Tổ Quốc với những lễ hội đặc sắc mang bản chất của núi rừng Tây Bắc...
-                <a href="#" class="XemTiep">Xem tiếp</a>
-            </p>
-        </div>
-    </div>
-
-    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 DiaDiem">
-        <div class="Khung">
-            <img class="img-responsive anh" src="~/img/haGiang.jpg" />
-            <a href="#" class="TieuDe">HÀ GIANG ĐIỂM HẸN</a>
-            <p class="GioiThieu">
-                Đến hẹn lại lên, chúng ta cùng đến với Hà Giang, nơi địa đầu
-                Tổ Quốc với những lễ hội đặc sắc mang bản chất của núi rừng Tây Bắc...
-                <a href="#" class="XemTiep">Xem tiếp</a>
-            </p>
-        </div>
-    </div>
-
-    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 DiaDiem">
-        <div class="Khung">
-            <img class="img-responsive anh" src="~/img/haGiang.jpg" />
-            <a href="#" class="TieuDe">HÀ GIANG ĐIỂM HẸN</a>
-            <p class="GioiThieu">
-                Đến hẹn lại lên, chúng ta cùng đến với Hà Giang, nơi địa đầu
-                Tổ Quốc với những lễ hội đặc sắc mang bản chất của núi rừng Tây Bắc...
-                <a href="#" class="XemTiep">Xem tiếp</a>
-            </p>
-        </div>
-    </div>
-</div>*@

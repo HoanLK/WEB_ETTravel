@@ -39,7 +39,7 @@
                                 @role[0]
                             </td>
                             <td>
-                                <a data-toggle="tooltip" data-placement="top" title="Sửa thông tin" href="@Url.Action("Edit", new { id = item.UserId })" class="btn btn-xs btn-social-icon btn-dropbox"><i class="fa fa-fw fa-edit"></i></a>
+                                <a data-toggle="tooltip" data-placement="top" title="Đổi mật khẩu" href="@Url.Action("ChangePassword", new { id = item.UserId })" class="btn btn-xs btn-social-icon btn-google"><i class="fa fa-key"></i></a>
                                 <a data-toggle="tooltip" data-placement="top" title="Xóa" href="@Url.Action("Delete", new { id = item.UserId })" class="btn btn-xs btn-social-icon btn-google"><i class="fa fa-trash-o"></i></a>
                             </td>
                         </tr>

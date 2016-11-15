@@ -1,1 +1,1 @@
-﻿var frontApp = angular.module('frontApp', ['ngSanitize', 'ngCookies']);
+﻿var frontApp = angular.module('frontApp', ['ngSanitize', 'ngCookies', 'ngLoadingSpinner']);

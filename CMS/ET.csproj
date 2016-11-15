@@ -188,8 +188,18 @@
     <Folder Include="bower_components\sweetalert\" />
     <Folder Include="Content\admin\js\core\cache\" />
     <Folder Include="Content\front\img\" />
-    <Folder Include="Content\Images\files\" />
     <Folder Include="Content\Images\flash\" />
+    <Folder Include="Content\Images\images\Cho thue xe du lich\" />
+    <Folder Include="Content\Images\images\thang canh trong nuoc\" />
+    <Folder Include="Content\Images\images\tour nuoc ngoai\" />
+    <Folder Include="Content\Images\images\tour trong nuoc\" />
+    <Folder Include="Content\Images\images\Visa\" />
+    <Folder Include="Content\Images\_thumbs\Files\" />
+    <Folder Include="Content\Images\_thumbs\Images\Cho thue xe du lich\" />
+    <Folder Include="Content\Images\_thumbs\Images\thang canh trong nuoc\" />
+    <Folder Include="Content\Images\_thumbs\Images\tour nuoc ngoai\" />
+    <Folder Include="Content\Images\_thumbs\Images\tour trong nuoc\" />
+    <Folder Include="Content\Images\_thumbs\Images\Visa\" />
     <Folder Include="Views\CategoryProduct\" />
     <Folder Include="Views\Product\" />
   </ItemGroup>
@@ -238,6 +248,7 @@
     <Compile Include="Controllers\TimKiemController.cs" />
     <Compile Include="Controllers\UsersAPIController.cs" />
     <Compile Include="Controllers\VideosAPIController.cs" />
+    <Compile Include="Models\Account\ChangePassword.cs" />
     <Compile Include="Models\Account\Login.cs" />
     <Compile Include="Models\Account\Register.cs" />
     <Compile Include="Areas\HelpPage\ApiDescriptionExtensions.cs" />
@@ -2259,28 +2270,55 @@
     </Content>
     <Content Include="Content\front\fonts\fontawesome-webfont.svg" />
     <Content Include="Content\front\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Content\Images\files\test.png" />
     <Content Include="Content\Images\images\Building.jpg" />
     <Content Include="Content\Images\images\ChoThueXe.jpg" />
+    <Content Include="Content\Images\images\cát bà.jpg" />
+    <Content Include="Content\Images\images\cô tô.jpg" />
     <Content Include="Content\Images\images\DatVeMayBay.jpg" />
     <Content Include="Content\Images\images\DatVeMayBay2.jpg" />
+    <Content Include="Content\Images\images\Huế%281%29.jpg" />
+    <Content Include="Content\Images\images\Huế.jpg" />
+    <Content Include="Content\Images\images\hồ ba bể.jpg" />
+    <Content Include="Content\Images\images\hội an.jpg" />
     <Content Include="Content\Images\images\LamVisa.jpg" />
     <Content Include="Content\Images\images\logo.png" />
+    <Content Include="Content\Images\images\mộc châu.jpg" />
+    <Content Include="Content\Images\images\phong nha kẻ bàng.jpg" />
     <Content Include="Content\Images\images\Plane.png" />
     <Content Include="Content\Images\images\QC.jpg" />
+    <Content Include="Content\Images\images\sa-pa.jpg" />
     <Content Include="Content\Images\images\SkyLine.png" />
+    <Content Include="Content\Images\images\tam đảo%281%29.jpg" />
+    <Content Include="Content\Images\images\tam đảo.jpg" />
+    <Content Include="Content\Images\images\thành nhà hồ.jpg" />
+    <Content Include="Content\Images\images\thánh địa mỹ sơn.jpg" />
     <Content Include="Content\Images\images\Visa.jpg" />
     <Content Include="Content\Images\_thumbs\Images\Anonymous.png" />
     <Content Include="Content\Images\_thumbs\Images\Banner.jpg" />
     <Content Include="Content\Images\_thumbs\Images\Building.jpg" />
     <Content Include="Content\Images\_thumbs\Images\ChoThueXe.jpg" />
+    <Content Include="Content\Images\_thumbs\Images\cát bà.jpg" />
+    <Content Include="Content\Images\_thumbs\Images\cô tô.jpg" />
     <Content Include="Content\Images\_thumbs\Images\DatVeMayBay.jpg" />
     <Content Include="Content\Images\_thumbs\Images\DatVeMayBay2.jpg" />
+    <Content Include="Content\Images\_thumbs\Images\Huế%281%29.jpg" />
+    <Content Include="Content\Images\_thumbs\Images\Huế.jpg" />
+    <Content Include="Content\Images\_thumbs\Images\hồ ba bể.jpg" />
+    <Content Include="Content\Images\_thumbs\Images\hội an.jpg" />
     <Content Include="Content\Images\_thumbs\Images\LamVisa.jpg" />
     <Content Include="Content\Images\_thumbs\Images\logo.png" />
+    <Content Include="Content\Images\_thumbs\Images\mộc châu.jpg" />
+    <Content Include="Content\Images\_thumbs\Images\phong nha kẻ bàng.jpg" />
     <Content Include="Content\Images\_thumbs\Images\Plane.png" />
     <Content Include="Content\Images\_thumbs\Images\QC.jpg" />
     <Content Include="Content\Images\_thumbs\Images\Rinnai.gif" />
+    <Content Include="Content\Images\_thumbs\Images\sa-pa.jpg" />
     <Content Include="Content\Images\_thumbs\Images\SkyLine.png" />
+    <Content Include="Content\Images\_thumbs\Images\tam đảo%281%29.jpg" />
+    <Content Include="Content\Images\_thumbs\Images\tam đảo.jpg" />
+    <Content Include="Content\Images\_thumbs\Images\thành nhà hồ.jpg" />
+    <Content Include="Content\Images\_thumbs\Images\thánh địa mỹ sơn.jpg" />
     <Content Include="Content\Images\_thumbs\Images\vietjet air.jpg" />
     <Content Include="Content\Images\_thumbs\Images\Visa.jpg" />
     <Content Include="Content\ui-grid.css" />
@@ -2580,6 +2618,9 @@
     <Content Include="Scripts\front\videoController.min.js">
       <DependentUpon>videoController.js</DependentUpon>
     </Content>
+    <Content Include="Scripts\loading-spinner\angular-loading-spinner.js" />
+    <Content Include="Scripts\loading-spinner\angular-spinner.min.js" />
+    <Content Include="Scripts\loading-spinner\spin.min.js" />
     <Content Include="Scripts\modernizr-2.8.3.js" />
     <Content Include="Scripts\respond.js" />
     <Content Include="Scripts\respond.matchmedia.addListener.js" />
@@ -2965,6 +3006,7 @@
     <Content Include="Views\DanhMucKhachSan\Index.cshtml" />
     <Content Include="Views\DanhMucKhachSan\Show.cshtml" />
     <Content Include="Views\Account\Info.cshtml" />
+    <Content Include="Views\Account\ChangePassword.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <WCFMetadata Include="Service References\" />

@@ -38,7 +38,7 @@
                                 @*<div class="col-md-6" ng-repeat="(index, value) in categories">*@
                                 <div class="col-md-6" dir-paginate="(index, value) in categories | itemsPerPage: 12">
                                     <div class="child-post">
-                                        <a href="/danh-muc-bai-viet/{{value.alias}}-{{value.idCategory}}" class="title-child-post"><img src="{{value.image}}" class="img-responsive" /></a>
+                                        <a href="/danh-muc-bai-viet/{{value.alias}}-{{value.idCategory}}" class="title-child-post"><img ng-src="{{value.image}}" class="img-responsive" /></a>
                                         <div class="text">
                                             <a href="/danh-muc-bai-viet/{{value.alias}}-{{value.idCategory}}">{{value.title}}</a> <br />
                                             <div class="description">{{value.description | limitTo: 100}}{{value.description.length > 100 ? '&hellip;' : ''}}</div>

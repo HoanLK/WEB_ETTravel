@@ -11,7 +11,7 @@
     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 DuLich">
         <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 DiaDiem" ng-repeat="(index, value) in products">
             <div class="Khung">
-                <img class="img-responsive anh" title="{{value.title}}" alt="{{value.title}}" src="{{value.image}}" />
+                <img class="img-responsive anh" title="{{value.title}}" alt="{{value.title}}" ng-src="{{value.image}}" />
                 <div class="a">
                     <div class="b">
                         <a href="/hotel/{{value.alias}}-{{value.idProduct}}" class="Ten">{{value.title}}</a>
@@ -37,7 +37,7 @@
     <p class="TieuDe">Bài viết liên quan đến @Model.title</p>
     <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 DiaDiem" dir-paginate="(index, value) in Posts | itemsPerPage:4">
         <div class="Khung">
-            <img class="img-responsive anh" src="{{value.image}}" title="{{value.title}}" alt="{{value.title}}" />
+            <img class="img-responsive anh" ng-src="{{value.image}}" title="{{value.title}}" alt="{{value.title}}" />
             <a href="/bai-viet/{{value.alias}}-{{value.idPost}}" class="TieuDe">{{value.title}}</a>
             <br />
             <p class="GioiThieu" ng-bind-html="value.description | limitTo: 300">

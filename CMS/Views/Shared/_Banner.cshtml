@@ -8,7 +8,7 @@
         <!-- Wrapper for slides -->
         <div class="carousel-inner" role="listbox">
             <a class="item" ng-class="{'active':index==0}" ng-repeat="(index, value) in banners" href="{{value.link}}">
-                <img src="{{value.image}}" class="img-responsive" title="{{value.title}}" alt="{{value.title}}">
+                <img ng-src="{{value.image}}" class="img-responsive" title="{{value.title}}" alt="{{value.title}}">
             </a>
         </div>
 

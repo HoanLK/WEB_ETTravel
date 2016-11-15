@@ -8,16 +8,19 @@
     <p class="TieuDe">@Model.title</p>
     <p class="TieuDe">---------------- <span class="fa fa-car"></span> ----------------</p>
     <input type="hidden" value="@Model.idCategory" id="idCategory" />
-    <div ng-repeat="(index, value) in posts">
+    <p ng-hide="posts.length > 0" style="font-size: 4em;color: #f44336;">Chưa có bài viết nào</p>
+    <div dir-paginate="(index, value) in posts | itemsPerPage: 8" ng-show="posts.length > 0">
         <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 item">
-            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                <img class="img-responsive anh" src="{{value.image}}" title="{{value.title}}" alt="{{value.title}}" />
+            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                <img class="img-responsive anh" ng-src="{{value.image}}" title="{{value.title}}" alt="{{value.title}}" />
+            </div>
+            <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8" style="padding:1em;">
                 <a href="/bai-viet/{{value.alias}}-{{value.idPost}}" class="TieuDe"><h4 style="display:inline; font-size:inherit; font-weight:inherit">{{value.title}}</h4></a>
                 <p class="GioiThieu">
                     {{value.description | limitTo: 100}}{{value.description.length > 100 ? '&hellip;' : ''}}
                 </p>
             </div>
-            
         </div>
     </div>
+    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 ccontainer" style="text-align:center"><dir-pagination-controls></dir-pagination-controls></div>
 </div>

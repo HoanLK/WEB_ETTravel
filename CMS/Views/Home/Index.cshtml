@@ -44,9 +44,11 @@
 
     @*Danh sách Tour theo danh mục*@
     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 DuLich">
-        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 DiaDiem" dir-paginate="(index, value) in productTrongNuocs | itemsPerPage:6">
+        <span us-spinner="{radius:15, width:4, length: 8}"></span>
+        <p ng-hide="productTrongNuocs.length > 0" style="font-size: 4em;color: #f44336;">Chưa có tour</p>
+        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 DiaDiem" dir-paginate="(index, value) in productTrongNuocs | itemsPerPage:6" ng-show="productTrongNuocs.length > 0">
             <div class="Khung">
-                <img class="img-responsive anh" title="{{value.title}}" alt="{{value.title}}" src="{{value.image}}" />
+                <img class="img-responsive anh" title="{{value.title}}" alt="{{value.title}}" ng-src="{{value.image}}" />
                 <div class="a">
                     <div class="b">
                         <a href="/tour/{{value.alias}}-{{value.idProduct}}" class="Ten"><h3 style="display:inline; font-size:inherit; font-weight:inherit">{{value.title}}</h3></a>
@@ -59,14 +61,14 @@
                             <span class="fa PhuongTien" ng-class="{'fa-car':value.vehicle==0,'fa-plane':value.vehicle==1,'fa-ship':value.vehicle==2}"></span><br />
                         </div>
                     </div>
-                    <p class="description" ng-bind-html="value.description | limitTo: 300" ></p>
+                    <p class="description" ng-bind-html="value.description | limitTo: 300"></p>
                     <p class="DonGia">Đơn giá: {{value.price | number:0}}<sup class="" ng-class="{'hidden':value.price == null}">vnđ</sup>{{value.price == null ? 'Liên hệ' : ''}}</p>
                     <a href="/tour/{{value.alias}}-{{value.idProduct}}" class="ChiTiet">Chi tiết</a>
                 </div>
             </div>
         </div>
     </div>
-    <a href="/loai-tour/{{categoryTrongNuoc.alias}}-{{categoryTrongNuoc.idCategory}}" class="XemTatCaTour">Xem thêm Tour >></a>
+    <a href="/loai-tour/{{categoryTrongNuoc.alias}}-{{categoryTrongNuoc.idCategory}}" class="XemTatCaTour" ng-show="productTrongNuocs.length > 0">Xem thêm Tour >></a>
 </div>
 
 @*<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" ng-controller="tabController">
@@ -85,9 +87,11 @@
 
     @*Danh sách Tour theo danh mục*@
     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 DuLich">
-        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 DiaDiem" dir-paginate="(index, value) in productQuocTes | itemsPerPage:6">
+        <span us-spinner="{radius:15, width:4, length: 8}"></span>
+        <p ng-hide="productQuocTes.length > 0" style="font-size: 4em;color: #f44336;">Chưa có tour</p>
+        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 DiaDiem" dir-paginate="(index, value) in productQuocTes | itemsPerPage:6" ng-show="productQuocTes.length > 0">
             <div class="Khung">
-                <img class="img-responsive anh" title="{{value.title}}" alt="{{value.title}}" src="{{value.image}}" />
+                <img class="img-responsive anh" title="{{value.title}}" alt="{{value.title}}" ng-src="{{value.image}}" />
                 <div class="a">
                     <div class="b">
                         <a href="/tour/{{value.alias}}-{{value.idProduct}}" class="Ten"><h3 style="display:inline; font-size:inherit; font-weight:inherit">{{value.title}}</h3></a>
@@ -107,7 +111,7 @@
             </div>
         </div>
     </div>
-    <a href="/loai-tour/{{categoryQuocTe.alias}}-{{categoryQuocTe.idCategory}}" class="XemTatCaTour">Xem thêm Tour >></a>
+    <a href="/loai-tour/{{categoryQuocTe.alias}}-{{categoryQuocTe.idCategory}}" class="XemTatCaTour" ng-show="productQuocTes.length > 0">Xem thêm Tour >></a>
 </div>
 
 @*<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
@@ -144,7 +148,7 @@
         <p class="TieuDe">---------------------- <span class="fa fa-group"></span> ----------------------</p>
 
         <marquee class="item" id="marq" scrollamount="6" direction="left" loop="0" scrolldelay="0" onmouseover="this.stop()" onmouseout="this.start()">
-            <a ng-repeat="(index, value) in Customers" target="_blank" href="{{value.link}}" class="Co"><img src="{{value.image}}" title="{{value.title}}" /> </a>
+            <a ng-repeat="(index, value) in Customers" target="_blank" href="{{value.link}}" class="Co"><img ng-src="{{value.image}}" title="{{value.title}}" /> </a>
         </marquee>
     </div>
 
@@ -153,7 +157,7 @@
         <p class="TieuDe">---------------------- <span class="fa fa-group"></span> ----------------------</p>
 
         <marquee class="item" id="marq" scrollamount="6" direction="left" loop="0" scrolldelay="0" onmouseover="this.stop()" onmouseout="this.start()">
-            <a ng-repeat="(index, value) in Partners" target="_blank" href="{{value.link}}" class="Co"><img src="{{value.image}}" title="{{value.title}}" /> </a>
+            <a ng-repeat="(index, value) in Partners" target="_blank" href="{{value.link}}" class="Co"><img ng-src="{{value.image}}" title="{{value.title}}" /> </a>
         </marquee>
     </div>
 
@@ -163,7 +167,7 @@
 
         <marquee class="item" id="marq" scrollamount="6" direction="left" loop="0" scrolldelay="0" onmouseover="this.stop()" onmouseout="this.start()">
             <a ng-repeat="(index, value) in Employees" style="width:20em; display:inline-block; background:#fff; margin-right:0.5em;">
-                <img class="img-responsive" src="{{value.anh}}" title="{{value.hoTen}}" style="width:30%; float:left; padding:0;" />
+                <img class="img-responsive" ng-src="{{value.anh}}" title="{{value.hoTen}}" style="width:30%; float:left; padding:0;" />
                 <p style="width:70%; float:right; font-size:1.5em; padding-left:1em;">{{value.hoTen}}</p>
                 <p style="width:70%; float:right; font-size:1.3em; color:#575757; padding-left:1em;">{{value.chucVu}}</p>
             </a>

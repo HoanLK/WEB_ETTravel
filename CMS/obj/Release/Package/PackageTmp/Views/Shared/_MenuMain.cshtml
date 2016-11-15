@@ -39,7 +39,7 @@
                                                         <div class="col-md-4" ng-repeat="(index, value) in desSanPham" ng-show="index < 3">
                                                             <section class="related-body">
                                                                 <a href="/san-pham/{{value.alias}}-{{value.idProduct}}" title="{{value.title}}">
-                                                                    <img src="{{value.image}}" title="{{value.title}}" alt="{{value.title}}" class="img-responsive" />
+                                                                    <img ng-src="{{value.image}}" title="{{value.title}}" alt="{{value.title}}" class="img-responsive" />
                                                                 </a>
                                                             </section>
                                                             <div class="related-footer">
@@ -76,7 +76,7 @@
                                                             <div class="col-md-4" ng-repeat="(index, value) in desBaoDuongXe" ng-show="index < 3">
                                                                 <section class="related-body">
                                                                     <a href="/bai-viet/{{value.alias}}-{{value.idPost}}"  title="{{value.title}}">
-                                                                        <img src="{{value.image}}" title="{{value.title}}" alt="{{value.title}}" class="img-responsive" style="width: 125px; height: 125px;" />
+                                                                        <img ng-src="{{value.image}}" title="{{value.title}}" alt="{{value.title}}" class="img-responsive" style="width: 125px; height: 125px;" />
                                                                     </a>
                                                                 </section>
                                                                 <div class="related-footer">
@@ -110,7 +110,7 @@
                                                             <div class="col-md-4" ng-repeat="(index, value) in desLaiXeAnToan" ng-show="index < 3">
                                                                 <section class="related-body">
                                                                     <a href="/bai-viet/{{value.alias}}-{{value.idPost}}" title="{{value.title}}">
-                                                                        <img src="{{value.image}}" title="{{value.title}}" alt="{{value.title}}" class="img-responsive" style="width: 125px; height: 125px;" />
+                                                                        <img ng-src="{{value.image}}" title="{{value.title}}" alt="{{value.title}}" class="img-responsive" style="width: 125px; height: 125px;" />
                                                                     </a>
                                                                 </section>
                                                                 <div class="related-footer">
@@ -144,7 +144,7 @@
                                                             <div class="col-md-4" ng-repeat="(index, value) in desDaiLy" ng-show="index < 3">
                                                                 <section class="related-body">
                                                                     <a href="/bai-viet/{{value.alias}}-{{value.idPost}}" title="{{value.title}}">
-                                                                        <img src="{{value.image}}" title="{{value.title}}" alt="{{value.title}}" class="img-responsive" style="width: 125px; height: 125px;"/>
+                                                                        <img ng-src="{{value.image}}" title="{{value.title}}" alt="{{value.title}}" class="img-responsive" style="width: 125px; height: 125px;"/>
                                                                     </a>
                                                                 </section>
                                                                 <div class="related-footer">

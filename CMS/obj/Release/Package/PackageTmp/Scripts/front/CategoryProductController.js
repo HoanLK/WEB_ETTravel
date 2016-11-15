@@ -11,10 +11,7 @@
                     $scope.categoriesTrongNuoc.push(value);
                 }
             });
-        })
-    $http.get('/API/CategoryProductsAPI/')
-        .success(function (data) {
-            var categories = CategoryProduct.getallCategory(data);
+
             angular.forEach(categories, function (value, key) {
                 if (value.idCategoryParent == 35) {
                     $scope.categoriesQuocTe.push(value);

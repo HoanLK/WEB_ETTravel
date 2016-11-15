@@ -83,27 +83,23 @@
             box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
             background-color: #fff;
             padding: 0;
-            height: 9em;
+            height: 13em;
         }
 
-            .Visa_ThueXe .item > div > .anh {
-                width: 30%;
+            .Visa_ThueXe .item > div .anh {
                 float: left;
                 height: 100%;
             }
 
-            .Visa_ThueXe .item > div > .TieuDe {
-                width: 70%;
-                float: right;
+            .Visa_ThueXe .item > div .TieuDe {
                 text-align: left;
                 color: #f44336;
                 font-size: 1.3em;
-                padding: 0.6em;
+                margin-bottom:1em;
             }
 
-            .Visa_ThueXe .item > div > .GioiThieu {
-                width: 68%;
-                float: right;
+            .Visa_ThueXe .item > div .GioiThieu {
+                margin-top:1em;
                 text-align: justify;
             }
 
