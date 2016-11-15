@@ -3,7 +3,6 @@
     ViewBag.Title = "Thêm tour";
     Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
 }
-
 <div ng-app="myApp">
     <div ng-controller="themProductController">
         <input type="hidden" value="@WebSecurity.CurrentUserName" id="user" />
@@ -22,7 +21,6 @@
             </div>
         </div>
         <hr class="ruler-lg" />
-
         <div class="card">
             <div class="card-body">
                 <form class="form" role="form">
@@ -41,8 +39,13 @@
                         </div>
                     </div>
                 </form>
-
                 <div class="row">
+                    <div class="card-head">
+                        <ul class="nav nav-tabs" data-toggle="tabs">
+                            <li class="active"><a href="#noidung">Nội dung</a></li>
+                            <li class=""><a href="#xuatban">Xuất bản</a></li>
+                        </ul>
+                    </div>
                     <div class="card-body tab-content">
                         <!--Nội dung-->
                         <div class="tab-pane active" id="noidung">
@@ -188,217 +191,14 @@
                                         <label for="robots">Robots</label>
                                     </div>
                                 </div>
-
                             </form>
-                        </div>
-
-                        <!--0W-20-->
-                        <div class="tab-pane" id="0W-20">
-                            <div class="col-md-6">
-                                Đặc điểm kỹ thuật
-                                <textarea id="ckeditor" data-ck-editor class="form-control control-12-rows" ng-model="product.gra0w20_specification" name="gra0w20_specification"></textarea>
-                            </div>
-                            <div class="col-md-6">
-                                Chi tiết kỹ thuật
-                                <textarea id="ckeditor" data-ck-editor class="form-control control-12-rows" ng-model="product.gra0w20_technical" name="gra0w20_technical"></textarea>
-                            </div>
-                        </div>
-                        <!--0W-30-->
-                        <div class="tab-pane" id="0W-30">
-                            <div class="col-md-6">
-                                Đặc điểm kỹ thuật
-                                <textarea id="ckeditor" data-ck-editor class="form-control control-12-rows" ng-model="product.gra0w30_specification" name="gra0w30_specification"></textarea>
-                            </div>
-                            <div class="col-md-6">
-                                Chi tiết kỹ thuật
-                                <textarea id="ckeditor" data-ck-editor class="form-control control-12-rows" ng-model="product.gra0w30_technical" name="gra0w30_technical"></textarea>
-                            </div>
-                        </div>
-                        <!--0W-40-->
-                        <div class="tab-pane" id="0W-40">
-                            <div class="col-md-6">
-                                Đặc điểm kỹ thuật
-                                <textarea id="ckeditor" data-ck-editor class="form-control control-12-rows" ng-model="product.gra0w40_specification" name="gra0w40_specification"></textarea>
-                            </div>
-                            <div class="col-md-6">
-                                Chi tiết kỹ thuật
-                                <textarea id="ckeditor" data-ck-editor class="form-control control-12-rows" ng-model="product.gra0w40_technical" name="gra0w40_technical"></textarea>
-                            </div>
-                        </div>
-                        <!--0W-50-->
-                        <div class="tab-pane" id="0W-50">
-                            <div class="col-md-6">
-                                Đặc điểm kỹ thuật
-                                <textarea id="ckeditor" data-ck-editor class="form-control control-12-rows" ng-model="product.gra0w50_specification" name="gra0w50_specification"></textarea>
-                            </div>
-                            <div class="col-md-6">
-                                Chi tiết kỹ thuật
-                                <textarea id="ckeditor" data-ck-editor class="form-control control-12-rows" ng-model="product.gra0w50_technical" name="gra0w50_technical"></textarea>
-                            </div>
-                        </div>
-
-                        <!--5W-20-->
-                        <div class="tab-pane" id="5W-20">
-                            <div class="col-md-6">
-                                Đặc điểm kỹ thuật
-                                <textarea id="ckeditor" data-ck-editor class="form-control control-12-rows" ng-model="product.gra5w20_specification" name="gra5w20_specification"></textarea>
-                            </div>
-                            <div class="col-md-6">
-                                Chi tiết kỹ thuật
-                                <textarea id="ckeditor" data-ck-editor class="form-control control-12-rows" ng-model="product.gra5w20_technical" name="gra5w20_technical"></textarea>
-                            </div>
-                        </div>
-                        <!--5W-30-->
-                        <div class="tab-pane" id="5W-30">
-                            <div class="col-md-6">
-                                Đặc điểm kỹ thuật
-                                <textarea id="ckeditor" data-ck-editor class="form-control control-12-rows" ng-model="product.gra5w30_specification" name="gra5w30_specification"></textarea>
-                            </div>
-                            <div class="col-md-6">
-                                Chi tiết kỹ thuật
-                                <textarea id="ckeditor" data-ck-editor class="form-control control-12-rows" ng-model="product.gra5w30_technical" name="gra5w30_technical"></textarea>
-                            </div>
-                        </div>
-                        <!--5W-40-->
-                        <div class="tab-pane" id="5W-40">
-                            <div class="col-md-6">
-                                Đặc điểm kỹ thuật
-                                <textarea id="ckeditor" data-ck-editor class="form-control control-12-rows" ng-model="product.gra5w40_specification" name="gra5w40_specification"></textarea>
-                            </div>
-                            <div class="col-md-6">
-                                Chi tiết kỹ thuật
-                                <textarea id="ckeditor" data-ck-editor class="form-control control-12-rows" ng-model="product.gra5w40_technical" name="gra5w40_technical"></textarea>
-                            </div>
-                        </div>
-                        <!--5W-50-->
-                        <div class="tab-pane" id="5W-50">
-                            <div class="col-md-6">
-                                Đặc điểm kỹ thuật
-                                <textarea id="ckeditor" data-ck-editor class="form-control control-12-rows" ng-model="product.gra5w50_specification" name="gra5w50_specification"></textarea>
-                            </div>
-                            <div class="col-md-6">
-                                Chi tiết kỹ thuật
-                                <textarea id="ckeditor" data-ck-editor class="form-control control-12-rows" ng-model="product.gra5w50_technical" name="gra5w50_technical"></textarea>
-                            </div>
-                        </div>
-
-                        <!--10W-30-->
-                        <div class="tab-pane" id="10W-30">
-                            <div class="col-md-6">
-                                Đặc điểm kỹ thuật
-                                <textarea id="ckeditor" data-ck-editor class="form-control control-12-rows" ng-model="product.gra10w30_specification" name="gra10w30_specification"></textarea>
-                            </div>
-                            <div class="col-md-6">
-                                Chi tiết kỹ thuật
-                                <textarea id="ckeditor" data-ck-editor class="form-control control-12-rows" ng-model="product.gra10w30_technical" name="gra10w30_technical"></textarea>
-                            </div>
-                        </div>
-                        <!--10W-40-->
-                        <div class="tab-pane" id="10W-40">
-                            <div class="col-md-6">
-                                Đặc điểm kỹ thuật
-                                <textarea id="ckeditor" data-ck-editor class="form-control control-12-rows" ng-model="product.gra10w40_specification" name="gra10w40_specification"></textarea>
-                            </div>
-                            <div class="col-md-6">
-                                Chi tiết kỹ thuật
-                                <textarea id="ckeditor" data-ck-editor class="form-control control-12-rows" ng-model="product.gra10w40_technical" name="gra10w40_technical"></textarea>
-                            </div>
-                        </div>
-
-                        <!--15W-40-->
-                        <div class="tab-pane" id="15W-40">
-                            <div class="col-md-6">
-                                Đặc điểm kỹ thuật
-                                <textarea id="ckeditor" data-ck-editor class="form-control control-12-rows" ng-model="product.gra15w40_specification" name="gra15w40_specification"></textarea>
-                            </div>
-                            <div class="col-md-6">
-                                Chi tiết kỹ thuật
-                                <textarea id="ckeditor" data-ck-editor class="form-control control-12-rows" ng-model="product.gra15w40_technical" name="gra15w40_technical"></textarea>
-                            </div>
-                        </div>
-                        <!--15W-50-->
-                        <div class="tab-pane" id="15W-50">
-                            <div class="col-md-6">
-                                Đặc điểm kỹ thuật
-                                <textarea id="ckeditor" data-ck-editor class="form-control control-12-rows" ng-model="product.gra15w50_specification" name="gra15w50_specification"></textarea>
-                            </div>
-                            <div class="col-md-6">
-                                Chi tiết kỹ thuật
-                                <textarea id="ckeditor" data-ck-editor class="form-control control-12-rows" ng-model="product.gra15w50_technical" name="gra15w50_technical"></textarea>
-                            </div>
-                        </div>
-
-                        <!--20W-50-->
-                        <div class="tab-pane" id="20W-50">
-                            <div class="col-md-6">
-                                Đặc điểm kỹ thuật
-                                <textarea id="ckeditor" data-ck-editor class="form-control control-12-rows" ng-model="product.gra20w50_specification" name="gra20w50_specification"></textarea>
-                            </div>
-                            <div class="col-md-6">
-                                Chi tiết kỹ thuật
-                                <textarea id="ckeditor" data-ck-editor class="form-control control-12-rows" ng-model="product.gra20w50_technical" name="gra20w50_technical"></textarea>
-                            </div>
-                        </div>
-
-                        <!--75W-90-->
-                        <div class="tab-pane" id="75W-90">
-                            <div class="col-md-6">
-                                Đặc điểm kỹ thuật
-                                <textarea id="ckeditor" data-ck-editor class="form-control control-12-rows" ng-model="product.gra75w90_specification" name="gra75w90_specification"></textarea>
-                            </div>
-                            <div class="col-md-6">
-                                Chi tiết kỹ thuật
-                                <textarea id="ckeditor" data-ck-editor class="form-control control-12-rows" ng-model="product.gra75w90_technical" name="gra75w90_technical"></textarea>
-                            </div>
-                        </div>
-                        <!--75W-140-->
-                        <div class="tab-pane" id="75W-140">
-                            <div class="col-md-6">
-                                Đặc điểm kỹ thuật
-                                <textarea id="ckeditor" data-ck-editor class="form-control control-12-rows" ng-model="product.gra75w140_specification" name="gra75w140_specification"></textarea>
-                            </div>
-                            <div class="col-md-6">
-                                Chi tiết kỹ thuật
-                                <textarea id="ckeditor" data-ck-editor class="form-control control-12-rows" ng-model="product.gra75w140_technical" name="gra75w140_technical"></textarea>
-                            </div>
-                        </div>
-
-                        <!--80W-90-->
-                        <div class="tab-pane" id="80W-90">
-                            <div class="col-md-6">
-                                Đặc điểm kỹ thuật
-                                <textarea id="ckeditor" data-ck-editor class="form-control control-12-rows" ng-model="product.gra80w90_specification" name="gra80w90_specification"></textarea>
-                            </div>
-                            <div class="col-md-6">
-                                Chi tiết kỹ thuật
-                                <textarea id="ckeditor" data-ck-editor class="form-control control-12-rows" ng-model="product.gra80w90_technical" name="gra80w90_technical"></textarea>
-                            </div>
-                        </div>
-
-                        <!--85W-140-->
-                        <div class="tab-pane" id="85W-140">
-                            <div class="col-md-6">
-                                Đặc điểm kỹ thuật
-                                <textarea id="ckeditor" data-ck-editor class="form-control control-12-rows" ng-model="product.gra85w140_specification" name="gra85w140_specification"></textarea>
-                            </div>
-                            <div class="col-md-6">
-                                Chi tiết kỹ thuật
-                                <textarea id="ckeditor" data-ck-editor class="form-control control-12-rows" ng-model="product.gra85w140_technical" name="gra85w140_technical"></textarea>
-                            </div>
                         </div>
 
                     </div>
 
-
                 </div>
             </div>
         </div>
-
-
     </div>
-
-</div>
-
-
 
 
