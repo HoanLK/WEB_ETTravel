@@ -163,6 +163,5 @@ D:\Code\TeamDev\ettravel\CMS\bin\System.Web.WebPages.Deployment.xml
 D:\Code\TeamDev\ettravel\CMS\bin\System.Web.WebPages.Razor.xml
 D:\Code\TeamDev\ettravel\CMS\bin\WebMatrix.Data.xml
 D:\Code\TeamDev\ettravel\CMS\bin\WebMatrix.WebData.xml
-D:\Code\TeamDev\ettravel\CMS\obj\Debug\ET.csprojResolveAssemblyReference.cache
 D:\Code\TeamDev\ettravel\CMS\obj\Debug\CMS.dll
 D:\Code\TeamDev\ettravel\CMS\obj\Debug\CMS.pdb

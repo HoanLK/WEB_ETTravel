@@ -258,6 +258,7 @@
     <script type="text/javascript" src='@Url.Content("~/ckfinder/ckfinder.js")'></script>
     <script type="text/javascript" src='@Url.Content("~/ckeditor/ckeditor.js")'></script>
     <script type="text/javascript"> CKFinder.setupCKEditor(null, '@Url.Content("~/ckfinder/")'); </script>
+    <script>CKEDITOR.dtd.$removeEmpty['span'] = false;</script>
 
     <!--AngularJS-->
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular.min.js"></script>
@@ -284,7 +285,7 @@
     <script src="~/Content/admin/js/libs/DataTables/jquery.dataTables.min.js"></script>
     <script src="~/Content/admin/js/libs/DataTables/extensions/ColVis/js/dataTables.colVis.min.js"></script>
     <script src="~/Content/admin/js/libs/DataTables/extensions/TableTools/js/dataTables.tableTools.min.js"></script>
-    <script src="~/Content/admin/js/core/demo/DemoTableDynamic.min.js"></script>
+    @*<script src="~/Content/admin/js/core/demo/DemoTableDynamic.min.js"></script>*@
 
     <script src="~/Content/admin/js/core/source/App.js"></script>
     <script src="~/Content/admin/js/core/source/AppNavigation.js"></script>
@@ -294,11 +295,15 @@
     <script src="~/Content/admin/js/core/source/AppNavSearch.js"></script>
     <script src="~/Content/admin/js/core/source/AppVendor.js"></script>
     <script src="~/Content/admin/js/core/demo/Demo.js"></script>
-    <script src="~/Content/admin/js/core/demo/DemoFormEditors.js"></script>
+    @*<script src="~/Content/admin/js/core/demo/DemoFormEditors.js"></script>*@
     <script src="~/Content/admin/js/core/demo/DemoFormComponents.js"></script>
 
     <!--NG-CKEditor-->
     <script src="~/Scripts/admin/ng-ckeditor.min.js"></script>
+
+    
+
+
 
     <!--My Script-->
     <script src="~/Scripts/admin/myApp.js"></script>

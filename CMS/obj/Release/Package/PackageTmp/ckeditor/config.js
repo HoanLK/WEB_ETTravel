@@ -8,5 +8,9 @@ CKEDITOR.editorConfig = function( config ) {
 	// config.language = 'fr';
 	// config.uiColor = '#AADC6E';
 	
-	config.skin = 'office2013';
+    config.skin = 'office2013';
+    config.extraPlugins = 'widget,lineheight,fontawesome';
+    config.contentsCss = '../../ckeditor/plugins/fontawesome/font-awesome/css/font-awesome.min.css';
+    config.allowedContent = true;
+
 };
