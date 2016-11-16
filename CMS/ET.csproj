@@ -186,6 +186,7 @@
     <Folder Include="App_Data\" />
     <Folder Include="Areas\Admin\Models\" />
     <Folder Include="bower_components\sweetalert\" />
+    <Folder Include="ckeditor\plugins\lineheight\" />
     <Folder Include="Content\admin\js\core\cache\" />
     <Folder Include="Content\front\img\" />
     <Folder Include="Content\Images\flash\" />
