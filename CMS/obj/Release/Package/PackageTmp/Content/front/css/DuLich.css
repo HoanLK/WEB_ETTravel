@@ -23,36 +23,36 @@
         }
 
             .Main > .CanhDepMienBac > .DiaDiem > .Khung > .anh {
-                width:30%;
-                height:100%;
-                float:left;
+                width: 30%;
+                height: 100%;
+                float: left;
             }
 
             .Main > .CanhDepMienBac > .DiaDiem > .Khung > .TieuDe {
-                width:70%;
-                float:right;
+                width: 70%;
+                float: right;
                 font-size: 1.2em;
                 font-weight: bold;
                 color: #0078ff;
-                padding:1em 1em 0.5em 1em;
+                padding: 1em 1em 0.5em 1em;
             }
 
             .Main > .CanhDepMienBac > .DiaDiem > .Khung > .GioiThieu {
                 padding: 0 1em;
-                width:70%;
-                float:right;
+                width: 70%;
+                float: right;
             }
 
                 .Main > .CanhDepMienBac > .DiaDiem > .Khung > .GioiThieu > p {
-                    width:100%;
+                    width: 100%;
                 }
 
             .Main > .CanhDepMienBac > .DiaDiem > .Khung > .XemTiep {
                 color: #ff0000;
-                position:absolute;
-                overflow:hidden;
-                right:2em;
-                bottom:1.5em;
+                position: absolute;
+                overflow: hidden;
+                right: 2em;
+                bottom: 1.5em;
             }
 
                 .Main > .CanhDepMienBac > .DiaDiem > .Khung > .XemTiep:hover {
@@ -66,13 +66,13 @@
         color: #ff0000;
         margin: 0;
         font-size: 2em;
-        text-align:center;
+        text-align: center;
     }
 
     .Main > .AllDLTrongNuoc > .HangLe {
-        padding:0;
+        padding: 0;
         margin-bottom: 1.5em;
-        background-color:#fff;
+        background-color: #fff;
         box-shadow: 0 14px 28px rgba(0,0,0,.25),0 10px 10px rgba(0,0,0,.22);
     }
 
@@ -82,8 +82,8 @@
         }
 
             .Main > .AllDLTrongNuoc > .HangLe > .left > img {
-                height:100%;
-                width:100%;
+                height: 100%;
+                width: 100%;
             }
 
         .Main > .AllDLTrongNuoc > .HangLe > .right {
@@ -96,7 +96,7 @@
             .Main > .AllDLTrongNuoc > .HangLe > .right > .TieuDe {
                 color: #2400ff;
                 font-size: 1.5em;
-                padding:1em;
+                padding: 1em;
             }
 
                 .Main > .AllDLTrongNuoc > .HangLe > .right > .TieuDe:hover {
@@ -107,7 +107,7 @@
             .Main > .AllDLTrongNuoc > .HangLe > .right > .GioiThieu {
                 color: #515154;
                 font-size: 1.3em;
-                padding:1em;
+                padding: 1em;
             }
 
             .Main > .AllDLTrongNuoc > .HangLe > .right > .XemThem {
@@ -121,7 +121,7 @@
                 font-weight: bold;
                 padding: 0.5em 2em;
                 border-radius: 5px;
-                margin-left:1em;
+                margin-left: 1em;
             }
 
                 .Main > .AllDLTrongNuoc > .HangLe > .right > .XemThem:hover {
@@ -130,9 +130,9 @@
                 }
 
     .Main > .AllDLTrongNuoc > .HangChan {
-        padding:0;
+        padding: 0;
         margin-bottom: 1.5em;
-        background-color:#fff;
+        background-color: #fff;
         box-shadow: 0 14px 28px rgba(0,0,0,.25),0 10px 10px rgba(0,0,0,.22);
     }
 
@@ -141,13 +141,13 @@
             float: left;
             text-align: left;
             padding-right: 10px;
-            padding:1em;
+            padding: 1em;
         }
 
             .Main > .AllDLTrongNuoc > .HangChan > .left > .TieuDe {
                 color: #2400ff;
                 font-size: 1.5em;
-                padding:1em;
+                padding: 1em;
             }
 
                 .Main > .AllDLTrongNuoc > .HangChan > .left > .TieuDe:hover {
@@ -158,7 +158,7 @@
             .Main > .AllDLTrongNuoc > .HangChan > .left > .GioiThieu {
                 color: #515154;
                 font-size: 1.3em;
-                padding:1em;
+                padding: 1em;
             }
 
             .Main > .AllDLTrongNuoc > .HangChan > .left > .XemThem {
@@ -172,7 +172,7 @@
                 font-weight: bold;
                 padding: 0.5em 2em;
                 border-radius: 5px;
-                margin-left:1em;
+                margin-left: 1em;
             }
 
                 .Main > .AllDLTrongNuoc > .HangChan > .left > .XemThem:hover {
@@ -186,8 +186,8 @@
         }
 
             .Main > .AllDLTrongNuoc > .HangChan > .right > img {
-                height:100%;
-                width:100%;
+                height: 100%;
+                width: 100%;
             }
 
 .Main > .TomTat {
@@ -238,7 +238,7 @@
 
         .Main > .TomTat > .right > .GioiThieu {
             font-size: 1.3em;
-            padding-bottom:3em;
+            padding-bottom: 3em;
         }
 
         .Main > .TomTat > .right > .btnDangKy {
@@ -331,7 +331,7 @@
         font-weight: bold;
     }
 
-    .Main > .ChiTiet  .btnDangKy {
+    .Main > .ChiTiet .btnDangKy {
         padding: 0.2em 1.5em;
         font-size: 1.3em;
         font-weight: bold;
@@ -344,21 +344,21 @@
         transition: background-color .3s;
     }
 
-        .Main > .ChiTiet  .btnDangKy:hover,
-        .Main > .ChiTiet  .btnDangKy:focus {
+        .Main > .ChiTiet .btnDangKy:hover,
+        .Main > .ChiTiet .btnDangKy:focus {
             background-color: #27ae60;
         }
 
-        .Main > .ChiTiet  .btnDangKy > * {
+        .Main > .ChiTiet .btnDangKy > * {
             position: relative;
         }
 
-        .Main > .ChiTiet  .btnDangKy span {
+        .Main > .ChiTiet .btnDangKy span {
             display: block;
             padding: 12px 24px;
         }
 
-        .Main > .ChiTiet  .btnDangKy:before {
+        .Main > .ChiTiet .btnDangKy:before {
             content: "";
             position: absolute;
             top: 50%;
@@ -375,13 +375,13 @@
             transform: translate(-50%, -50%);
         }
 
-        .Main > .ChiTiet  .btnDangKy:active:before {
+        .Main > .ChiTiet .btnDangKy:active:before {
             width: 120%;
             padding-top: 120%;
             transition: width .4s ease-out, padding-top .4s ease-out;
         }
 
-        .Main > .ChiTiet  .btnDangKy:hover {
+        .Main > .ChiTiet .btnDangKy:hover {
             background-color: #30cfc0 !important;
             text-decoration: none;
             box-shadow: 0 5px 11px 0 rgba(0,0,0,.18),0 4px 15px 0 rgba(0,0,0,.15);
@@ -402,17 +402,17 @@
             padding: 1em;
         }
 
-        .Main>.CanhDepMienBac>.DiaDiem>.Khung{
-            height:18em;
-        }
-
-            .Main > .CanhDepMienBac > .DiaDiem > .Khung > .TieuDe {
-                font-size: 1.2em;
+            .Main > .CanhDepMienBac > .DiaDiem > .Khung {
+                height: 18em;
             }
 
-            .Main > .CanhDepMienBac > .DiaDiem > .Khung > .GioiThieu {
-                font-size: 1em;
-            }
+                .Main > .CanhDepMienBac > .DiaDiem > .Khung > .TieuDe {
+                    font-size: 1.2em;
+                }
+
+                .Main > .CanhDepMienBac > .DiaDiem > .Khung > .GioiThieu {
+                    font-size: 1em;
+                }
 
     /*Các tour du lich strong nước*/
     .Main > .AllDLTrongNuoc > .TieuDe {
@@ -447,7 +447,7 @@
 
     .Main > .TomTat {
         height: auto;
-        padding-bottom:0.5em;
+        padding-bottom: 0.5em;
     }
 
         .Main > .TomTat > .right > .TieuDe {
@@ -470,7 +470,7 @@
         .Main > .TomTat > .right > .btnDangKy {
             padding: 0.2em 1.5em;
             font-size: 1em;
-            bottom:5%;
+            bottom: 5%;
         }
 
     .Main > .ChiTiet {
@@ -510,7 +510,7 @@
         }
 
             .Main > .CanhDepMienBac > .DiaDiem > .Khung {
-                height:13em;
+                height: 13em;
             }
 
                 .Main > .CanhDepMienBac > .DiaDiem > .Khung > .TieuDe {
@@ -530,13 +530,13 @@
         margin-bottom: 3em;
     }
 
-    .Main > .TomTat{
-        height:23em;
+    .Main > .TomTat {
+        height: 23em;
     }
 
-    .Main > .TomTat > .right > .GioiThieu {
-        margin-bottom: 3em;
-    }
+        .Main > .TomTat > .right > .GioiThieu {
+            margin-bottom: 3em;
+        }
 }
 
 /*table xoay ngang*/
@@ -553,8 +553,8 @@
         height: 24.5em;
     }
 
-    .Main > .TomTat{
-        height:24em;
+    .Main > .TomTat {
+        height: 24em;
     }
 }
 
@@ -573,13 +573,17 @@
             font-size: 4em;
         }
 
-        .Main > .CanhDepMienBac > .DiaDiem > .Khung > .TieuDe {
-            font-size: 3em;
+        .Main > .CanhDepMienBac > .DiaDiem > .Khung {
+            height: 20em;
         }
 
-        .Main > .CanhDepMienBac > .DiaDiem > .Khung > .GioiThieu {
-            font-size: 2.2em;
-        }
+            .Main > .CanhDepMienBac > .DiaDiem > .Khung > .TieuDe {
+                font-size: 2.5em;
+            }
+
+            .Main > .CanhDepMienBac > .DiaDiem > .Khung > .GioiThieu {
+                font-size: 2em;
+            }
 
     /*Các tour du lich strong nước*/
     .Main > .AllDLTrongNuoc > .TieuDe {
