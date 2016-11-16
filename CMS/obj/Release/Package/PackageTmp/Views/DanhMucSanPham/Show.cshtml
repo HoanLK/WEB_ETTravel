@@ -42,7 +42,7 @@
         <div class="Khung">
             <img class="img-responsive anh" ng-src="{{value.image}}" title="{{value.title}}" alt="{{value.title}}" />
             <a href="/bai-viet/{{value.alias}}-{{value.idPost}}" class="TieuDe"><h4 style="display:inline; font-size:inherit; font-weight:inherit">{{value.title}}</h4></a>
-            <p class="GioiThieu" ng-bind-html="value.description | limitTo: 300">
+            <p class="GioiThieu" ng-bind-html="value.description | limitTo: 200">
             </p>
             <a href="/bai-viet/{{value.alias}}-{{value.idPost}}" class="XemTiep">Xem tiếp</a>
         </div>
