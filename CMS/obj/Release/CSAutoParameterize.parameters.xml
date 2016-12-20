@@ -1,9 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <parameters>
   <parameter name="ET_DB-Web.config Connection String" description="ET_DB Connection String used in web.config by the application to access the database." defaultValue="Data Source=112.78.2.94,1433;Initial Catalog=ettc419f_ET;MultipleActiveResultSets=True;Application Name=EntityFramework; User ID=ettc419f_pgdien;Password=Dienvjppr0@@" tags="SqlConnectionString">
-    <parameterEntry kind="XmlFile" scope="D:\\Code\\TeamDev\\ettravel\\CMS\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='ET_DB']/@connectionString" />
+    <parameterEntry kind="XmlFile" scope="D:\\Project\\KNT\\ettravel\\CMS\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='ET_DB']/@connectionString" />
   </parameter>
   <parameter name="ETEntities-Web.config Connection String" description="ETEntities Connection String used in web.config by the application to access the database." defaultValue="metadata=res://*/Models.ET_DB.csdl|res://*/Models.ET_DB.ssdl|res://*/Models.ET_DB.msl;provider=System.Data.SqlClient;provider connection string=&quot;Data Source=112.78.2.94,1433; Initial Catalog=ettc419f_ET;Application Name=EntityFramework; User ID=ettc419f_pgdien;Password=Dienvjppr0@@&quot;" tags="SqlConnectionString">
-    <parameterEntry kind="XmlFile" scope="D:\\Code\\TeamDev\\ettravel\\CMS\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='ETEntities']/@connectionString" />
+    <parameterEntry kind="XmlFile" scope="D:\\Project\\KNT\\ettravel\\CMS\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='ETEntities']/@connectionString" />
   </parameter>
 </parameters>

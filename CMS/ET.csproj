@@ -2415,6 +2415,7 @@
     <Content Include="Content\ui-grid.svg" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
+    <Content Include="google6d54c712823d1966.html" />
     <Content Include="Models\ET_DB.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>ET_DB.edmx</DependentUpon>
@@ -2718,6 +2719,7 @@
     <Content Include="Scripts\toaster.js" />
     <Content Include="Scripts\ui-grid.js" />
     <Content Include="Scripts\ui-grid.min.js" />
+    <Content Include="sitemap.xml" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
     </Content>
