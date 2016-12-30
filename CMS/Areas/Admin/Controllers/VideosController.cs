@@ -92,6 +92,7 @@ namespace CMS.Areas.Admin.Controllers
         }
 
         // GET: Admin/Videos/Delete/5
+        [Authorize]
         public async Task<ActionResult> Delete(int? id)
         {
             if (id == null)
@@ -107,6 +108,7 @@ namespace CMS.Areas.Admin.Controllers
         }
 
         // POST: Admin/Videos/Delete/5
+        [Authorize]
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public async Task<ActionResult> DeleteConfirmed(int id)

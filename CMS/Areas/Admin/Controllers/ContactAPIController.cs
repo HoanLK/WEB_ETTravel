@@ -36,6 +36,7 @@ namespace CMS.Areas.Admin.Controllers
         }
 
         // PUT: api/ContactAPI/5
+        [Authorize]
         [ResponseType(typeof(void))]
         public IHttpActionResult PutContact(int id, Contact contact)
         {
@@ -71,6 +72,7 @@ namespace CMS.Areas.Admin.Controllers
         }
 
         // POST: api/ContactAPI
+        [Authorize]
         [ResponseType(typeof(Contact))]
         public IHttpActionResult PostContact(Contact contact)
         {
@@ -86,6 +88,7 @@ namespace CMS.Areas.Admin.Controllers
         }
 
         // DELETE: api/ContactAPI/5
+        [Authorize]
         [ResponseType(typeof(Contact))]
         public IHttpActionResult DeleteContact(int id)
         {

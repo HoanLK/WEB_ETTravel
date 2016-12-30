@@ -37,6 +37,7 @@ namespace CMS.Controllers
         }
 
         // PUT: api/UsersAPI/5
+        [Authorize]
         [ResponseType(typeof(void))]
         public async Task<IHttpActionResult> PutUser(int id, User user)
         {
@@ -72,6 +73,7 @@ namespace CMS.Controllers
         }
 
         // POST: api/UsersAPI
+        [Authorize]
         [ResponseType(typeof(User))]
         public async Task<IHttpActionResult> PostUser(User user)
         {
@@ -87,6 +89,7 @@ namespace CMS.Controllers
         }
 
         // DELETE: api/UsersAPI/5
+        [Authorize]
         [ResponseType(typeof(User))]
         public async Task<IHttpActionResult> DeleteUser(int id)
         {

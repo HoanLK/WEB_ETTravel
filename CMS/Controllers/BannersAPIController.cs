@@ -37,6 +37,7 @@ namespace CMS.Controllers
         }
 
         // PUT: api/BannersAPI/5
+        [Authorize]
         [ResponseType(typeof(void))]
         public async Task<IHttpActionResult> PutBanner(int id, Banner banner)
         {
@@ -72,6 +73,7 @@ namespace CMS.Controllers
         }
 
         // POST: api/BannersAPI
+        [Authorize]
         [ResponseType(typeof(Banner))]
         public async Task<IHttpActionResult> PostBanner(Banner banner)
         {
@@ -87,6 +89,7 @@ namespace CMS.Controllers
         }
 
         // DELETE: api/BannersAPI/5
+        [Authorize]
         [ResponseType(typeof(Banner))]
         public async Task<IHttpActionResult> DeleteBanner(int id)
         {

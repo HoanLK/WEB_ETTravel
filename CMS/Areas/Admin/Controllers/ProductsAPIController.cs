@@ -36,7 +36,24 @@ namespace CMS.Areas.Admin.Controllers
             return Ok(product);
         }
 
+        //GET: API/ProductsAPI?att=...&&value=...
+        public IQueryable<Product> GetProduct(string att, string value)
+        {
+            var product = db.Product;
+
+            if(att == "idCategoryProduct" && att != null && value != null)
+            {
+                int idCategoryProduct = int.Parse(value);
+                var model = db.Product.Where(p => p.idCategoryProduct == idCategoryProduct && p.published == 1).OrderByDescending(p => p.timeModified);
+
+                return model;
+            }
+
+            return product;
+        }
+
         // PUT: api/ProductsAPI/5
+        [Authorize]
         [ResponseType(typeof(void))]
         public async Task<IHttpActionResult> PutProduct(int id, Product product)
         {
@@ -72,6 +89,7 @@ namespace CMS.Areas.Admin.Controllers
         }
 
         // POST: api/ProductsAPI
+        [Authorize]
         [ResponseType(typeof(Product))]
         public async Task<IHttpActionResult> PostProduct(Product product)
         {
@@ -87,6 +105,7 @@ namespace CMS.Areas.Admin.Controllers
         }
 
         // DELETE: api/ProductsAPI/5
+        [Authorize]
         [ResponseType(typeof(Product))]
         public async Task<IHttpActionResult> DeleteProduct(int id)
         {

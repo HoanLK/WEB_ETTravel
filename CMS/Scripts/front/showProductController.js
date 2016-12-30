@@ -7,7 +7,8 @@
     $http.get('/API/ProductsAPI/' + $scope.idProduct)
         .success(function (data) {
             $scope.product = data;
-            $scope.product.content = $sce.trustAsHtml(data.content)
+            $scope.product.content = $sce.trustAsHtml(data.content);
+            $scope.product.timeStart = ($scope.product.timeStart != null ) ? new Date($scope.product.timeStart) : null;
             $scope.idCategoryProduct = data.idCategoryProduct;
 
 

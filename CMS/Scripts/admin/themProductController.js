@@ -50,7 +50,6 @@
                     idUserModified: data.idUserModified,
                     timeCreated: data.timeCreated,
                     timeModified: data.timeModified,
-                    timeStart: data.timeStart,
                     dateNumber: data.dateNumber,
                     nightNumber: data.nightNumber,
                     guestNumber: data.guestNumber,
@@ -72,6 +71,9 @@
                     author: data.author,
                     robots: data.robots,
                 };
+
+                $scope.product.timeStart = ($scope.product.timeStart != null) ? new Date($scope.product.timeStart) : null;
+
                 //Giá trị cho Danh mục
                 $scope.category = { id: data.idCategoryProduct };
             });
@@ -96,9 +98,11 @@
     //Lưu Sản phẩm
     $scope.saveProduct = function () {
         $scope.product.idCategoryProduct = $scope.category.id;
+        $scope.product.timeStart = ($scope.product.timeStart != null) ? new Date($scope.product.timeStart) : null;
+
         if ($scope.currentIdProduct) {
-            $scope.product.idUserModified = angular.element('#user').val(),
-            $scope.product.timeModified = new Date()
+            $scope.product.idUserModified = angular.element('#user').val();
+            $scope.product.timeModified = new Date();
             $http.put('/API/ProductsAPI/' + $scope.product.idProduct, $scope.product)
             .success(function () {
                 toastr.success('Thành công', 'Lưu Sản phẩm');
@@ -120,6 +124,8 @@
     //Lưu sản phẩm và Thoát
     $scope.saveProductAndExit = function () {
         $scope.product.idCategoryProduct = $scope.category.id;
+        $scope.product.timeStart = ($scope.product.timeStart != null) ? new Date($scope.product.timeStart) : null;
+
         if ($scope.currentIdProduct) {
             $scope.product.idUserModified = angular.element('#user').val(),
             $scope.product.timeModified = new Date()
@@ -143,6 +149,8 @@
     //Lưu bài viết và Thêm mới
     $scope.saveProductAndNew = function () {
         $scope.product.idCategoryProduct = $scope.category.id;
+        $scope.product.timeStart = ($scope.product.timeStart != null) ? new Date($scope.product.timeStart) : null;
+
         if ($scope.currentIdProduct) {
             $scope.product.idUserModified = angular.element('#user').val(),
             $scope.product.timeModified = new Date()

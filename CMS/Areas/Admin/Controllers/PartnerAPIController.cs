@@ -36,6 +36,7 @@ namespace CMS.Areas.Admin.Controllers
         }
 
         // PUT: api/PartnerAPI/5
+        [Authorize]
         [ResponseType(typeof(void))]
         public IHttpActionResult PutPartner(int id, Partner partner)
         {
@@ -71,6 +72,7 @@ namespace CMS.Areas.Admin.Controllers
         }
 
         // POST: api/PartnerAPI
+        [Authorize]
         [ResponseType(typeof(Partner))]
         public IHttpActionResult PostPartner(Partner partner)
         {
@@ -86,6 +88,7 @@ namespace CMS.Areas.Admin.Controllers
         }
 
         // DELETE: api/PartnerAPI/5
+        [Authorize]
         [ResponseType(typeof(Partner))]
         public IHttpActionResult DeletePartner(int id)
         {

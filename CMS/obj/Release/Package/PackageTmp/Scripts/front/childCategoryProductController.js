@@ -14,14 +14,9 @@
                 }
             });
         })
-    $http.get('/API/ProductsAPI/')
-        .success(function (data) {
-            angular.forEach(data, function (value, key) {
-
-                if (value.idCategoryProduct == $scope.idCategory) {
-                    $scope.products.push(value);
-                }
-            });
+    $http.get('/API/ProductsAPI?att=idCategoryProduct&&value='+$scope.idCategory)
+        .success(function (products) {
+            $scope.products = products;
         });
 
     //Lấy bài viết theo tên tour

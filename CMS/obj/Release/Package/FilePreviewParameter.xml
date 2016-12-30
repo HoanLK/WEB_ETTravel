@@ -1,13 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <parameters>
   <parameter name="IIS Web Application Name" description="" value="Default Web Site/et" tags="IisApp">
-    <parameterEntry kind="ProviderPath" scope="IisApp" match="^D:\\Code\\TeamDev\\ettravel\\CMS\\obj\\Release\\Package\\PackageTmp$" />
-    <parameterEntry kind="ProviderPath" scope="setAcl" match="^D:\\Code\\TeamDev\\ettravel\\CMS\\obj\\Release\\Package\\PackageTmp$" />
+    <parameterEntry kind="ProviderPath" scope="IisApp" match="^D:\\Project\\KNT\\ettravel\\CMS\\obj\\Release\\Package\\PackageTmp$" />
+    <parameterEntry kind="ProviderPath" scope="setAcl" match="^D:\\Project\\KNT\\ettravel\\CMS\\obj\\Release\\Package\\PackageTmp$" />
   </parameter>
   <parameter name="ETEntities-Web.config Connection String" description="" value="metadata=res://*/Models.ET_DB.csdl|res://*/Models.ET_DB.ssdl|res://*/Models.ET_DB.msl;provider=System.Data.SqlClient;provider connection string=&quot;Data Source=112.78.2.94,1433; Initial Catalog=ettc419f_ET;Application Name=EntityFramework; User ID=ettc419f_pgdien;Password=Dienvjppr0@@&quot;" tags="">
-    <parameterEntry kind="XmlFile" scope="D:\\Code\\TeamDev\\ettravel\\CMS\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='ETEntities']/@connectionString" />
+    <parameterEntry kind="XmlFile" scope="D:\\Project\\KNT\\ettravel\\CMS\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='ETEntities']/@connectionString" />
   </parameter>
   <parameter name="ET_DB-Web.config Connection String" description="" value="Data Source=112.78.2.94,1433;Initial Catalog=ettc419f_ET;MultipleActiveResultSets=True;Application Name=EntityFramework; User ID=ettc419f_pgdien;Password=Dienvjppr0@@" tags="">
-    <parameterEntry kind="XmlFile" scope="D:\\Code\\TeamDev\\ettravel\\CMS\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='ET_DB']/@connectionString" />
+    <parameterEntry kind="XmlFile" scope="D:\\Project\\KNT\\ettravel\\CMS\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='ET_DB']/@connectionString" />
   </parameter>
 </parameters>

@@ -36,6 +36,7 @@ namespace CMS.Areas.Admin.Controllers
         }
 
         // PUT: api/CustomerAPI/5
+        [Authorize]
         [ResponseType(typeof(void))]
         public IHttpActionResult PutCustomer(int id, Customer customer)
         {
@@ -71,6 +72,7 @@ namespace CMS.Areas.Admin.Controllers
         }
 
         // POST: api/CustomerAPI
+        [Authorize]
         [ResponseType(typeof(Customer))]
         public IHttpActionResult PostCustomer(Customer customer)
         {
@@ -86,6 +88,7 @@ namespace CMS.Areas.Admin.Controllers
         }
 
         // DELETE: api/CustomerAPI/5
+        [Authorize]
         [ResponseType(typeof(Customer))]
         public IHttpActionResult DeleteCustomer(int id)
         {

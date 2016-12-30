@@ -37,6 +37,7 @@ namespace CMS.Controllers
         }
 
         // PUT: api/VideosAPI/5
+        [Authorize]
         [ResponseType(typeof(void))]
         public async Task<IHttpActionResult> PutVideo(int id, Video video)
         {
@@ -72,6 +73,7 @@ namespace CMS.Controllers
         }
 
         // POST: api/VideosAPI
+        [Authorize]
         [ResponseType(typeof(Video))]
         public async Task<IHttpActionResult> PostVideo(Video video)
         {
@@ -87,6 +89,7 @@ namespace CMS.Controllers
         }
 
         // DELETE: api/VideosAPI/5
+        [Authorize]
         [ResponseType(typeof(Video))]
         public async Task<IHttpActionResult> DeleteVideo(int id)
         {

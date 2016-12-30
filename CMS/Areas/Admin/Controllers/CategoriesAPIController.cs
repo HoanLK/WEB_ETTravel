@@ -37,6 +37,7 @@ namespace CMS.Areas.Admin.Controllers
         }
 
         // PUT: api/CategoriesAPI/5
+        [Authorize]
         [ResponseType(typeof(void))]
         public async Task<IHttpActionResult> PutCategory(int id, Category category)
         {
@@ -72,6 +73,7 @@ namespace CMS.Areas.Admin.Controllers
         }
 
         // POST: api/CategoriesAPI
+        [Authorize]
         [ResponseType(typeof(Category))]
         public async Task<IHttpActionResult> PostCategory(Category category)
         {
@@ -87,6 +89,7 @@ namespace CMS.Areas.Admin.Controllers
         }
 
         // DELETE: api/CategoriesAPI/5
+        [Authorize]
         [ResponseType(typeof(Category))]
         public async Task<IHttpActionResult> DeleteCategory(int id)
         {

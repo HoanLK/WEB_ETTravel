@@ -37,6 +37,7 @@ namespace CMS.Areas.Admin.Controllers
         }
 
         // PUT: api/CategoryProductsAPI/5
+        [Authorize]
         [ResponseType(typeof(void))]
         public async Task<IHttpActionResult> PutCategoryProduct(int id, CategoryProduct categoryProduct)
         {
@@ -72,6 +73,7 @@ namespace CMS.Areas.Admin.Controllers
         }
 
         // POST: api/CategoryProductsAPI
+        [Authorize]
         [ResponseType(typeof(CategoryProduct))]
         public async Task<IHttpActionResult> PostCategoryProduct(CategoryProduct categoryProduct)
         {
@@ -87,6 +89,7 @@ namespace CMS.Areas.Admin.Controllers
         }
 
         // DELETE: api/CategoryProductsAPI/5
+        [Authorize]
         [ResponseType(typeof(CategoryProduct))]
         public async Task<IHttpActionResult> DeleteCategoryProduct(int id)
         {
