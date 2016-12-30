@@ -18,6 +18,7 @@
             .success(function (productTrongNuocs) {
                 $scope.productTrongNuocs = productTrongNuocs;
             })
+        
     }
 
     //Chọn Category quốc tế
@@ -28,7 +29,7 @@
                 $scope.productQuocTes = productQuocTes;
             })
     }
-    
+
 
     //FUNCTION
     /*

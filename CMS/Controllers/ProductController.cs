@@ -21,7 +21,7 @@ namespace CMS.Controllers
         public JsonResult GetByCategory(int id)
         {
             //Cái này về kiến thức LinQ nhé, thỉnh thoảng tự đọc thêm nhé
-            var model = db.Product.Where(p => p.idCategoryProduct == id).Take(6);
+            var model = db.Product.Where(p => p.idCategoryProduct == id && p.feature.Contains("1")).Take(6);
 
             return Json(model, JsonRequestBehavior.AllowGet);
         }
