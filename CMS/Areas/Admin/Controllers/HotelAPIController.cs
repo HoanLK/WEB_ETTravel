@@ -36,7 +36,7 @@ namespace CMS.Areas.Admin.Controllers
         }
 
         // PUT: api/HotelAPI/5
-        [Authorize]
+        //[Authorize]
         [ResponseType(typeof(void))]
         public IHttpActionResult PutHotel(int id, Hotel hotel)
         {
@@ -72,7 +72,7 @@ namespace CMS.Areas.Admin.Controllers
         }
 
         // POST: api/HotelAPI
-        [Authorize]
+        //[Authorize]
         [ResponseType(typeof(Hotel))]
         public IHttpActionResult PostHotel(Hotel hotel)
         {

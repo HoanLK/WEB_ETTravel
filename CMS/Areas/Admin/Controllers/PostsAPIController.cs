@@ -37,7 +37,7 @@ namespace CMS.Areas.Admin.Controllers
         }
 
         // PUT: api/PostsAPI/5
-        [Authorize]
+        //[Authorize]
         [ResponseType(typeof(void))]
         public async Task<IHttpActionResult> PutPost(int id, Post post)
         {
@@ -73,7 +73,7 @@ namespace CMS.Areas.Admin.Controllers
         }
 
         // POST: api/PostsAPI
-        [Authorize]
+        //[Authorize]
         [ResponseType(typeof(Post))]
         public async Task<IHttpActionResult> PostPost(Post post)
         {

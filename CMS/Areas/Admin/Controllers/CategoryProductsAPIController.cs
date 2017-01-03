@@ -37,7 +37,7 @@ namespace CMS.Areas.Admin.Controllers
         }
 
         // PUT: api/CategoryProductsAPI/5
-        [Authorize]
+        //[Authorize]
         [ResponseType(typeof(void))]
         public async Task<IHttpActionResult> PutCategoryProduct(int id, CategoryProduct categoryProduct)
         {
@@ -73,7 +73,7 @@ namespace CMS.Areas.Admin.Controllers
         }
 
         // POST: api/CategoryProductsAPI
-        [Authorize]
+        //[Authorize]
         [ResponseType(typeof(CategoryProduct))]
         public async Task<IHttpActionResult> PostCategoryProduct(CategoryProduct categoryProduct)
         {

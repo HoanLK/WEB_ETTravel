@@ -36,7 +36,7 @@ namespace CMS.Areas.Admin.Controllers
         }
 
         // PUT: api/EmployeeAPI/5
-        [Authorize]
+        //[Authorize]
         [ResponseType(typeof(void))]
         public IHttpActionResult PutEmployee(int id, Employee employee)
         {
@@ -72,7 +72,7 @@ namespace CMS.Areas.Admin.Controllers
         }
 
         // POST: api/EmployeeAPI
-        [Authorize]
+        //[Authorize]
         [ResponseType(typeof(Employee))]
         public IHttpActionResult PostEmployee(Employee employee)
         {
